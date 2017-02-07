@@ -1,0 +1,93 @@
+﻿@font-face {
+	font-family: 'ims-icon-font';
+    src: url('//at.alicdn.com/t/font_cypddivzecmr6bt9.eot');
+    src: url('//at.alicdn.com/t/font_cypddivzecmr6bt9.eot?#iefix') format('embedded-opentype'),
+         url('//at.alicdn.com/t/font_cypddivzecmr6bt9.woff') format('woff'),
+         url('//at.alicdn.com/t/font_cypddivzecmr6bt9.ttf') format('truetype'),
+         url('//at.alicdn.com/t/font_cypddivzecmr6bt9.svg#ims-icon-font') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="ims-icon-font-"], [class*=" ims-icon-font-"] {
+	font-family: 'ims-icon-font';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ims-icon-font-tui:before {
+    content: "\e600";
+}
+
+.ims-icon-font-pei:before {
+    content: "\e601";
+}
+
+.ims-icon-font-shi:before {
+    content: "\e602";
+}
+
+.ims-icon-font-yuan:before {
+    content: "\e603";
+}
+
+.ims-icon-font-kefu:before {
+    content: "\e604";
+}
+
+.ims-icon-font-zixun:before {
+    content: "\e605";
+}
+
+.ims-icon-font-weixin:before {
+    content: "\e606";
+}
+
+.ims-icon-font-qq:before {
+    content: "\e607";
+}
+
+.ims-icon-font-dianhua:before {
+    content: "\e608";
+}
+
+.ims-icon-font-weibo:before {
+    content: "\e609";
+}
+
+.ims-icon-font-email:before {
+    content: "\e610";
+}
+
+.ims-icon-font-shipin:before {
+    content: "\e60b";
+}
+
+.ims-icon-font-gonggao:before {
+    content: "\e60f";
+}
+
+.ims-icon-font-why:before {
+    content: "\e66b";
+}
+
+.ims-icon-font-gift:before {
+    content: "\e646";
+}
+
+.ims-icon-font-left:before {
+    content: "\e63c";
+}
+
+.ims-icon-font-right:before {
+    content: "\e620";
+}

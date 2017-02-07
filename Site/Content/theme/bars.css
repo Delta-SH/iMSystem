@@ -1,0 +1,371 @@
+﻿.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+    min-width: 1000px;
+}
+
+.navbar-black {
+    border: none;
+    border-bottom: 1px solid #43454a;
+    background-color: #22252a;
+}
+
+.navbar-black:hover {
+    border-bottom: 1px solid #65676a;
+    background-color: #373d41;
+}
+
+.logo-cell {
+    width: 100px;
+    height: 60px;
+    position: relative;
+    margin-right: 80px;
+}
+
+.logo-cell img {
+    width: 100px;
+    height: 30px;
+    margin-top: 16px;
+    display: block;
+}
+
+.menus-row {
+    height: 60px;
+    position: relative;
+    display: block;
+}
+
+.menus-row > dl {
+    position: relative;
+}
+
+.menus-row > dl:after {
+    font-size: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ' ';
+}
+
+.menus-row > dl > dd {
+    font-size: 14px;
+    height: 61px;
+    line-height: 61px;
+    position: relative;
+    float: left;
+}
+
+.menus-row > dl > dd a {
+    display: block;
+    padding: 0 25px;
+    color: #fff;
+}
+
+.menus-row > dl > dd.line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    padding: 0;
+    background-color: #00c1de;
+}
+
+.dropdown-box {
+    position: absolute;
+    z-index: 998;
+    left: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: none;
+    width: 600px;
+    padding: 20px 10px;
+    background-color: #262c30;
+}
+
+.dropdown-box:after {
+    font-size: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ' ';
+}
+
+.dropdown-box .menu-box {
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-box .menu-body {
+    margin: 0 10px;
+}
+
+.dropdown-box .menu-body .title {
+    height: 30px;
+    line-height: 20px;
+    font-size: 14px;
+    margin:0;
+    padding: 0;
+    color: #fff;
+    border-bottom: 1px solid #65676a;
+}
+
+.dropdown-box .menu-body > ul:after {
+    font-size: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ' ';
+}
+
+.dropdown-box .menu-body > ul > li {
+    width: 100%;
+    margin:10px 0 0 0;
+    padding: 10px 10px;
+    background: #373d41 none repeat scroll 0 0;
+    transition: background-color 0.2s ease 0s;
+}
+
+.dropdown-box .menu-body > ul > li:hover {
+    background-color: #00c1de;
+}
+
+.dropdown-box .menu-body > ul > li:hover p {
+    color: #fff;
+}
+
+.dropdown-box .menu-body > ul > li a {
+    padding:0;
+    line-height:normal;
+}
+
+.dropdown-box .menu-body > ul > li h3 {
+    color: #fff;
+    font-size: 13px;
+    margin:0 0 5px 0;
+    padding: 0;
+}
+
+.dropdown-box .menu-body > ul > li h3 img {
+    width: 28px; 
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.dropdown-box .menu-body > ul > li p {
+    font-size: 12px;
+    color: #777f84;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin:0;
+    padding:0;
+}
+
+.normal-dropdown {
+    padding: 0 0 10px 0;
+    width: 200px;
+}
+
+.normal-dropdown > .menu-box {
+    width: 100%;
+}
+
+.normal-dropdown .menu-body > ul > li {
+    background-color: transparent;
+}
+
+.normal-dropdown .menu-body > ul > li h3 {
+    margin: 0;
+}
+
+/** toolbar */
+.toolbar-item, .toolbar-layer {
+    background: url(/Content/images/toolbar.png) no-repeat;
+}
+.toolbar {
+    position: fixed;
+    right: 0px;
+    bottom: 50px;
+    z-index: 250;
+}
+.toolbar-item {
+    display: block;
+    width: 52px;
+    height: 52px;
+    margin-top: 1px;
+    position: relative;
+    background-color:#cdcdcd;
+}
+.toolbar-item:hover {
+    background-color:#a6a6a6;
+}
+.toolbar-item-qq {
+    background-position: 0 -426px;
+}
+.toolbar-item-qq:hover {
+    background-position: 0 -488px;
+}
+.toolbar-item-contact {
+    background-position: 0 -550px;
+}
+.toolbar-item-contact:hover {
+    background-position: 0 -612px;
+}
+.toolbar-item-contact .toolbar-layer {
+    height: 212px;
+    background-position: 0 0;
+}
+.toolbar-item-app {
+    background-position: 0 -674px;
+}
+.toolbar-item-app:hover {
+    background-position: 0 -736px;
+}
+.toolbar-item-app .toolbar-layer {
+    height: 194px;
+    background-position: 0 -222px;
+}
+.toolbar-item-top {
+    background-position: 0 -798px;
+}
+.toolbar-item-top:hover {
+    background-position: 0 -860px;
+}
+.toolbar-layer{
+    display:none;
+    position:absolute;
+    right:50px;
+    bottom:-10px;
+    width: 172px;
+}
+/** footer */
+footer{
+    min-width:1000px;
+    background-color: #373d41;
+}
+
+footer .row {
+    border-bottom: 1px solid #65676a;
+}
+
+footer .last-row {
+    border-bottom: none;
+}
+
+footer .commitment > .icon {
+    float: left;
+    font-size: 50px;
+    height: 120px;
+    line-height: 130px;
+    width: 60px;
+    color: #fff;
+}
+
+footer .commitment > .icon:after {
+    font-size: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ' ';
+}
+
+footer .commitment > .slogan {
+    font-size: 16px;
+    height: 120px;
+    line-height: 120px;
+    color: #fff;
+    overflow: hidden;
+}
+
+footer .commitment:hover > .slogan {
+    color: #00c1de;
+}
+
+footer .short h3 {
+    color:#fff;
+    font-size:16px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+footer .short a {
+    color: #a9b0b4;
+    font-size: 13px;
+}
+
+footer .short a:hover {
+    color: #00c1de;
+}
+
+footer .short .contact {
+    color: #a9b0b4;
+    font-size: 13px;
+    height: 30px;
+    position:relative;
+}
+
+footer .short .contact .icon {
+    float:left;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+footer .short .contact .kefu {
+    float: left;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+footer .short .other {
+    color: #a9b0b4;
+    height: 80px;
+}
+
+footer .short .other .icon {
+    font-size: 30px;
+    line-height: 80px;
+    padding-right:10px;
+}
+
+footer .short .other a {
+    position: relative;
+}
+
+footer .short .other .weixin {
+    display:none;
+    height: 150px;
+    width: 150px;
+    left: 0;
+    top: -160px;
+    position: absolute;
+    z-index:998;
+}
+
+footer .short .other .weixin img {
+    height: 100%;
+    width: 100%;
+}
+
+footer .copyright {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+}
+
+footer .copyright a {
+    color: #999;
+}
+
+footer .copyright a:hover {
+    color: #00c1de;
+}
