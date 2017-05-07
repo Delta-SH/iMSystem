@@ -1,0 +1,166 @@
+﻿body{
+    background:#eee;
+}
+
+h1, h2, h3 {
+    margin:0;
+    padding:0;
+}
+
+a.btn-blue, a.btn-white {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+a.btn-blue, a.btn-blue:link, a.btn-blue:visited, a.btn-white, a.btn-white:link, a.btn-white:visited {
+    display: inline-block;
+    width: 150px;
+    padding: 8px 0;
+    background: #00a2ca;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-right:5px;
+    border: solid 1px #00a2ca;
+}
+
+a.btn-blue:hover{
+	background: #33b5d4; 
+    border-color: #33b5d4; 
+}
+
+a.btn-white, a.btn-white:link, a.btn-white:visited {
+    background: #fff;
+    border-color: #00a2ca;
+    color: #00a2ca;
+}
+
+a.btn-white:hover{
+	background: #33b5d4; 
+    border-color: #33b5d4; 
+    color: #fff; 
+}
+
+.modulars h2 {
+    font-weight:bold;
+	font-size:20px;
+	padding:40px 0 30px 0
+}
+
+.modulars h2 span {
+	display:inline-block;
+	background-color:#fff;
+	position:relative;
+	padding-right:20px
+}
+
+.modulars h2:before {
+	content:'';
+	width:100%;
+	border-top:1px solid #e6e6e6;
+	position:relative;
+	display:block;
+	top:.7em
+}
+
+.viewport {
+    min-width:1000px;
+    max-width:1200px;
+    background: #293038;
+}
+
+.left-nav {
+    margin:0;
+    padding-right:0;
+}
+
+.main-content {
+    margin:0;
+    padding: 0 25px;
+    min-height: 800px;
+    background:#fff;
+}
+
+.main-content > .solution {
+    color: #333;
+    padding: 0;
+    height: 310px;
+    margin: 0;
+    background: url(/Content/images/solution-header.png) right top no-repeat;
+}
+
+.main-content > .solution > article {
+    position:relative;
+    height: 310px;
+    margin-right:350px;
+}
+
+.main-content > .solution > article figcaption {
+    padding:20px 0;
+}
+
+.main-content > .solution figcaption h1 {
+    font-size: 42px;
+    font-weight:lighter;
+}
+
+.main-content > .solution figcaption h3 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.main-content > .solution figcaption p {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.main-content > .solution figcaption > .sales {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+}
+
+.main-content > .solution figcaption > .sales > .prices {
+    line-height:25px;
+    margin-bottom: 10px;
+}
+
+.main-content > .solution figcaption > .sales > .prices > span {
+    color: #999;
+    display: block;
+    font-size: 14px;
+}
+
+.main-content > .solution figcaption > .sales > .prices > span strong {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.main-content > .solution figcaption > .sales > .prices > span small {
+    color: #ff8a00;
+}
+
+.main-content > .solution figcaption > .sales > .prices > span small.old {
+    text-decoration: line-through;
+}
+
+.main-content > .summary {
+    font-size: 14px;
+}
+
+.main-content > .pros {
+    font-size: 14px;
+}
+
+.main-content > .feature {
+    font-size: 14px;
+}
+
+.main-content > .cases {
+    font-size: 14px;
+}

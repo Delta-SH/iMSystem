@@ -1,0 +1,112 @@
+﻿ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, dd, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    margin:0;
+    padding:0;
+}
+
+.sidebar > .header {
+    height:50px;
+    line-height:50px;
+    color:#fff;
+    font-size:15px;
+}
+
+.sidebar > .header > .header-icon {
+    display: inline-block;
+    margin: 0 10px 0 20px;
+    vertical-align: middle;
+    transition: transform 0.12s;
+    -o-transition: -o-transform 0.12s;
+    -ms-transition: -ms-transform 0.12s;
+    -moz-transition: -moz-transform 0.12s;
+    -webkit-transition: -webkit-transform 0.12s;
+}
+
+.sidebar > ul > li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.sidebar > ul > li .title {
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: #373d41 none repeat scroll 0 0;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.sidebar > ul > li .title > .title-icon {
+    display: inline-block;
+    margin: 0 15px 0 20px;
+    vertical-align: middle;
+    transition: transform 0.12s;
+    -o-transition: -o-transform 0.12s;
+    -ms-transition: -ms-transform 0.12s;
+    -moz-transition: -moz-transform 0.12s;
+    -webkit-transition: -webkit-transform 0.12s;
+}
+
+.sidebar > ul > li.active .title > .ims-icon-font-right {
+    vertical-align: text-top;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.sidebar > ul > li > ul {
+    display: block;
+    overflow: hidden;
+}
+
+.sidebar > ul > li > ul > li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.sidebar > ul > li > ul > li a {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+}
+
+.sidebar > ul > li > ul > li a:hover {
+    background-color: #00c1de; 
+}
+
+.sidebar > ul > li > ul > li .menu-icon {
+    margin: 0 10px 0 20px;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.12s;
+    -o-transition: -o-transform 0.12s;
+    -ms-transition: -ms-transform 0.12s;
+    -moz-transition: -moz-transform 0.12s;
+    -webkit-transition: -webkit-transform 0.12s;
+}
+
+.sidebar > ul > li > ul > li.selected a {
+    background: #00c1de none repeat scroll 0 0;
+    transition: none;
+    -webkit-transition: none;
+}

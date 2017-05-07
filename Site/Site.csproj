@@ -93,51 +93,66 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\images\banners\image.png" />
+    <Content Include="Content\images\banners\banner-1.png" />
+    <Content Include="Content\images\banners\banner-2.png" />
+    <Content Include="Content\images\top-banner.jpg" />
     <Content Include="Content\images\ffffff.gif" />
     <Content Include="Content\images\forums-bg-01.jpg" />
     <Content Include="Content\images\forums-bg-02.jpg" />
     <Content Include="Content\images\forums-bg-03.jpg" />
     <Content Include="Content\images\hot.png" />
+    <Content Include="Content\images\solution-header.png" />
+    <Content Include="Content\images\product-header.png" />
     <Content Include="Content\images\product-icons.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\new.png" />
-    <Content Include="Content\images\solutions-bg-01.jpg" />
     <Content Include="Content\images\solutions-bg-02.jpg" />
+    <Content Include="Content\images\solutions-bg-05.jpg" />
+    <Content Include="Content\images\solutions-bg-01.jpg" />
     <Content Include="Content\images\solutions-bg-03.jpg" />
     <Content Include="Content\images\solutions-bg-04.jpg" />
-    <Content Include="Content\images\solutions-bg-05.jpg" />
+    <Content Include="Content\images\solutions-bg-06.jpg" />
     <Content Include="Content\images\toolbar.png" />
     <Content Include="Content\images\weixin.png" />
-    <Content Include="Content\theme\bootstrap.css" />
-    <Content Include="Content\theme\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\theme\bars.css" />
+    <Content Include="Content\theme\ie10-viewport-bug-workaround.css" />
+    <Content Include="Content\theme\product.css" />
     <Content Include="Content\theme\iconfonts.css" />
-    <Content Include="Content\theme\normalize.css" />
+    <Content Include="Content\theme\sidebar.css" />
+    <Content Include="Content\theme\solution.css" />
     <Content Include="Content\theme\unslider.css" />
     <Content Include="favicon.ico" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\theme\site.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bars.js" />
+    <Content Include="Scripts\news.js" />
+    <Content Include="Scripts\product.js" />
     <Content Include="Scripts\index.js" />
-    <Content Include="Scripts\jquery-1.12.4.js" />
-    <Content Include="Scripts\jquery-1.12.4.min.js" />
-    <Content Include="Scripts\jquery.dotdotdot.min.js" />
-    <Content Include="Scripts\unslider-min.js" />
-    <Content Include="Scripts\unslider.js" />
-    <Content Include="Web.config" />
+    <Content Include="Scripts\solution.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ErrorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\SolutionController.cs" />
+    <Compile Include="Controllers\SupportController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CommonHelper.cs" />
+    <Compile Include="Models\Figure.cs" />
     <Compile Include="Models\iMStore.cs" />
+    <Compile Include="Models\News.cs" />
+    <Compile Include="Models\NewsModel.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Solution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +165,14 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Views\Product\Sidebar.cshtml" />
+    <Content Include="Views\Home\News.cshtml" />
+    <Content Include="Views\Solution\Index.cshtml" />
+    <Content Include="Views\Solution\Sidebar.cshtml" />
+    <Content Include="Views\Product\DCIM.cshtml" />
+    <Content Include="Views\Errors\Index.cshtml" />
+    <Content Include="Views\Errors\FileNotFound.cshtml" />
+    <Content Include="Views\Errors\NoAccess.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -159,6 +182,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="Views\Support\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

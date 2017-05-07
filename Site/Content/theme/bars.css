@@ -246,8 +246,9 @@
 }
 /** footer */
 footer{
-    min-width:1000px;
+    min-width: 1000px;
     background-color: #373d41;
+    border-top: 1px solid #43454a;
 }
 
 footer .row {
