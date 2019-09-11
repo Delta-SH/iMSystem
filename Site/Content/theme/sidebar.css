@@ -8,26 +8,21 @@ h1, h2, h3, dd, ul, ol {
 }
 
 .sidebar {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 .sidebar > .header {
-    height:50px;
-    line-height:50px;
-    color:#fff;
-    font-size:15px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 15px;
 }
 
 .sidebar > .header > .header-icon {
     display: inline-block;
     margin: 0 10px 0 20px;
     vertical-align: middle;
-    transition: transform 0.12s;
-    -o-transition: -o-transform 0.12s;
-    -ms-transition: -ms-transform 0.12s;
-    -moz-transition: -moz-transform 0.12s;
-    -webkit-transition: -webkit-transform 0.12s;
 }
 
 .sidebar > ul > li {
@@ -52,11 +47,6 @@ h1, h2, h3, dd, ul, ol {
     display: inline-block;
     margin: 0 15px 0 20px;
     vertical-align: middle;
-    transition: transform 0.12s;
-    -o-transition: -o-transform 0.12s;
-    -ms-transition: -ms-transform 0.12s;
-    -moz-transition: -moz-transform 0.12s;
-    -webkit-transition: -webkit-transform 0.12s;
 }
 
 .sidebar > ul > li.active .title > .ims-icon-font-right {
@@ -86,10 +76,14 @@ h1, h2, h3, dd, ul, ol {
     color: #fff;
     display: block;
     overflow: hidden;
+    transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
 }
 
 .sidebar > ul > li > ul > li a:hover {
-    background-color: #00c1de; 
+    background-color: #00c1de;
 }
 
 .sidebar > ul > li > ul > li .menu-icon {
@@ -98,15 +92,8 @@ h1, h2, h3, dd, ul, ol {
     font-size: 20px;
     display: inline-block;
     vertical-align: middle;
-    transition: transform 0.12s;
-    -o-transition: -o-transform 0.12s;
-    -ms-transition: -ms-transform 0.12s;
-    -moz-transition: -moz-transform 0.12s;
-    -webkit-transition: -webkit-transform 0.12s;
 }
 
 .sidebar > ul > li > ul > li.selected a {
     background: #00c1de none repeat scroll 0 0;
-    transition: none;
-    -webkit-transition: none;
 }

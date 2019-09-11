@@ -41,6 +41,7 @@ namespace Site.Models {
                     new Product {
                         Index = 1,
                         Id = "P000101",
+                        Type = 1,
                         Name = "DCIM存储系统",
                         English = "DCIM Storage System",
                         Remark = "软件产品的简单介绍说明",
@@ -54,6 +55,7 @@ namespace Site.Models {
                     new Product {
                         Index = 2,
                         Id = "P000102",
+                        Type = 1,
                         Name = "动环监控系统",
                         English = "DCIM Storage System",
                         Remark = "软件产品的简单介绍说明",
@@ -66,6 +68,7 @@ namespace Site.Models {
                     new Product {
                         Index = 3,
                         Id = "P000103",
+                        Type = 1,
                         Name = "三维可视化平台",
                         English = "DCIM Storage System",
                         Remark = "软件产品的简单介绍说明",
@@ -78,6 +81,7 @@ namespace Site.Models {
                     new Product {
                         Index = 4,
                         Id = "P000104",
+                        Type = 1,
                         Name = "能耗管理系统",
                         English = "DCIM Storage System",
                         Remark = "软件产品的简单介绍说明",
@@ -101,6 +105,7 @@ namespace Site.Models {
                     new Product {
                         Index = 1,
                         Id = "P000201",
+                        Type = 2,
                         Name = "水浸传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
@@ -113,6 +118,7 @@ namespace Site.Models {
                     new Product {
                         Index = 2,
                         Id = "P000202",
+                        Type = 2,
                         Name = "温湿度传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
@@ -126,6 +132,7 @@ namespace Site.Models {
                     new Product {
                         Index = 3,
                         Id = "P000203",
+                        Type = 2,
                         Name = "红外传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
@@ -139,6 +146,7 @@ namespace Site.Models {
                     new Product {
                         Index = 4,
                         Id = "P000204",
+                        Type = 2,
                         Name = "光电烟雾传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
@@ -151,6 +159,7 @@ namespace Site.Models {
                     new Product {
                         Index = 5,
                         Id = "P000205",
+                        Type = 2,
                         Name = "光电烟雾传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
@@ -163,6 +172,7 @@ namespace Site.Models {
                     new Product {
                         Index = 6,
                         Id = "P000206",
+                        Type = 2,
                         Name = "光电烟雾传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",

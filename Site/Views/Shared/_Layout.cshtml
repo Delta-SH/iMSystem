@@ -50,20 +50,20 @@
                         <div class="dropdown-box">
                             <div class="menu-box">
                                 <div class="menu-body">
-                                    <div class="title">软件产品系列</div>
+                                    <div class="title">硬件产品系列</div>
                                     <ul>
-                                        @foreach(var soft in iMStore.Software) {
+                                        @foreach (var hard in iMStore.Hardware) {
                                             <li>
-                                                <a href="@soft.Url" target="_self">
+                                                <a href="@hard.Url" target="_self">
                                                     <h3>
-                                                        @soft.Name
-                                                        @if("hot" == soft.Tag) {
+                                                        @hard.Name
+                                                        @if ("hot" == hard.Tag) {
                                                             <img alt="HOT" title="HOT" src="/Content/images/hot.png" />
-                                                        } else if("new" == soft.Tag) {
+                                                        } else if ("new" == hard.Tag) {
                                                             <img alt="NEW" title="NEW" src="/Content/images/new.png" />
                                                         }
                                                     </h3>
-                                                    <p>@soft.Remark</p>
+                                                    <p>@hard.Remark</p>
                                                 </a>
                                             </li>
                                         }
@@ -72,20 +72,20 @@
                             </div>
                             <div class="menu-box">
                                 <div class="menu-body">
-                                    <div class="title">硬件产品系列</div>
+                                    <div class="title">软件产品系列</div>
                                     <ul>
-                                        @foreach(var hard in iMStore.Hardware) {
+                                        @foreach (var soft in iMStore.Software) {
                                             <li>
-                                                <a href="@hard.Url" target="_self">
+                                                <a href="@soft.Url" target="_self">
                                                     <h3>
-                                                        @hard.Name
-                                                        @if("hot" == hard.Tag) {
+                                                        @soft.Name
+                                                        @if ("hot" == soft.Tag) {
                                                             <img alt="HOT" title="HOT" src="/Content/images/hot.png" />
-                                                        } else if("new" == hard.Tag) {
+                                                        } else if ("new" == soft.Tag) {
                                                             <img alt="NEW" title="NEW" src="/Content/images/new.png" />
                                                         }
                                                     </h3>
-                                                    <p>@hard.Remark</p>
+                                                    <p>@soft.Remark</p>
                                                 </a>
                                             </li>
                                         }
@@ -101,14 +101,14 @@
                                 <div class="menu-body">
                                     <div class="title">行业解决方案</div>
                                     <ul>
-                                        @foreach(var solution in iMStore.Hsolution) {
+                                        @foreach (var solution in iMStore.Hsolution) {
                                             <li>
                                                 <a href="@solution.Url" target="_self">
                                                     <h3>
                                                         @solution.Name
-                                                        @if("hot" == solution.Tag) {
+                                                        @if ("hot" == solution.Tag) {
                                                             <img alt="HOT" title="HOT" src="/Content/images/hot.png" />
-                                                        } else if("new" == solution.Tag) {
+                                                        } else if ("new" == solution.Tag) {
                                                             <img alt="NEW" title="NEW" src="/Content/images/new.png" />
                                                         }
                                                     </h3>
@@ -123,14 +123,14 @@
                                 <div class="menu-body">
                                     <div class="title">通用解决方案</div>
                                     <ul>
-                                        @foreach(var solution in iMStore.Tsolution) {
+                                        @foreach (var solution in iMStore.Tsolution) {
                                             <li>
                                                 <a href="@solution.Url" target="_self">
                                                     <h3>
                                                         @solution.Name
-                                                        @if("hot" == solution.Tag) {
+                                                        @if ("hot" == solution.Tag) {
                                                             <img alt="HOT" title="HOT" src="/Content/images/hot.png" />
-                                                        } else if("new" == solution.Tag) {
+                                                        } else if ("new" == solution.Tag) {
                                                             <img alt="NEW" title="NEW" src="/Content/images/new.png" />
                                                         }
                                                     </h3>
@@ -152,7 +152,7 @@
                             <div class="menu-box">
                                 <div class="menu-body">
                                     <ul>
-                                        <li><a href="#"><h3>客户服务</h3></a></li>
+                                        <li><a href="/Support"><h3>客户服务</h3></a></li>
                                         <li><a href="#"><h3>售后政策</h3></a></li>
                                         <li><a href="#"><h3>常见问题</h3></a></li>
                                         <li><a href="#"><h3>资料下载<img alt="new" title="new" src="/Content/images/hot.png"></h3></a></li>
@@ -167,7 +167,7 @@
                             <div class="menu-box">
                                 <div class="menu-body">
                                     <ul>
-                                        <li><a href="#"><h3>公司简介</h3></a></li>
+                                        <li><a href="/About"><h3>公司简介</h3></a></li>
                                         <li><a href="#"><h3>公司理念</h3></a></li>
                                         <li><a href="#"><h3>企业资质</h3></a></li>
                                         <li><a href="#"><h3>联系我们</h3></a></li>

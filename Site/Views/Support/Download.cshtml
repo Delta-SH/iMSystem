@@ -1,5 +1,5 @@
 ﻿@model Site.Models.NewsModel
-<div class="page-top-banner page-news">
+<div class="news-top-banner">
     <div class="container">
         <div class="header">
             <h3>新闻中心</h3>
@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<div class="page-common-content news-content">
+<div class="news-content">
     <div class="container">
         <ol class="breadcrumb">
             <li><a href="/">首页</a></li>
@@ -24,8 +24,8 @@
             </div>
             <div class="col-xs-10 content">
                 <div class="news-box">
-                    @if(Model.PageNews != null) {
-                        foreach(var news in Model.PageNews) {
+                    @if (Model.PageNews != null) {
+                        foreach (var news in Model.PageNews) {
                             <div class="news-list">
                                 <div class="row">
                                     <div class="col-xs-3">
@@ -42,9 +42,9 @@
                                         </div>
                                         <div class="clearfix">
                                             <div class="pull-left">
-                                                @if(news.Tag == "p1") {
+                                                @if (news.Tag == "p1") {
                                                     <span class="label label-danger">重要新闻</span>
-                                                } else if(news.Tag == "p2") {
+                                                } else if (news.Tag == "p2") {
                                                     <span class="label label-info">普通新闻</span>
                                                 } else {
                                                     <span class="label label-default">其他新闻</span>
@@ -68,26 +68,26 @@
                             </a>
                         </li>
                         @{
-                            if(Model.TotalPages <= 9) {
-                                for(var i = 1; i <= Model.TotalPages; i++) {
+                            if (Model.TotalPages <= 9) {
+                                for (var i = 1; i <= Model.TotalPages; i++) {
                                     <li class="@(i==Model.CurrentPage?"active":"")"><a href="/home/news/@i">@i</a></li>
                                 }
                             } else {
                                 var minPage = Model.CurrentPage - 4;
-                                if(minPage <= 0) {
+                                if (minPage <= 0) {
                                     minPage = 1;
                                 }
-                                
+
                                 var maxPage = Model.CurrentPage + 4;
-                                if(maxPage > Model.TotalPages) {
+                                if (maxPage > Model.TotalPages) {
                                     maxPage = Model.TotalPages;
                                 }
-                                
-                                for(var i = minPage; i <= maxPage; i++) {
+
+                                for (var i = minPage; i <= maxPage; i++) {
                                     <li class="@(i==Model.CurrentPage?"active":"")"><a href="/home/news/@i">@i</a></li>
                                 }
                             }
-                         }
+                        }
                         <li class="@(Model.CurrentPage == Model.TotalPages ? "disabled":"")">
                             <a href="@(Model.CurrentPage < Model.TotalPages ? string.Format("/home/news/{0}", Model.CurrentPage + 1) : "#")" aria-label="Next">
                                 <span aria-hidden="true">下一页</span>

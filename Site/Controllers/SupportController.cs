@@ -13,5 +13,10 @@ namespace Site.Controllers
         {
             return View();
         }
+
+        // GET: Support
+        public ActionResult Download() {
+            return View();
+        }
     }
 }

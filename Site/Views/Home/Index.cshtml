@@ -7,27 +7,27 @@
     <div class="top-banner">
         <ul>
             @foreach (var figure in iMStore.Carousel.OrderBy(c => c.Index)) {
-            <li>
-                @if (!string.IsNullOrWhiteSpace(figure.Url) && string.IsNullOrWhiteSpace(figure.Title)) {
-                    <a href="@figure.Url" target="_blank">
+                <li>
+                    @if (!string.IsNullOrWhiteSpace(figure.Url) && string.IsNullOrWhiteSpace(figure.Title)) {
+                        <a href="@figure.Url" target="_blank">
+                            <img alt="@figure.Comment" title="@figure.Comment" class="@figure.BgClass" src="/Content/images/ffffff.gif" />
+                        </a>
+                    } else {
                         <img alt="@figure.Comment" title="@figure.Comment" class="@figure.BgClass" src="/Content/images/ffffff.gif" />
-                    </a>
-                } else {
-                    <img alt="@figure.Comment" title="@figure.Comment" class="@figure.BgClass" src="/Content/images/ffffff.gif" />
-                }
+                    }
 
-                @if (!string.IsNullOrWhiteSpace(figure.Title)) {
-                    <div class="container">
-                        <div class="row-box">
-                            <div class="slogan">
-                                <h1>@figure.Title</h1>
-                                <p>@figure.Subtitle</p>
-                                <a href="@figure.Url" target="_blank" class="slogan-btn">@figure.BtnText</a>
+                    @if (!string.IsNullOrWhiteSpace(figure.Title)) {
+                        <div class="container">
+                            <div class="row-box">
+                                <div class="slogan">
+                                    <h1>@figure.Title</h1>
+                                    <p>@figure.Subtitle</p>
+                                    <a href="@figure.Url" target="_blank" class="slogan-btn">@figure.BtnText</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                }
-            </li>
+                    }
+                </li>
             }
         </ul>
     </div>
@@ -84,142 +84,14 @@
         <div class="sale-box">
             <ul class="tabs">
                 <li class="tab-item active">
-                    <div>软件产品系列</div>
+                    <div>硬件产品系列</div>
                 </li>
                 <li class="tab-item">
-                    <div>硬件产品系列</div>
+                    <div>软件产品系列</div>
                 </li>
             </ul>
             <div class="content">
                 <div class="content-item active">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-xs-6 pros0">
-                                @{
-                                    var software1 = iMStore.Software.Find(s => s.Index == 1);
-                                    if (software1 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-001" src="/Content/images/ffffff.gif">
-                                                <figcaption>
-                                                    <h3>@software1.Name</h3>
-                                                    <p>@software1.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@software1.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@software1.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software1.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software1.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@software1.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                            <div class="col-xs-6 pros1">
-                                @{
-                                    var software2 = iMStore.Software.Find(s => s.Index == 2);
-                                    if (software2 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-002" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@software2.Name</h3>
-                                                    <p>@software2.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@software2.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@software2.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software2.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software2.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@software2.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 pros4">
-                                @{
-                                    var software3 = iMStore.Software.Find(s => s.Index == 3);
-                                    if (software3 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-003" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@software3.Name</h3>
-                                                    <p>@software3.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@software3.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@software3.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software3.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software3.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@software3.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                            <div class="col-xs-6 pros5">
-                                @{
-                                    var software4 = iMStore.Software.Find(s => s.Index == 4);
-                                    if (software4 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-004" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@software4.Name</h3>
-                                                    <p>@software4.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@software4.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@software4.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software4.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software4.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@software4.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-item">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-6 pros0">
@@ -401,6 +273,134 @@
                                                     <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", hardware6.Price)</strong> /套</small></span>
                                                 </p>
                                                 <a href="@hardware6.Url" target="_blank">了解详情</a>
+                                            </div>
+                                        </article>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-6 pros0">
+                                @{
+                                    var software1 = iMStore.Software.Find(s => s.Index == 1);
+                                    if (software1 != null) {
+                                        <article>
+                                            <figure class="products-main">
+                                                <img class="icon product-icons-001" src="/Content/images/ffffff.gif">
+                                                <figcaption>
+                                                    <h3>@software1.Name</h3>
+                                                    <p>@software1.Comment</p>
+                                                    <div class="products-image">
+                                                        <img alt="" src="@software1.Picture">
+                                                        <div class="bg"></div>
+                                                        <div class="products-detail">
+                                                            <a href="@software1.Url" target="_blank">了解详情</a>
+                                                        </div>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="products-price">
+                                                <p>
+                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software1.Original)</strong> /套</small></span>
+                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software1.Price)</strong> /套</small></span>
+                                                </p>
+                                                <a href="@software1.Url" target="_blank">了解详情</a>
+                                            </div>
+                                        </article>
+                                    }
+                                }
+                            </div>
+                            <div class="col-xs-6 pros1">
+                                @{
+                                    var software2 = iMStore.Software.Find(s => s.Index == 2);
+                                    if (software2 != null) {
+                                        <article>
+                                            <figure class="products-main">
+                                                <img class="icon product-icons-002" src="/Content/images/ffffff.gif" width="65" height="65">
+                                                <figcaption>
+                                                    <h3>@software2.Name</h3>
+                                                    <p>@software2.Comment</p>
+                                                    <div class="products-image">
+                                                        <img alt="" src="@software2.Picture">
+                                                        <div class="bg"></div>
+                                                        <div class="products-detail">
+                                                            <a href="@software2.Url" target="_blank">了解详情</a>
+                                                        </div>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="products-price">
+                                                <p>
+                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software2.Original)</strong> /套</small></span>
+                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software2.Price)</strong> /套</small></span>
+                                                </p>
+                                                <a href="@software2.Url" target="_blank">了解详情</a>
+                                            </div>
+                                        </article>
+                                    }
+                                }
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 pros4">
+                                @{
+                                    var software3 = iMStore.Software.Find(s => s.Index == 3);
+                                    if (software3 != null) {
+                                        <article>
+                                            <figure class="products-main">
+                                                <img class="icon product-icons-003" src="/Content/images/ffffff.gif" width="65" height="65">
+                                                <figcaption>
+                                                    <h3>@software3.Name</h3>
+                                                    <p>@software3.Comment</p>
+                                                    <div class="products-image">
+                                                        <img alt="" src="@software3.Picture">
+                                                        <div class="bg"></div>
+                                                        <div class="products-detail">
+                                                            <a href="@software3.Url" target="_blank">了解详情</a>
+                                                        </div>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="products-price">
+                                                <p>
+                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software3.Original)</strong> /套</small></span>
+                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software3.Price)</strong> /套</small></span>
+                                                </p>
+                                                <a href="@software3.Url" target="_blank">了解详情</a>
+                                            </div>
+                                        </article>
+                                    }
+                                }
+                            </div>
+                            <div class="col-xs-6 pros5">
+                                @{
+                                    var software4 = iMStore.Software.Find(s => s.Index == 4);
+                                    if (software4 != null) {
+                                        <article>
+                                            <figure class="products-main">
+                                                <img class="icon product-icons-004" src="/Content/images/ffffff.gif" width="65" height="65">
+                                                <figcaption>
+                                                    <h3>@software4.Name</h3>
+                                                    <p>@software4.Comment</p>
+                                                    <div class="products-image">
+                                                        <img alt="" src="@software4.Picture">
+                                                        <div class="bg"></div>
+                                                        <div class="products-detail">
+                                                            <a href="@software4.Url" target="_blank">了解详情</a>
+                                                        </div>
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="products-price">
+                                                <p>
+                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software4.Original)</strong> /套</small></span>
+                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software4.Price)</strong> /套</small></span>
+                                                </p>
+                                                <a href="@software4.Url" target="_blank">了解详情</a>
                                             </div>
                                         </article>
                                     }
