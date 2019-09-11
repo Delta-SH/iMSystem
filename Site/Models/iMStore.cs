@@ -273,31 +273,24 @@ namespace Site.Models {
                 return new List<Figure>() {
                     new Figure {
                         Index = 1,
-                        Id = "F001",
-                        Title = "",
-                        Subtitle = "",
-                        Background = "banner-1",
-                        Button = "了解详情",
-                        Url = "/product/dcim",
+                        BgClass = "banner-1",
                         Comment = "促销信息1"
                     },
                     new Figure {
                         Index = 2,
-                        Id = "F002",
                         Title = "行业领先的软硬件一体化产品",
                         Subtitle = "针对不同的客户需求，定制出更懂你的产品",
-                        Background = "banner-2",
-                        Button = "了解详情",
+                        BgClass = "banner-2",
+                        BtnText = "了解详情",
                         Url = "/product/dcim",
                         Comment = "促销信息2"
                     },
                     new Figure {
                         Index = 3,
-                        Id = "F003",
                         Title = "专业的智慧型机房解决方案",
                         Subtitle = "致力于让企业机房运维更智能、更安全、更高效",
-                        Background = "banner-3",
-                        Button = "了解详情",
+                        BgClass = "banner-3",
+                        BtnText = "了解详情",
                         Url = "/product/dcim",
                         Comment = "促销信息3"
                     }

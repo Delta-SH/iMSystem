@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     var slider = $('.index-top-banner > .top-banner').unslider({
         autoplay: true,
-        delay: 15000,
+        delay: 115000,
         nav: true,
         arrows: false,
         infinite: true

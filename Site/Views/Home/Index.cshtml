@@ -7,24 +7,27 @@
     <div class="top-banner">
         <ul>
             @foreach (var figure in iMStore.Carousel.OrderBy(c => c.Index)) {
-                <li>
+            <li>
+                @if (!string.IsNullOrWhiteSpace(figure.Url) && string.IsNullOrWhiteSpace(figure.Title)) {
                     <a href="@figure.Url" target="_blank">
-                        <img alt="" class="@figure.Background" src="/Content/images/ffffff.gif" />
+                        <img alt="@figure.Comment" title="@figure.Comment" class="@figure.BgClass" src="/Content/images/ffffff.gif" />
                     </a>
-                    @if (!string.IsNullOrWhiteSpace(figure.Title)) {
-                        <div class="container">
-                            <div class="row-box">
-                                <a href="@figure.Url" target="_blank">
-                                    <div class="slogan">
-                                        <h1>@figure.Title</h1>
-                                        <p>@figure.Subtitle</p>
-                                        <button class="slogan-btn">@figure.Button</button>
-                                    </div>
-                                </a>
+                } else {
+                    <img alt="@figure.Comment" title="@figure.Comment" class="@figure.BgClass" src="/Content/images/ffffff.gif" />
+                }
+
+                @if (!string.IsNullOrWhiteSpace(figure.Title)) {
+                    <div class="container">
+                        <div class="row-box">
+                            <div class="slogan">
+                                <h1>@figure.Title</h1>
+                                <p>@figure.Subtitle</p>
+                                <a href="@figure.Url" target="_blank" class="slogan-btn">@figure.BtnText</a>
                             </div>
                         </div>
-                    }
-                </li>
+                    </div>
+                }
+            </li>
             }
         </ul>
     </div>

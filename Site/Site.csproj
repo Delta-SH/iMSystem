@@ -117,8 +117,10 @@
     <Content Include="Content\images\solutions-bg-04.jpg" />
     <Content Include="Content\images\solutions-bg-06.jpg" />
     <Content Include="Content\images\toolbar.png" />
+    <Content Include="Content\images\top-about-banner.png" />
     <Content Include="Content\images\top-product-banner.png" />
     <Content Include="Content\images\top-news-banner.png" />
+    <Content Include="Content\images\top-solution-banner.png" />
     <Content Include="Content\images\weixin.png" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\theme\bars.css" />
