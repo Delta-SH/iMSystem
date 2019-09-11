@@ -2,41 +2,51 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     color: #333;
     background: #fff none repeat scroll 0 0;
 }
+
 body, button, input, select, textarea {
     font: 12px/1.5 "微软雅黑","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"宋体";
 }
+
 ol, ul, dl {
     margin: 0;
     padding: 0;
     list-style: outside none none;
 }
+
 a, a:hover, a:link, a:visited {
     color: #00a2ca;
     text-decoration: none;
 }
+
 a:focus {
     outline: 0 none;
-    -moz-outline: 0 none;
 }
+
 .align-right {
     text-align: right !important;
 }
+
 .align-left {
     text-align: left !important;
 }
+
 .align-center {
     text-align: center !important;
 }
+
 .left, .right {
     display: inline;
 }
+
 .left {
     float: left !important;
 }
+
 .right {
     float: right !important;
 }
@@ -62,8 +72,8 @@ a:focus {
     position: absolute;
     top: 0;
     left: 0;
-    bottom:0;
-    right:0;
+    bottom: 0;
+    right: 0;
 }
 
 .index-top-banner .top-banner > ul > li > a > img {
@@ -81,11 +91,7 @@ a:focus {
 }
 
 .index-top-banner .top-banner > ul > li > a > img.banner-3 {
-    background: url(/Content/images/banners/banner-2.png) right top no-repeat;
-}
-
-.index-top-banner .top-banner > ul > li > a > img.banner-4 {
-    background: url(/Content/images/banners/banner-2.png) right top no-repeat;
+    background: url(/Content/images/banners/banner-3.png) right top no-repeat;
 }
 
 .index-top-banner .top-banner li > .container {
@@ -125,6 +131,9 @@ a:focus {
     color: #fff;
     border: 1px solid #fff;
     background: transparent none repeat scroll 0 0;
+    -webkit-transition: color 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
+    -moz-transition: color 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
+    -o-transition: color 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
     transition: color 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
 }
 
@@ -155,7 +164,7 @@ a:focus {
     display: block;
     overflow: hidden;
     color: #00c1de;
-    background:#fff;
+    background: #fff;
     border: 1px solid #dbdbdb;
 }
 
@@ -170,7 +179,7 @@ a:focus {
     height: 100px;
     line-height: 110px;
     width: 100px;
-    text-align:center;
+    text-align: center;
 }
 
 .index-top-events .top-events .events > .icon:after {
@@ -221,7 +230,7 @@ a:focus {
     line-height: 24px;
     margin-bottom: 40px;
     margin-top: 0;
-    text-align:center;
+    text-align: center;
 }
 
 .index-products-sale .sale-box {
@@ -237,7 +246,7 @@ a:focus {
     position: relative;
     top: 0;
     width: 100%;
-    border-bottom:1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .index-products-sale .tab-item {
@@ -250,6 +259,10 @@ a:focus {
     padding-left: 50px;
     text-align: center;
     width: 250px;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
 }
 
 .index-products-sale .tab-item:hover {
@@ -263,6 +276,10 @@ a:focus {
 .index-products-sale .tab-item div {
     border-bottom: 1px solid #eee;
     margin-top: -1px;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
 }
 
 .index-products-sale .tab-item.active div {
@@ -286,13 +303,13 @@ a:focus {
 }
 
 .index-products-sale .content-item .container-fluid {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 .index-products-sale .content-item .row {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 .index-products-sale .content-item .row > div {
@@ -301,27 +318,27 @@ a:focus {
 }
 
 .index-products-sale .content-item .row > .pros0 {
-    position:relative;
+    position: relative;
     border-bottom: 1px solid #eee;
     border-right: 1px solid #eee;
     padding: 0 20px 20px 0;
 }
 
 .index-products-sale .content-item .row > .pros1 {
-    position:relative;
+    position: relative;
     border-bottom: 1px solid #eee;
     padding: 0 0 20px 20px;
 }
 
 .index-products-sale .content-item .row > .pros2 {
-    position:relative;
+    position: relative;
     border-bottom: 1px solid #eee;
     border-right: 1px solid #eee;
     padding: 20px 20px 20px 0;
 }
 
 .index-products-sale .content-item .row > .pros3 {
-    position:relative;
+    position: relative;
     border-bottom: 1px solid #eee;
     padding: 20px 0 20px 20px;
 }
@@ -333,7 +350,7 @@ a:focus {
 }
 
 .index-products-sale .content-item .row > .pros5 {
-    position:relative;
+    position: relative;
     padding: 20px 0 0 20px;
 }
 
@@ -341,6 +358,7 @@ a:focus {
     content: "";
     display: table;
 }
+
 .index-products-sale .content-item .products-main::after {
     clear: both;
 }
@@ -349,6 +367,8 @@ a:focus {
     float: left;
     color: #00c1de;
     font-size: 65px;
+    height: 65px;
+    width: 65px;
     background: url(/Content/images/product-icons.png) 0 0 no-repeat;
 }
 
@@ -368,6 +388,22 @@ a:focus {
     background-position: 0 -195px;
 }
 
+.index-products-sale .content-item .products-main > .product-icons-005 {
+    background-position: 0 -260px;
+}
+
+.index-products-sale .content-item .products-main > .product-icons-006 {
+    background-position: 0 -325px;
+}
+
+.index-products-sale .content-item .products-main > .product-icons-007 {
+    background-position: 0 -390px;
+}
+
+.index-products-sale .content-item .products-main > .product-icons-008 {
+    background-position: 0 -455px;
+}
+
 .index-products-sale .content-item .products-main > .product-icons-101 {
     background-position: -65px 0;
 }
@@ -381,15 +417,23 @@ a:focus {
 }
 
 .index-products-sale .content-item .products-main > .product-icons-104 {
-    background-position: -130px 0;
+    background-position: -65px -195px;
 }
 
 .index-products-sale .content-item .products-main > .product-icons-105 {
-    background-position: -130px -65px;
+    background-position: -65px -260px;
 }
 
 .index-products-sale .content-item .products-main > .product-icons-106 {
-    background-position: -130px -130px;
+    background-position: -65px -325px;
+}
+
+.index-products-sale .content-item .products-main > .product-icons-106 {
+    background-position: -65px -390px;
+}
+
+.index-products-sale .content-item .products-main > .product-icons-106 {
+    background-position: -65px -455px;
 }
 
 .index-products-sale .content-item figcaption {
@@ -398,7 +442,7 @@ a:focus {
 }
 
 .index-products-sale .content-item figcaption > h3 {
-    margin:0 0 10px;
+    margin: 0 0 10px;
     color: #666;
     font-size: 18px;
     font-weight: 400;
@@ -412,15 +456,80 @@ a:focus {
     overflow: hidden;
 }
 
+.index-products-sale .content-item .products-image {
+    position: relative;
+    height: 220px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #c5d8db;
+    text-align: center;
+    overflow: hidden;
+}
+
+.index-products-sale .content-item .products-image > img {
+    height: 100%;
+    width: 100%;
+}
+
+.index-products-sale .content-item .products-image > .bg {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.index-products-sale .content-item .products-image:hover .bg {
+    opacity: 0.9;
+    background: #00c2de none repeat scroll 0 0;
+}
+
+.index-products-sale .content-item .products-image > .products-detail {
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.index-products-sale .content-item .products-image > .products-detail > a {
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    padding: 7px 20px;
+    margin: 0 auto;
+    width: 120px;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.index-products-sale .content-item .products-image > .products-detail > a:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #00c1de;
+}
+
 .index-products-sale .content-item .products-price::before, .index-products-sale .content-item .products-price::after {
     content: "";
     display: table;
 }
+
 .index-products-sale .content-item .products-price::after {
     clear: both;
 }
 
 .index-products-sale .content-item .products-price {
+    display: none;
     height: 40px;
     margin-top: 20px;
 }
@@ -438,7 +547,7 @@ a:focus {
 
 .index-products-sale .content-item .products-price > p strong {
     font-size: 18px;
-    font-weight:lighter;
+    font-weight: lighter;
 }
 
 .index-products-sale .content-item .products-price > p small {
@@ -457,6 +566,9 @@ a:focus {
     float: right;
     font-size: 14px;
     padding: 10px 25px;
+    -webkit-transition: color 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
+    -moz-transition: color 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
+    -o-transition: color 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
     transition: color 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s;
 }
 
@@ -466,7 +578,7 @@ a:focus {
 }
 
 .index-solutions-sale {
-    display:none;
+    display: none;
     min-width: 1000px;
     background: #fff none repeat scroll 0 0;
 }
@@ -483,16 +595,16 @@ a:focus {
     line-height: 24px;
     margin-bottom: 40px;
     margin-top: 0;
-    text-align:center;
+    text-align: center;
 }
 
 .index-solutions-sale .sale-box {
-    position:relative;
+    position: relative;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
-.index-solutions-sale .slide-btn-panel,.index-solutions-sale .slide-btn {
+.index-solutions-sale .slide-btn-panel, .index-solutions-sale .slide-btn {
     background: transparent none repeat scroll 0 0;
     border: 0 none;
     bottom: 0;
@@ -525,11 +637,11 @@ a:focus {
     opacity: 1;
 }
 
-.index-solutions-sale .slide-btn-panel.left-btn,.index-solutions-sale .slide-btn.left-btn {
+.index-solutions-sale .slide-btn-panel.left-btn, .index-solutions-sale .slide-btn.left-btn {
     left: 0;
 }
 
-.index-solutions-sale .slide-btn-panel.right-btn,.index-solutions-sale .slide-btn.right-btn {
+.index-solutions-sale .slide-btn-panel.right-btn, .index-solutions-sale .slide-btn.right-btn {
     right: 0;
 }
 
@@ -544,10 +656,10 @@ a:focus {
 }
 
 .index-solutions-sale .slide-item {
-    position:relative;
+    position: relative;
     height: 400px;
-    padding:0;
-    text-align:center;
+    padding: 0;
+    text-align: center;
 }
 
 .index-solutions-sale figure > img {
@@ -576,6 +688,9 @@ a:focus {
     position: absolute;
     right: 0;
     top: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
@@ -595,6 +710,9 @@ a:focus {
     line-height: 24px;
     margin: 24px 0;
     padding: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
@@ -605,6 +723,9 @@ a:focus {
     margin: 0;
     padding: 0 23px;
     text-align: center;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
@@ -617,6 +738,9 @@ a:focus {
     margin: 0 auto;
     margin-top: 200px;
     width: 120px;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
@@ -642,7 +766,7 @@ a:focus {
     line-height: 24px;
     margin-bottom: 40px;
     margin-top: 0;
-    text-align:center;
+    text-align: center;
 }
 
 .index-solutions > .solutions-box > .solutions-content > .top {
@@ -654,11 +778,11 @@ a:focus {
 }
 
 .index-solutions > .solutions-box > .solutions-content .solutions-item {
-    position:relative;
+    position: relative;
     height: 360px;
-    padding:0;
-    text-align:center;
-    overflow:hidden;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
 }
 
 .index-solutions > .solutions-box > .solutions-content figure > img {
@@ -687,6 +811,9 @@ a:focus {
     position: absolute;
     right: 0;
     top: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
@@ -706,6 +833,9 @@ a:focus {
     line-height: 24px;
     margin: 24px 0;
     padding: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
@@ -716,6 +846,9 @@ a:focus {
     margin: 0;
     padding: 0 24px;
     text-align: center;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
@@ -728,6 +861,9 @@ a:focus {
     margin: 0 auto;
     margin-top: 100px;
     width: 120px;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
@@ -753,7 +889,7 @@ a:focus {
     line-height: 24px;
     margin-bottom: 40px;
     margin-top: 0;
-    text-align:center;
+    text-align: center;
 }
 
 .index-forums-sale .forums-box .title {
@@ -773,9 +909,9 @@ a:focus {
 }
 
 .index-forums-sale .forums-box .content {
-    position:relative;
+    position: relative;
     border: 1px solid #c5d8db;
-    height:180px;
+    height: 180px;
     overflow: hidden;
 }
 
@@ -788,31 +924,31 @@ a:focus {
 }
 
 .index-forums-sale .forums-box .content:hover img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .index-forums-sale .forums-box .content-title {
-    width:100%;
-    height:35px;
+    width: 100%;
+    height: 35px;
     background: #373d41 none repeat scroll 0 0;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     opacity: 0.7;
-    line-height:35px;
-    padding-left:5px;
+    line-height: 35px;
+    padding-left: 5px;
 }
 
 .index-forums-sale .forums-box .content-title a {
-    color:#fff;
-    font-size:14px;
+    color: #fff;
+    font-size: 14px;
 }
 
 .index-forums-sale .forums-box .content-title a:hover {
-    color:#00a2ca;
+    color: #00a2ca;
 }
 
 .index-forums-sale .forums-box .detail {
@@ -831,7 +967,7 @@ a:focus {
 
 .index-forums-sale .forums-box .detail li > a {
     color: #333;
-    font-size:14px;
+    font-size: 14px;
     text-decoration: none;
 }
 
@@ -851,7 +987,7 @@ a:focus {
 
 .news-top-banner {
     min-width: 1000px;
-    background-image: url(/Content/images/top-banner.jpg);
+    background-image: url(/Content/images/top-news-banner.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% 100%;
@@ -861,7 +997,7 @@ a:focus {
 .news-top-banner .header > h3 {
     color: #fff;
     font-size: 40px;
-    margin:0;
+    margin: 0;
     padding: 40px 0 20px;
     line-height: 40px;
 }
@@ -875,7 +1011,7 @@ a:focus {
 
 .news-content {
     min-width: 1000px;
-    min-height:800px;
+    min-height: 800px;
 }
 
 .news-content .breadcrumb {
@@ -890,12 +1026,12 @@ a:focus {
 }
 
 .news-content .sidebar > ul {
-    background:#f5f5f5;
+    background: #f5f5f5;
 }
 
-.news-content .sidebar > ul > li{
+.news-content .sidebar > ul > li {
     margin-top: 0;
-    border-bottom:1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .news-content .sidebar > ul > li.active > a {
@@ -917,7 +1053,7 @@ a:focus {
 }
 
 .news-content .content > .news-box > .news-list .thumbnail {
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 
 .news-content .content > .news-box > .news-list a.thumbnail:hover {
@@ -945,13 +1081,13 @@ a:focus {
 }
 
 .news-content .content > .news-box > .news-list .label {
-    font-size:100%;
+    font-size: 100%;
 }
 
 .news-content .content > .news-box > .news-list .timestamp {
-    color:#999;
+    color: #999;
 }
 
-.news-content .content > .news-pager{
-    width:100%;
+.news-content .content > .news-pager {
+    width: 100%;
 }

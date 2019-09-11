@@ -15,21 +15,21 @@ namespace Site.Models {
         /// Gets or sets the application name
         /// </summary>
         public static string Name {
-            get { return "动力环境监控系统"; }
+            get { return "漳州市艾睿普软件技术有限公司 - 智慧型机房解决方案服务商"; }
         }
 
         /// <summary>
         /// Gets or sets the application version
         /// </summary>
         public static string Version {
-            get { return "V1.0.0 Build170101"; }
+            get { return "V1.0.0 Build190905"; }
         }
 
         /// <summary>
         /// Gets or sets the company
         /// </summary>
         public static string Company {
-            get { return "中达电通股份有限公司"; }
+            get { return "漳州市艾睿普软件技术有限公司"; }
         }
 
         /// <summary>
@@ -48,6 +48,7 @@ namespace Site.Models {
                         Price = 29.9M,
                         Tag = "new",
                         Url = "/product/dcim",
+                        Picture = "/Content/images/software-bg-01.png",
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -59,6 +60,7 @@ namespace Site.Models {
                         Original = 50,
                         Price = 29.9M,
                         Url = "/product/dcim",
+                        Picture = "/Content/images/forums-bg-01.jpg",
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -70,6 +72,7 @@ namespace Site.Models {
                         Original = 50,
                         Price = 29.9M,
                         Url = "/product/dcim",
+                        Picture = "/Content/images/forums-bg-02.jpg",
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -82,6 +85,7 @@ namespace Site.Models {
                         Price = 29.9M,
                         Tag = "hot",
                         Url = "/product/dcim",
+                        Picture = "/Content/images/forums-bg-03.jpg",
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     }
                 };
@@ -103,6 +107,7 @@ namespace Site.Models {
                         Original = 50,
                         Price = 29.9M,
                         Url = "/product/dcim",
+                        Picture = "/Content/images/forums-bg-01.jpg",
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -115,6 +120,7 @@ namespace Site.Models {
                         Price = 29.9M,
                         Tag = "hot",
                         Url = "/product/dcim",
+                        Picture = "/Content/images/forums-bg-02.jpg",
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -127,6 +133,7 @@ namespace Site.Models {
                         Price = 29.9M,
                         Tag = "new",
                         Url = "/product/dcim",
+                        Picture = "/Content/images/forums-bg-03.jpg",
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -138,6 +145,31 @@ namespace Site.Models {
                         Original = 50,
                         Price = 29.9M,
                         Url = "/product/dcim",
+                        Picture = "/Content/images/forums-bg-01.jpg",
+                        Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
+                    },
+                    new Product {
+                        Index = 5,
+                        Id = "P000205",
+                        Name = "光电烟雾传感器",
+                        English = "DCIM Storage System",
+                        Remark = "硬件产品的简单介绍说明",
+                        Original = 50,
+                        Price = 29.9M,
+                        Url = "/product/dcim",
+                        Picture = "/Content/images/forums-bg-01.jpg",
+                        Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
+                    },
+                    new Product {
+                        Index = 6,
+                        Id = "P000206",
+                        Name = "光电烟雾传感器",
+                        English = "DCIM Storage System",
+                        Remark = "硬件产品的简单介绍说明",
+                        Original = 50,
+                        Price = 29.9M,
+                        Url = "/product/dcim",
+                        Picture = "/Content/images/forums-bg-01.jpg",
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     }
                 };
@@ -245,39 +277,29 @@ namespace Site.Models {
                         Title = "",
                         Subtitle = "",
                         Background = "banner-1",
-                        Button = "查看详情",
+                        Button = "了解详情",
                         Url = "/product/dcim",
                         Comment = "促销信息1"
                     },
                     new Figure {
                         Index = 2,
                         Id = "F002",
-                        Title = "视频技术大讲堂开课了",
-                        Subtitle = "新的一年，让自己更优秀",
+                        Title = "行业领先的软硬件一体化产品",
+                        Subtitle = "针对不同的客户需求，定制出更懂你的产品",
                         Background = "banner-2",
-                        Button = "立即报名",
+                        Button = "了解详情",
                         Url = "/product/dcim",
                         Comment = "促销信息2"
                     },
                     new Figure {
                         Index = 3,
                         Id = "F003",
-                        Title = "阿里云为什么推云数据库",
-                        Subtitle = "两位研究员为你解读数据库技术发展与应用现状",
+                        Title = "专业的智慧型机房解决方案",
+                        Subtitle = "致力于让企业机房运维更智能、更安全、更高效",
                         Background = "banner-3",
                         Button = "了解详情",
                         Url = "/product/dcim",
                         Comment = "促销信息3"
-                    },
-                    new Figure {
-                        Index = 4,
-                        Id = "F004",
-                        Title = "API as a Service 大赛",
-                        Subtitle = "百万大奖、30家VC投资",
-                        Background = "banner-4",
-                        Button = "立即报名",
-                        Url = "/product/dcim",
-                        Comment = "促销信息4"
                     }
                 };
             }

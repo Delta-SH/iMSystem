@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     var slider = $('.index-top-banner > .top-banner').unslider({
         autoplay: true,
-        delay: 115000,
+        delay: 15000,
         nav: true,
         arrows: false,
         infinite: true
@@ -35,6 +35,14 @@
         .addClass('active')
         .siblings()
         .removeClass('active');
+    });
+
+    $('.index-products-sale .content-item .products-image').hover(function (e) {
+        $(this).find(".products-detail").stop(true, false).animate({ 'top': '90px' }, 80);
+        e.preventDefault();
+    }, function (e) {
+        $(this).find(".products-detail").stop(true, false).animate({ 'top': '100%' }, 80);
+        e.preventDefault();
     });
 
     $('.index-products-sale .content-item figcaption > p').dotdotdot({
