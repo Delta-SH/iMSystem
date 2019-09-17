@@ -38,7 +38,7 @@
         <div class="row">
             <div class="col-xs-3">
                 <a href="/event/newCustomerEvent" target="_blank" class="events">
-                    <div class="icon ims-icon-font-why"></div>
+                    <div class="ims-icon-font ims-icon-font-why event-icon"></div>
                     <div class="slogan">
                         <h3>选择艾睿普</h3>
                         <p>全面了解艾睿普</p>
@@ -47,7 +47,7 @@
             </div>
             <div class="col-xs-3">
                 <a href="/event/newCustomerEvent" target="_blank" class="events">
-                    <div class="icon ims-icon-font-shipin"></div>
+                    <div class="ims-icon-font ims-icon-font-gonggao event-icon"></div>
                     <div class="slogan">
                         <h3>最新动态</h3>
                         <p>企业新闻，及时了解</p>
@@ -56,7 +56,7 @@
             </div>
             <div class="col-xs-3">
                 <a href="http://www.taobao.com" target="_blank" class="events">
-                    <div class="icon ims-icon-font-gift"></div>
+                    <div class="ims-icon-font ims-icon-font-gift event-icon"></div>
                     <div class="slogan">
                         <h3>限时优惠</h3>
                         <p>全线产品8折起</p>
@@ -65,7 +65,7 @@
             </div>
             <div class="col-xs-3">
                 <a href="/event/newCustomerEvent" target="_blank" class="events">
-                    <div class="icon ims-icon-font-gonggao"></div>
+                    <div class="ims-icon-font ims-icon-font-new event-icon"></div>
                     <div class="slogan">
                         <h3>新品上线</h3>
                         <p>你的关注，我们的动力</p>
@@ -92,439 +92,149 @@
             </ul>
             <div class="content">
                 <div class="content-item active">
+                    <!--全量模板-->
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-xs-6 pros0">
-                                @{
-                                    var hardware1 = iMStore.Hardware.Find(s => s.Index == 1);
-                                    if (hardware1 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-101" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@hardware1.Name</h3>
-                                                    <p>@hardware1.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@hardware1.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@hardware1.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", hardware1.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", hardware1.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@hardware1.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
+                        @{
+                            var hardwares = iMStore.Hardware.OrderBy(h => h.Index).ToArray();
+                            for (var i = 0; i < hardwares.Length; i++) {
+                                if ((i % 2) > 0) {
+                                    continue;
                                 }
-                            </div>
-                            <div class="col-xs-6 pros1">
-                                @{
-                                    var hardware2 = iMStore.Hardware.Find(s => s.Index == 2);
-                                    if (hardware2 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-104" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@hardware2.Name</h3>
-                                                    <p>@hardware2.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@hardware2.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
+
+                                var prosprev = "pros0";
+                                var prosnext = "pros1";
+                                if ((i + 1) == hardwares.Length
+                                    || (i + 2) == hardwares.Length) {
+                                    prosprev = "pros4";
+                                    prosnext = "pros5";
+                                } else if (i > 0) {
+                                    prosprev = "pros2";
+                                    prosnext = "pros3";
+                                }
+
+                                <div class="row">
+                                    <div class="col-xs-6 @prosprev">
+                                        @{
+                                            var hardware1 = hardwares[i];
+                                            if (hardware1 != null) {
+                                                <article>
+                                                    <figure class="products-main">
+                                                        <img class="products-icon @string.Format("product-icons-{0}{1:D2}",hardware1.Type, hardware1.Index)" src="/Content/images/ffffff.gif">
+                                                        <figcaption>
+                                                            <h3>@hardware1.Name</h3>
+                                                            <p>@hardware1.Comment</p>
+                                                            @*<div class="products-image">
+                                                                    <img alt="" src="@hardware1.Picture">
+                                                                    <div class="bg"></div>
+                                                                    <div class="products-detail">
+                                                                        <a href="@hardware1.Url" target="_blank">了解详情</a>
+                                                                    </div>
+                                                                </div>*@
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="products-price">
+                                                        @*<p>
+                                                                <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", hardware1.Original)</strong> /套</small></span>
+                                                                <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", hardware1.Price)</strong> /套</small></span>
+                                                            </p>*@
+                                                        <a href="@hardware1.Url" target="_blank">了解详情</a>
+                                                    </div>
+                                                </article>
+                                            }
+                                        }
+                                    </div>
+                                    <div class="col-xs-6 @prosnext">
+                                        @{
+                                            if (i + 1 < hardwares.Length) {
+                                                var hardware2 = hardwares[i + 1];
+                                                if (hardware2 != null) {
+                                                    <article>
+                                                        <figure class="products-main">
+                                                            <img class="products-icon @string.Format("product-icons-{0}{1:D2}",hardware2.Type, hardware2.Index)" src="/Content/images/ffffff.gif">
+                                                            <figcaption>
+                                                                <h3>@hardware2.Name</h3>
+                                                                <p>@hardware2.Comment</p>
+                                                            </figcaption>
+                                                        </figure>
+                                                        <div class="products-price">
                                                             <a href="@hardware2.Url" target="_blank">了解详情</a>
                                                         </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", hardware2.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", hardware2.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@hardware2.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 pros2">
-                                @{
-                                    var hardware3 = iMStore.Hardware.Find(s => s.Index == 3);
-                                    if (hardware3 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-102" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@hardware3.Name</h3>
-                                                    <p>@hardware3.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@hardware3.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@hardware3.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", hardware3.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", hardware3.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@hardware3.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                            <div class="col-xs-6 pros3">
-                                @{
-                                    var hardware4 = iMStore.Hardware.Find(s => s.Index == 4);
-                                    if (hardware4 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-105" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@hardware4.Name</h3>
-                                                    <p>@hardware4.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@hardware4.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@hardware4.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", hardware4.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", hardware4.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@hardware4.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 pros4">
-                                @{
-                                    var hardware5 = iMStore.Hardware.Find(s => s.Index == 5);
-                                    if (hardware5 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-103" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@hardware5.Name</h3>
-                                                    <p>@hardware5.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@hardware5.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@hardware5.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", hardware5.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", hardware5.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@hardware5.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                            <div class="col-xs-6 pros5">
-                                @{
-                                    var hardware6 = iMStore.Hardware.Find(s => s.Index == 6);
-                                    if (hardware6 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-106" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@hardware6.Name</h3>
-                                                    <p>@hardware6.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@hardware6.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@hardware6.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", hardware6.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", hardware6.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@hardware6.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                        </div>
+                                                    </article>
+                                                }
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        }
                     </div>
                 </div>
                 <div class="content-item">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-xs-6 pros0">
-                                @{
-                                    var software1 = iMStore.Software.Find(s => s.Index == 1);
-                                    if (software1 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-001" src="/Content/images/ffffff.gif">
-                                                <figcaption>
-                                                    <h3>@software1.Name</h3>
-                                                    <p>@software1.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@software1.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@software1.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software1.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software1.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@software1.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
+                        @{
+                            var softwares = iMStore.Software.OrderBy(h => h.Index).ToArray();
+                            for (var i = 0; i < softwares.Length; i++) {
+                                if ((i % 2) > 0) {
+                                    continue;
                                 }
-                            </div>
-                            <div class="col-xs-6 pros1">
-                                @{
-                                    var software2 = iMStore.Software.Find(s => s.Index == 2);
-                                    if (software2 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-002" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@software2.Name</h3>
-                                                    <p>@software2.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@software2.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
+
+                                var prosprev = "pros0";
+                                var prosnext = "pros1";
+                                if ((i + 1) == softwares.Length
+                                    || (i + 2) == softwares.Length) {
+                                    prosprev = "pros4";
+                                    prosnext = "pros5";
+                                } else if (i > 0) {
+                                    prosprev = "pros2";
+                                    prosnext = "pros3";
+                                }
+
+                                <div class="row">
+                                    <div class="col-xs-6 @prosprev">
+                                        @{
+                                            var software1 = softwares[i];
+                                            if (software1 != null) {
+                                                <article>
+                                                    <figure class="products-main">
+                                                        <img class="products-icon @string.Format("product-icons-{0}{1:D2}",software1.Type, software1.Index)" src="/Content/images/ffffff.gif">
+                                                        <figcaption>
+                                                            <h3>@software1.Name</h3>
+                                                            <p>@software1.Comment</p>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div class="products-price">
+                                                        <a href="@software1.Url" target="_blank">了解详情</a>
+                                                    </div>
+                                                </article>
+                                            }
+                                        }
+                                    </div>
+                                    <div class="col-xs-6 @prosnext">
+                                        @{
+                                            if (i + 1 < softwares.Length) {
+                                                var software2 = softwares[i + 1];
+                                                if (software2 != null) {
+                                                    <article>
+                                                        <figure class="products-main">
+                                                            <img class="products-icon @string.Format("product-icons-{0}{1:D2}",software2.Type, software2.Index)" src="/Content/images/ffffff.gif">
+                                                            <figcaption>
+                                                                <h3>@software2.Name</h3>
+                                                                <p>@software2.Comment</p>
+                                                            </figcaption>
+                                                        </figure>
+                                                        <div class="products-price">
                                                             <a href="@software2.Url" target="_blank">了解详情</a>
                                                         </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software2.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software2.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@software2.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 pros4">
-                                @{
-                                    var software3 = iMStore.Software.Find(s => s.Index == 3);
-                                    if (software3 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-003" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@software3.Name</h3>
-                                                    <p>@software3.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@software3.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@software3.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software3.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software3.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@software3.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                            <div class="col-xs-6 pros5">
-                                @{
-                                    var software4 = iMStore.Software.Find(s => s.Index == 4);
-                                    if (software4 != null) {
-                                        <article>
-                                            <figure class="products-main">
-                                                <img class="icon product-icons-004" src="/Content/images/ffffff.gif" width="65" height="65">
-                                                <figcaption>
-                                                    <h3>@software4.Name</h3>
-                                                    <p>@software4.Comment</p>
-                                                    <div class="products-image">
-                                                        <img alt="" src="@software4.Picture">
-                                                        <div class="bg"></div>
-                                                        <div class="products-detail">
-                                                            <a href="@software4.Url" target="_blank">了解详情</a>
-                                                        </div>
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                            <div class="products-price">
-                                                <p>
-                                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", software4.Original)</strong> /套</small></span>
-                                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", software4.Price)</strong> /套</small></span>
-                                                </p>
-                                                <a href="@software4.Url" target="_blank">了解详情</a>
-                                            </div>
-                                        </article>
-                                    }
-                                }
-                            </div>
-                        </div>
+                                                    </article>
+                                                }
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        }
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="index-solutions-sale">
-    <div class="container-fluid solutions-sale">
-        <div class="solutions-title">
-            成熟、专业、高效的解决方案
-        </div>
-        <div class="sale-box">
-            <div class="slide-body">
-                <div class="solutions-banner">
-                    <ul>
-                        <li>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xs-3 slide-item">
-                                        <article>
-                                            <figure>
-                                                <img alt="" src="/Content/images/solutions-bg-01.jpg">
-                                                <div class="bg"></div>
-                                                <figcaption>
-                                                    <div class="icon ims-icon-font-gift"></div>
-                                                    <h3>解决方案1</h3>
-                                                    <p>解决方案的简单介绍</p>
-                                                    <a href="/solution/solution1" target="_blank">查看详情</a>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="col-xs-3 slide-item">
-                                        <article>
-                                            <figure>
-                                                <img alt="" src="/Content/images/solutions-bg-01.jpg">
-                                                <div class="bg even"></div>
-                                                <figcaption>
-                                                    <div class="icon ims-icon-font-gift"></div>
-                                                    <h3>解决方案2</h3>
-                                                    <p>解决方案的简单介绍</p>
-                                                    <a href="/solution/solution2" target="_blank">查看详情</a>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="col-xs-3 slide-item">
-                                        <article>
-                                            <figure>
-                                                <img alt="" src="/Content/images/solutions-bg-01.jpg">
-                                                <div class="bg"></div>
-                                                <figcaption>
-                                                    <div class="icon ims-icon-font-gift"></div>
-                                                    <h3>解决方案3</h3>
-                                                    <p>解决方案的简单介绍</p>
-                                                    <a href="/solution/solution3" target="_blank">查看详情</a>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="col-xs-3 slide-item">
-                                        <article>
-                                            <figure>
-                                                <img alt="" src="/Content/images/solutions-bg-01.jpg">
-                                                <div class="bg even"></div>
-                                                <figcaption>
-                                                    <div class="icon ims-icon-font-gift"></div>
-                                                    <h3>解决方案4</h3>
-                                                    <p>解决方案的简单介绍</p>
-                                                    <a href="/solution/solution4" target="_blank">查看详情</a>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xs-3 slide-item">
-                                        <article>
-                                            <figure>
-                                                <img alt="" src="/Content/images/solutions-bg-01.jpg">
-                                                <div class="bg"></div>
-                                                <figcaption>
-                                                    <div class="icon ims-icon-font-gift"></div>
-                                                    <h3>解决方案5</h3>
-                                                    <p>解决方案的简单介绍</p>
-                                                    <a href="/solution/solution5" target="_blank">查看详情</a>
-                                                </figcaption>
-                                            </figure>
-                                        </article>
-                                    </div>
-                                    <div class="col-xs-3 slide-item">
-                                    </div>
-                                    <div class="col-xs-3 slide-item">
-                                    </div>
-                                    <div class="col-xs-3 slide-item">
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="slide-btn-panel left-btn">
-                <div class="btn-bg"></div>
-                <button class="slide-btn left-btn">
-                    <i class="ims-icon-font-left"></i>
-                </button>
-            </div>
-            <div class="slide-btn-panel right-btn">
-                <div class="btn-bg"></div>
-                <button id="bbb" class="slide-btn right-btn">
-                    <i class="ims-icon-font-right"></i>
-                </button>
             </div>
         </div>
     </div>
@@ -547,7 +257,7 @@
                                         <img alt="" src="/Content/images/solutions-bg-01.jpg">
                                         <div class="bg"></div>
                                         <figcaption>
-                                            <div class="icon ims-icon-font-dianxin"></div>
+                                            <div class="ims-icon-font ims-icon-font-telecom solution-icon"></div>
                                             <h3>@hsolution1.Name</h3>
                                             <p>@hsolution1.Comment</p>
                                             <a href="@hsolution1.Url" target="_blank">查看详情</a>
@@ -568,7 +278,7 @@
                                         <img alt="" src="/Content/images/solutions-bg-02.jpg">
                                         <div class="bg"></div>
                                         <figcaption>
-                                            <div class="icon ims-icon-font-nongye"></div>
+                                            <div class="ims-icon-font ims-icon-font-nongye solution-icon"></div>
                                             <h3>@hsolution2.Name</h3>
                                             <p>@hsolution2.Comment</p>
                                             <a href="@hsolution2.Url" target="_blank">查看详情</a>
@@ -589,7 +299,7 @@
                                         <img alt="" src="/Content/images/solutions-bg-03.jpg">
                                         <div class="bg"></div>
                                         <figcaption>
-                                            <div class="icon ims-icon-font-gongye"></div>
+                                            <div class="ims-icon-font ims-icon-font-gongye solution-icon"></div>
                                             <h3>@hsolution3.Name</h3>
                                             <p>@hsolution3.Comment</p>
                                             <a href="@hsolution3.Url" target="_blank">查看详情</a>
@@ -612,7 +322,7 @@
                                         <img alt="" src="/Content/images/solutions-bg-04.jpg">
                                         <div class="bg even"></div>
                                         <figcaption>
-                                            <div class="icon ims-icon-font-zhengfu"></div>
+                                            <div class="ims-icon-font ims-icon-font-zhengfu solution-icon"></div>
                                             <h3>@hsolution4.Name</h3>
                                             <p>@hsolution4.Comment</p>
                                             <a href="@hsolution4.Url" target="_blank">查看详情</a>
@@ -633,7 +343,7 @@
                                         <img alt="" src="/Content/images/solutions-bg-05.jpg">
                                         <div class="bg even"></div>
                                         <figcaption>
-                                            <div class="icon ims-icon-font-qiye"></div>
+                                            <div class="ims-icon-font ims-icon-font-qiye solution-icon"></div>
                                             <h3>@tsolution1.Name</h3>
                                             <p>@tsolution1.Comment</p>
                                             <a href="@tsolution1.Url" target="_blank">查看详情</a>
@@ -654,7 +364,7 @@
                                         <img alt="" src="/Content/images/solutions-bg-06.jpg">
                                         <div class="bg even"></div>
                                         <figcaption>
-                                            <div class="icon ims-icon-font-bangonglou"></div>
+                                            <div class="ims-icon-font ims-icon-font-xiezilou solution-icon"></div>
                                             <h3>@tsolution2.Name</h3>
                                             <p>@tsolution2.Comment</p>
                                             <a href="@tsolution2.Url" target="_blank">查看详情</a>

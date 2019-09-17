@@ -105,8 +105,6 @@
     <Content Include="Content\images\forums-bg-02.jpg" />
     <Content Include="Content\images\forums-bg-03.jpg" />
     <Content Include="Content\images\hot.png" />
-    <Content Include="Content\images\solution-header.png" />
-    <Content Include="Content\images\product-header.png" />
     <Content Include="Content\images\product-icons.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\new.png" />
@@ -124,7 +122,6 @@
     <Content Include="Content\images\weixin.png" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\theme\bars.css" />
-    <Content Include="Content\theme\ie10-viewport-bug-workaround.css" />
     <Content Include="Content\theme\product.css" />
     <Content Include="Content\theme\iconfonts.css" />
     <Content Include="Content\theme\sidebar.css" />
@@ -133,11 +130,21 @@
     <Content Include="favicon.ico" />
     <Content Include="Content\theme\site.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\about.js" />
     <Content Include="Scripts\bars.js" />
+    <Content Include="Scripts\certificate.js" />
+    <Content Include="Scripts\contact.js" />
+    <Content Include="Scripts\customer.js" />
+    <Content Include="Scripts\development.js" />
+    <Content Include="Scripts\download.js" />
+    <Content Include="Scripts\exchange.js" />
+    <Content Include="Scripts\faq.js" />
+    <Content Include="Scripts\industry.js" />
     <Content Include="Scripts\news.js" />
     <Content Include="Scripts\product.js" />
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\solution.js" />
+    <Content Include="Scripts\support.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -148,6 +155,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\ErrorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SolutionController.cs" />
     <Compile Include="Controllers\SupportController.cs" />
@@ -174,7 +182,6 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Views\Product\Sidebar.cshtml" />
-    <Content Include="Views\Home\News.cshtml" />
     <Content Include="Views\Solution\Index.cshtml" />
     <Content Include="Views\Solution\Sidebar.cshtml" />
     <Content Include="Views\Product\DCIM.cshtml" />
@@ -184,6 +191,14 @@
     <Content Include="Views\Support\Download.cshtml" />
     <Content Include="Views\Support\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\News\Industry.cshtml" />
+    <Content Include="Views\Support\Exchange.cshtml" />
+    <Content Include="Views\Support\FAQ.cshtml" />
+    <Content Include="Views\About\Development.cshtml" />
+    <Content Include="Views\About\Certificate.cshtml" />
+    <Content Include="Views\About\Customer.cshtml" />
+    <Content Include="Views\About\Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

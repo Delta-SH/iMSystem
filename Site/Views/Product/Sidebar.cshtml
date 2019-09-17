@@ -2,18 +2,18 @@
 @model Product
 <div class="sidebar">
     <div class="header">
-        <i class="header-icon ims-icon-font-menu"></i>产品中心
+        <i class="ims-icon-font ims-icon-font-menu header-icon"></i>产品中心
     </div>
     <ul>
         <li class="@(Model.Type == 2 ? "active" : "")">
             <div class="title">
-                <i class="title-icon ims-icon-font-right"></i>硬件产品系列
+                <i class="ims-icon-font ims-icon-font-right title-icon"></i>硬件产品系列
             </div>
             <ul style="@(Model.Type == 2 ? "" : "display:none;")">
                 @foreach (var hard in iMStore.Hardware) {
                     <li class="@(Model.Id == hard.Id ? "selected" : "")">
                         <a href="@(string.IsNullOrWhiteSpace(hard.Url) ? "#" : hard.Url)">
-                            <i class="menu-icon ims-icon-font-dianhua"></i>@hard.Name
+                            <i class="ims-icon-font ims-icon-font-hardware menu-icon"></i>@hard.Name
                         </a>
                     </li>
                 }
@@ -21,13 +21,13 @@
         </li>
         <li class="@(Model.Type == 1 ? "active" : "")">
             <div class="title">
-                <i class="title-icon ims-icon-font-right"></i>软件产品系列
+                <i class="ims-icon-font ims-icon-font-right title-icon"></i>软件产品系列
             </div>
             <ul style="@(Model.Type == 1 ? "" : "display:none;")">
                 @foreach (var soft in iMStore.Software) {
                     <li class="@(Model.Id == soft.Id ? "selected" : "")">
                         <a href="@(string.IsNullOrWhiteSpace(soft.Url) ? "#" : soft.Url)">
-                            <i class="menu-icon ims-icon-font-weibo"></i>@soft.Name
+                            <i class="ims-icon-font ims-icon-font-software menu-icon"></i>@soft.Name
                         </a>
                     </li>
                 }

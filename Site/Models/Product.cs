@@ -25,5 +25,7 @@ namespace Site.Models {
         public string Url { get; set; }
 
         public string Picture { get; set; }
+
+        public string[] Banners { get; set; }
     }
 }

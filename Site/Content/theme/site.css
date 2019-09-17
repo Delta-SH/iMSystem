@@ -171,22 +171,13 @@ a:focus {
     box-shadow: 0 0 5px rgba(0, 198, 226, 0.5);
 }
 
-.index-top-events .top-events .events > .icon {
+.index-top-events .top-events .events > .event-icon {
     float: left;
     font-size: 60px;
     height: 100px;
-    line-height: 110px;
     width: 100px;
+    line-height: 1.7;
     text-align: center;
-}
-
-.index-top-events .top-events .events > .icon:after {
-    font-size: 0;
-    display: block;
-    visibility: hidden;
-    clear: both;
-    height: 0;
-    content: ' ';
 }
 
 .index-top-events .top-events .events > .slogan {
@@ -361,76 +352,74 @@ a:focus {
     clear: both;
 }
 
-.index-products-sale .content-item .products-main > .icon {
+.index-products-sale .content-item .products-main > .products-icon {
     float: left;
-    color: #00c1de;
-    font-size: 65px;
-    height: 65px;
+    height: 62px;
     width: 65px;
     background: url(/Content/images/product-icons.png) 0 0 no-repeat;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-001 {
+.index-products-sale .content-item .products-main > .product-icons-101 {
     background-position: 0 0;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-002 {
+.index-products-sale .content-item .products-main > .product-icons-102 {
     background-position: 0 -65px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-003 {
+.index-products-sale .content-item .products-main > .product-icons-103 {
     background-position: 0 -130px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-004 {
+.index-products-sale .content-item .products-main > .product-icons-104 {
     background-position: 0 -195px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-005 {
+.index-products-sale .content-item .products-main > .product-icons-105 {
     background-position: 0 -260px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-006 {
+.index-products-sale .content-item .products-main > .product-icons-106 {
     background-position: 0 -325px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-007 {
+.index-products-sale .content-item .products-main > .product-icons-107 {
     background-position: 0 -390px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-008 {
+.index-products-sale .content-item .products-main > .product-icons-108 {
     background-position: 0 -455px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-101 {
+.index-products-sale .content-item .products-main > .product-icons-201 {
     background-position: -65px 0;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-102 {
+.index-products-sale .content-item .products-main > .product-icons-202 {
     background-position: -65px -65px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-103 {
+.index-products-sale .content-item .products-main > .product-icons-203 {
     background-position: -65px -130px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-104 {
+.index-products-sale .content-item .products-main > .product-icons-204 {
     background-position: -65px -195px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-105 {
+.index-products-sale .content-item .products-main > .product-icons-205 {
     background-position: -65px -260px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-106 {
+.index-products-sale .content-item .products-main > .product-icons-206 {
     background-position: -65px -325px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-106 {
+.index-products-sale .content-item .products-main > .product-icons-207 {
     background-position: -65px -390px;
 }
 
-.index-products-sale .content-item .products-main > .product-icons-106 {
+.index-products-sale .content-item .products-main > .product-icons-208 {
     background-position: -65px -455px;
 }
 
@@ -527,9 +516,9 @@ a:focus {
 }
 
 .index-products-sale .content-item .products-price {
-    display: none;
     height: 40px;
     margin-top: 20px;
+    position: relative;
 }
 
 .index-products-sale .content-item .products-price > p {
@@ -673,7 +662,7 @@ a:focus {
     top: 120px;
 }
 
-.index-solutions-sale figure > figcaption > .icon {
+.index-solutions-sale figure > figcaption > .solution-sale-icon {
     font-size: 60px;
     color: #fff;
 }
@@ -789,14 +778,14 @@ a:focus {
 }
 
 .index-solutions > .solutions-box > .solutions-content figure > figcaption {
-    top: 100px;
+    top: 80px;
     bottom: 0;
     left: 0;
     right: 0;
     position: absolute;
 }
 
-.index-solutions > .solutions-box > .solutions-content figure > figcaption > .icon {
+.index-solutions > .solutions-box > .solutions-content figure > figcaption > .solution-icon {
     font-size: 60px;
     color: #fff;
 }
@@ -1096,4 +1085,79 @@ a:focus {
 
 .news-content .content > .news-pager {
     width: 100%;
+}
+
+.introduce-sales {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+}
+
+.introduce-sales > .prices {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.introduce-sales > .prices > span {
+    color: #999;
+    display: block;
+    font-size: 14px;
+}
+
+.introduce-sales > .prices > span strong {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.introduce-sales > .prices > span small {
+    color: #ff8a00;
+}
+
+.introduce-sales > .prices > span small.old {
+    text-decoration: line-through;
+}
+
+.introduce-contact-us {
+    border-top: 1px solid #e6e6e6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+}
+
+.introduce-contact-us > .contact-telephone {
+    float: left;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #ff8a00;
+}
+
+.introduce-contact-us > .contact-telephone i {
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.introduce-contact-us > .contact-telephone .telephone {
+    display: inline-block;
+}
+
+.introduce-contact-us > .contact-telephone .telephone > .telephone-name {
+    font-size: 16px;
+}
+
+.introduce-contact-us > .contact-qq {
+    float: right;
+}
+
+.introduce-contact-us > .contact-qq > a.btn-blue {
+    margin-right: 0 !important;
+}
+
+.introduce-contact-us > .contact-qq > a i {
+    font-size: 18px;
+    vertical-align: middle;
 }

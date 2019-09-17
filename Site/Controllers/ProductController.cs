@@ -13,6 +13,7 @@ namespace Site.Controllers {
         }
 
         public ActionResult DCIM() {
+            ViewBag.HideFooter = true;
             var product = iMStore.Software.Find(s => s.Id == "P000101");
             if(product == null) throw new HttpException(404, "Page not found.");
             return View(product);

@@ -33,6 +33,27 @@ namespace Site.Models {
         }
 
         /// <summary>
+        /// Gets or sets the contact
+        /// </summary>
+        public static string Contact {
+            get { return "4008 118 118"; }
+        }
+
+        /// <summary>
+        /// Gets or sets the beian
+        /// </summary>
+        public static string Beian {
+            get { return "闽ICP备17027880号-1"; }
+        }
+
+        /// <summary>
+        /// Gets or sets the QQ
+        /// </summary>
+        public static string QQ {
+            get { return "tencent://message/?uin=543600918&Site=www.irep.com.cn&Menu=yes"; }
+        }
+
+        /// <summary>
         /// Gets or sets the software
         /// </summary>
         public static List<Product> Software {
@@ -45,12 +66,17 @@ namespace Site.Models {
                         Name = "DCIM存储系统",
                         English = "DCIM Storage System",
                         Remark = "软件产品的简单介绍说明",
-                        Original = 50,
-                        Price = 29.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Tag = "new",
                         Url = "/product/dcim",
                         Picture = "/Content/images/software-bg-01.png",
-                        Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
+                        Banners = new string[]{
+                            "/Content/images/forums-bg-01.jpg",
+                            "/Content/images/forums-bg-02.jpg",
+                            "/Content/images/forums-bg-03.jpg"
+                        },
+                        Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
                         Index = 2,
@@ -59,10 +85,15 @@ namespace Site.Models {
                         Name = "动环监控系统",
                         English = "DCIM Storage System",
                         Remark = "软件产品的简单介绍说明",
-                        Original = 50,
-                        Price = 29.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Url = "/product/dcim",
                         Picture = "/Content/images/forums-bg-01.jpg",
+                        Banners = new string[]{
+                            "/Content/images/forums-bg-01.jpg",
+                            "/Content/images/forums-bg-02.jpg",
+                            "/Content/images/forums-bg-03.jpg"
+                        },
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -72,10 +103,15 @@ namespace Site.Models {
                         Name = "三维可视化平台",
                         English = "DCIM Storage System",
                         Remark = "软件产品的简单介绍说明",
-                        Original = 50,
-                        Price = 29.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Url = "/product/dcim",
                         Picture = "/Content/images/forums-bg-02.jpg",
+                        Banners = new string[]{
+                            "/Content/images/forums-bg-01.jpg",
+                            "/Content/images/forums-bg-02.jpg",
+                            "/Content/images/forums-bg-03.jpg"
+                        },
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -85,11 +121,16 @@ namespace Site.Models {
                         Name = "能耗管理系统",
                         English = "DCIM Storage System",
                         Remark = "软件产品的简单介绍说明",
-                        Original = 50,
-                        Price = 29.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Tag = "hot",
                         Url = "/product/dcim",
                         Picture = "/Content/images/forums-bg-03.jpg",
+                        Banners = new string[]{
+                            "/Content/images/forums-bg-01.jpg",
+                            "/Content/images/forums-bg-02.jpg",
+                            "/Content/images/forums-bg-03.jpg"
+                        },
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     }
                 };
@@ -109,10 +150,15 @@ namespace Site.Models {
                         Name = "水浸传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
-                        Original = 50,
-                        Price = 29.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Url = "/product/dcim",
                         Picture = "/Content/images/forums-bg-01.jpg",
+                        Banners = new string[]{
+                            "/Content/images/forums-bg-01.jpg",
+                            "/Content/images/forums-bg-02.jpg",
+                            "/Content/images/forums-bg-03.jpg"
+                        },
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -122,11 +168,16 @@ namespace Site.Models {
                         Name = "温湿度传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
-                        Original = 50,
-                        Price = 29.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Tag = "hot",
                         Url = "/product/dcim",
                         Picture = "/Content/images/forums-bg-02.jpg",
+                        Banners = new string[]{
+                            "/Content/images/forums-bg-01.jpg",
+                            "/Content/images/forums-bg-02.jpg",
+                            "/Content/images/forums-bg-03.jpg"
+                        },
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -136,11 +187,16 @@ namespace Site.Models {
                         Name = "红外传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
-                        Original = 50,
-                        Price = 29.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Tag = "new",
                         Url = "/product/dcim",
                         Picture = "/Content/images/forums-bg-03.jpg",
+                        Banners = new string[]{
+                            "/Content/images/forums-bg-01.jpg",
+                            "/Content/images/forums-bg-02.jpg",
+                            "/Content/images/forums-bg-03.jpg"
+                        },
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -150,10 +206,15 @@ namespace Site.Models {
                         Name = "光电烟雾传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
-                        Original = 50,
-                        Price = 29.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Url = "/product/dcim",
                         Picture = "/Content/images/forums-bg-01.jpg",
+                        Banners = new string[]{
+                            "/Content/images/forums-bg-01.jpg",
+                            "/Content/images/forums-bg-02.jpg",
+                            "/Content/images/forums-bg-03.jpg"
+                        },
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -163,10 +224,15 @@ namespace Site.Models {
                         Name = "光电烟雾传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
-                        Original = 50,
-                        Price = 29.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Url = "/product/dcim",
                         Picture = "/Content/images/forums-bg-01.jpg",
+                        Banners = new string[]{
+                            "/Content/images/forums-bg-01.jpg",
+                            "/Content/images/forums-bg-02.jpg",
+                            "/Content/images/forums-bg-03.jpg"
+                        },
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     },
                     new Product {
@@ -176,10 +242,15 @@ namespace Site.Models {
                         Name = "光电烟雾传感器",
                         English = "DCIM Storage System",
                         Remark = "硬件产品的简单介绍说明",
-                        Original = 50,
-                        Price = 29.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Url = "/product/dcim",
                         Picture = "/Content/images/forums-bg-01.jpg",
+                        Banners = new string[]{
+                            "/Content/images/forums-bg-01.jpg",
+                            "/Content/images/forums-bg-02.jpg",
+                            "/Content/images/forums-bg-03.jpg"
+                        },
                         Comment = "提供稳定、安全、高效、高可扩展的云存储服务，支持最大5TB多媒体、文本、二进制等任意类型数据的存储。"
                     }
                 };
@@ -198,8 +269,8 @@ namespace Site.Models {
                         Name = "电信解决方案",
                         English = "Telecom Solution",
                         Remark = "解决方案的简单介绍说明",
-                        Original = 5000,
-                        Price = 2999.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Url = "/solution/telecom",
                         Comment = "结合大数据能力帮助电商企业快速搭建平台、应对业务高并发，剖析秒杀、视频直播等场景。"
                     },
@@ -209,8 +280,8 @@ namespace Site.Models {
                         Name = "农业解决方案",
                         English = "Agriculture Solution",
                         Remark = "解决方案的简单介绍说明",
-                        Original = 5000,
-                        Price = 2999.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Tag = "hot",
                         Url = "/solution/telecom",
                         Comment = "结合大数据能力帮助电商企业快速搭建平台、应对业务高并发，剖析秒杀、视频直播等场景。"
@@ -221,8 +292,8 @@ namespace Site.Models {
                         Name = "工业解决方案",
                         English = "Industry Solution",
                         Remark = "解决方案的简单介绍说明",
-                        Original = 5000,
-                        Price = 2999.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Tag = "new",
                         Url = "/solution/telecom",
                         Comment = "结合大数据能力帮助电商企业快速搭建平台、应对业务高并发，剖析秒杀、视频直播等场景。"
@@ -233,8 +304,8 @@ namespace Site.Models {
                         Name = "政府解决方案",
                         English = "Government Solution",
                         Remark = "解决方案的简单介绍说明",
-                        Original = 5000,
-                        Price = 2999.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Url = "/solution/telecom",
                         Comment = "结合大数据能力帮助电商企业快速搭建平台、应对业务高并发，剖析秒杀、视频直播等场景。"
                     }
@@ -254,8 +325,8 @@ namespace Site.Models {
                         Name = "企业解决方案",
                         English = "Enterprise Solution",
                         Remark = "解决方案的简单介绍说明",
-                        Original = 5000,
-                        Price = 2999.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Url = "/solution/telecom",
                         Comment = "结合大数据能力帮助电商企业快速搭建平台、应对业务高并发，剖析秒杀、视频直播等场景。"
                     },
@@ -265,8 +336,8 @@ namespace Site.Models {
                         Name = "办公楼解决方案",
                         English = "Buliding Solution",
                         Remark = "解决方案的简单介绍说明",
-                        Original = 5000,
-                        Price = 2999.9M,
+                        Original = 100,
+                        Price = 79.9M,
                         Tag = "hot",
                         Url = "/solution/telecom",
                         Comment = "结合大数据能力帮助电商企业快速搭建平台、应对业务高并发，剖析秒杀、视频直播等场景。"

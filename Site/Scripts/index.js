@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     var slider = $('.index-top-banner > .top-banner').unslider({
         autoplay: true,
-        delay: 115000,
+        delay: 15000,
         nav: true,
         arrows: false,
         infinite: true
@@ -79,7 +79,7 @@
         $(this).find("figure > figcaption > a").stop(true, false).animate({ 'margin-top': '24px' }, 80);
         e.preventDefault();
     }, function (e) {
-        $(this).find("figure > figcaption").stop(true, false).animate({ 'top': '100px' }, 200);
+        $(this).find("figure > figcaption").stop(true, false).animate({ 'top': '80px' }, 200);
         $(this).find("figure > figcaption > a").stop(true, false).animate({ 'margin-top': '100px' }, 80);
         e.preventDefault();
     });

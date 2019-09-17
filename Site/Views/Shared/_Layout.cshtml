@@ -21,7 +21,6 @@
     <link href="//cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- local css -->
-    <link href="@Url.Content("~/content/theme/ie10-viewport-bug-workaround.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/content/theme/iconfonts.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/content/theme/site.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/content/theme/bars.css")" rel="stylesheet" type="text/css" />
@@ -144,7 +143,7 @@
                         </div>
                     </dd>
                     <dd>
-                        <a href="/home/news" target="_self">新闻中心</a>
+                        <a href="/news" target="_self">新闻中心</a>
                     </dd>
                     <dd>
                         <a href="javascript:void(0);">服务支持</a>
@@ -152,10 +151,10 @@
                             <div class="menu-box">
                                 <div class="menu-body">
                                     <ul>
-                                        <li><a href="/Support"><h3>客户服务</h3></a></li>
-                                        <li><a href="#"><h3>售后政策</h3></a></li>
-                                        <li><a href="#"><h3>常见问题</h3></a></li>
-                                        <li><a href="#"><h3>资料下载<img alt="new" title="new" src="/Content/images/hot.png"></h3></a></li>
+                                        <li><a href="/support"><h3>客户服务</h3></a></li>
+                                        <li><a href="/support/exchange"><h3>售后政策</h3></a></li>
+                                        <li><a href="/support/faq"><h3>常见问题</h3></a></li>
+                                        <li><a href="/support/download"><h3>资料下载<img alt="HOT" title="HOT" src="/Content/images/hot.png"></h3></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -167,10 +166,11 @@
                             <div class="menu-box">
                                 <div class="menu-body">
                                     <ul>
-                                        <li><a href="/About"><h3>公司简介</h3></a></li>
-                                        <li><a href="#"><h3>公司理念</h3></a></li>
-                                        <li><a href="#"><h3>企业资质</h3></a></li>
-                                        <li><a href="#"><h3>联系我们</h3></a></li>
+                                        <li><a href="/about"><h3>公司简介</h3></a></li>
+                                        <li><a href="/about/development"><h3>公司理念</h3></a></li>
+                                        <li><a href="/about/certificate"><h3>资质证书</h3></a></li>
+                                        <li><a href="/about/customer"><h3>客户案例<img alt="NEW" title="NEW" src="/Content/images/new.png" /></h3></a></li>
+                                        <li><a href="/about/contact"><h3>联系我们</h3></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -188,137 +188,134 @@
     </div>
 
     <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-box">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <a href="###" target="_blank" class="commitment">
-                            <div class="icon ims-icon-font-pei"></div>
-                            <div class="slogan">100倍故障时长赔偿</div>
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="###" target="_blank" class="commitment">
-                            <div class="icon ims-icon-font-kefu"></div>
-                            <div class="slogan">7×24小时售后支持</div>
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="###" target="_blank" class="commitment">
-                            <div class="icon ims-icon-font-tui"></div>
-                            <div class="slogan">7天无理由退款</div>
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="###" target="_blank" class="commitment">
-                            <div class="icon ims-icon-font-shi"></div>
-                            <div class="slogan">免费试用30天</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-2">
-                        <div class="short">
-                            <h3>关于我们</h3>
-                            <p>
-                                <a href="#">公司简介</a>
-                            </p>
-                            <p>
-                                <a href="#">公司理念</a>
-                            </p>
-                            <p>
-                                <a href="#">企业资质</a>
-                            </p>
-                            <p>
-                                <a href="#">客户案例</a>
-                            </p>
-                            <p>
-                                <a href="#">联系我们</a>
-                            </p>
+    @if (ViewBag.HideFooter == null) {
+        <footer>
+            <div class="container">
+                <div class="footer-box">
+                    <div class="row">
+
+                        <div class="col-xs-3">
+                            <a href="javascript:void(0);" class="commitment">
+                                <div class="icon ims-icon-font ims-icon-font-shi"></div>
+                                <div class="slogan">30天免费试用</div>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="javascript:void(0);" class="commitment">
+                                <div class="icon ims-icon-font ims-icon-font-tui"></div>
+                                <div class="slogan">7天无理由退款</div>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="javascript:void(0);" class="commitment">
+                                <div class="icon ims-icon-font ims-icon-font-zhibao"></div>
+                                <div class="slogan">1年免费维保服务</div>
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="javascript:void(0);" class="commitment">
+                                <div class="icon ims-icon-font ims-icon-font-kefu"></div>
+                                <div class="slogan">7×24小时售后支持</div>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-xs-2">
-                        <div class="short">
-                            <h3>服务支持</h3>
-                            <p>
-                                <a href="#">客户服务</a>
-                            </p>
-                            <p>
-                                <a href="#">售后政策</a>
-                            </p>
-                            <p>
-                                <a href="#">常见问题</a>
-                            </p>
-                            <p>
-                                <a href="#">资料下载</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-2">
-                        <div class="short">
-                            <h3>法律声明</h3>
-                            <p>
-                                <a href="#">服务条款</a>
-                            </p>
-                            <p>
-                                <a href="#">隐私条款</a>
-                            </p>
-                            <p>
-                                <a href="#">相关法律</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-2">
-                        <div class="short">
-                            <h3>友情链接</h3>
-                            <p>
-                                <a href="#">阿里云</a>
-                            </p>
-                            <p>
-                                <a href="#">支付宝</a>
-                            </p>
-                            <p>
-                                <a href="#">百度云</a>
-                            </p>
-                            <p>
-                                <a href="#">腾讯新闻</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-4">
-                        <div class="short">
-                            <h3>客服热线</h3>
-                            <div class="contact">
-                                <div class="icon ims-icon-font-dianhua"></div>
-                                <div class="kefu">4008 118 118</div>
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <div class="short">
+                                <h3>关于我们</h3>
+                                <p>
+                                    <a href="#">公司简介</a>
+                                </p>
+                                <p>
+                                    <a href="#">公司理念</a>
+                                </p>
+                                <p>
+                                    <a href="#">资质证书</a>
+                                </p>
+                                <p>
+                                    <a href="#">客户案例</a>
+                                </p>
+                                <p>
+                                    <a href="#">联系我们</a>
+                                </p>
                             </div>
-                            <div class="other">
-                                <a href="#" class="icon ims-icon-font-zixun" title="在线咨询"></a>
-                                <a id="weixincode" href="javascript:;" class="icon ims-icon-font-weixin" title="微信公众号">
-                                    <span class="weixin">
-                                        <img src="/Content/images/weixin.png" alt="weixin" title="">
-                                    </span>
-                                </a>
-                                <a href="http://weibo.com/donaldyu" target="_blank" class="icon ims-icon-font-weibo" title="官方微博"></a>
-                                <a href="mailto:service@deltaww.com" class="icon ims-icon-font-email" title="客服邮箱"></a>
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="short">
+                                <h3>服务支持</h3>
+                                <p>
+                                    <a href="#">客户服务</a>
+                                </p>
+                                <p>
+                                    <a href="#">售后政策</a>
+                                </p>
+                                <p>
+                                    <a href="#">常见问题</a>
+                                </p>
+                                <p>
+                                    <a href="#">资料下载</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="short">
+                                <h3>法律声明</h3>
+                                <p>
+                                    <a href="#">服务条款</a>
+                                </p>
+                                <p>
+                                    <a href="#">隐私条款</a>
+                                </p>
+                                <p>
+                                    <a href="#">相关法律</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="short">
+                                <h3>友情链接</h3>
+                                <p>
+                                    <a target="_blank" href="https://www.aliyun.com">阿里云</a>
+                                </p>
+                                <p>
+                                    <a target="_blank" href="https://cloud.baidu.com">百度云</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="short">
+                                <h3>咨询热线</h3>
+                                <div class="contact">
+                                    <div class="icon ims-icon-font ims-icon-font-dianhua"></div>
+                                    <div class="kefu">@iMStore.Contact</div>
+                                </div>
+                                <div class="other">
+                                    <a href="@iMStore.QQ" class="icon ims-icon-font ims-icon-font-zixun" title="在线咨询"></a>
+                                    <a id="weixincode" href="javascript:;" class="icon ims-icon-font ims-icon-font-weixin" title="微信公众号">
+                                        <span class="weixin">
+                                            <img src="/Content/images/weixin.png" alt="weixin" title="关注公众号">
+                                        </span>
+                                    </a>
+                                    <a href="http://weibo.com/" target="_blank" class="icon ims-icon-font ims-icon-font-weibo" title="官方微博"></a>
+                                    <a href="mailto:service@irep.com.cn" class="icon ims-icon-font ims-icon-font-email" title="客服邮箱"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row last-row">
-                    <div class="col-xs-12 copyright">
-                        &copy; 2018-@DateTime.Today.Year @iMStore.Company 版权所有
-                        <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备1122334455号</a>
+                    <div class="row last-row">
+                        <div class="col-xs-12 copyright">
+                            &copy; 2018-@DateTime.Today.Year @iMStore.Company 版权所有
+                            <a href="http://www.beian.miit.gov.cn" target="_blank">@iMStore.Beian</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    }
 
     <!-- rightbar -->
     <div class="toolbar">
-        <a href="tencent://message/?uin=1234567890&Site=www.imsystem.com&Menu=yes" class="toolbar-item toolbar-item-qq"></a>
+        <a href="@iMStore.QQ" class="toolbar-item toolbar-item-qq"></a>
         <a href="javascript:;" class="toolbar-item toolbar-item-contact">
             <span class="toolbar-layer"></span>
         </a>

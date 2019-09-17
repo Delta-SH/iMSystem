@@ -1,10 +1,10 @@
-﻿body{
-    background:#eee;
+﻿body {
+    background: #eee;
 }
 
 h1, h2, h3 {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 a.btn-blue, a.btn-white {
@@ -21,13 +21,13 @@ a.btn-blue, a.btn-blue:link, a.btn-blue:visited, a.btn-white, a.btn-white:link, 
     font-size: 14px;
     color: #fff;
     text-align: center;
-    margin-right:5px;
+    margin-right: 5px;
     border: solid 1px #00a2ca;
 }
 
-a.btn-blue:hover{
-	background: #33b5d4; 
-    border-color: #33b5d4; 
+a.btn-blue:hover {
+    background: #33b5d4;
+    border-color: #33b5d4;
 }
 
 a.btn-white, a.btn-white:link, a.btn-white:visited {
@@ -36,32 +36,32 @@ a.btn-white, a.btn-white:link, a.btn-white:visited {
     color: #00a2ca;
 }
 
-a.btn-white:hover{
-	background: #33b5d4; 
-    border-color: #33b5d4; 
-    color: #fff; 
+a.btn-white:hover {
+    background: #33b5d4;
+    border-color: #33b5d4;
+    color: #fff;
 }
 
 .modulars h2 {
-    font-weight:bold;
-	font-size:20px;
-	padding:40px 0 30px 0
+    font-weight: bold;
+    font-size: 20px;
+    padding: 40px 0 30px 0
 }
 
 .modulars h2 span {
-	display:inline-block;
-	background-color:#fff;
-	position:relative;
-	padding-right:20px
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    padding-right: 20px
 }
 
 .modulars h2:before {
-	content:'';
-	width:100%;
-	border-top:1px solid #e6e6e6;
-	position:relative;
-	display:block;
-	top:.7em
+    content: '';
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    position: relative;
+    display: block;
+    top: .7em
 }
 
 .fixed {
@@ -91,33 +91,31 @@ a.btn-white:hover{
 }
 
 .main-content {
-    margin:0;
+    margin: 0;
     padding: 0 25px;
     min-height: 800px;
-    background:#fff;
+    background: #fff;
 }
 
 .main-content > .product {
     color: #333;
     padding: 0;
-    height: 310px;
     margin: 0;
-    background: url(/Content/images/product-header.png) right top no-repeat;
 }
 
 .main-content > .product > article {
-    position:relative;
-    height: 310px;
-    margin-right:350px;
+    position: relative;
+    height: 300px;
+    margin-right: 360px;
 }
 
 .main-content > .product > article figcaption {
-    padding:20px 0;
+    padding: 20px 0;
 }
 
 .main-content > .product figcaption h1 {
     font-size: 42px;
-    font-weight:lighter;
+    font-weight: lighter;
 }
 
 .main-content > .product figcaption h3 {
@@ -130,37 +128,9 @@ a.btn-white:hover{
     color: #444;
     font-size: 14px;
     line-height: 1.5;
-    margin: 15px 0;
-}
-
-.main-content > .product figcaption > .sales {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 20px;
-}
-
-.main-content > .product figcaption > .sales > .prices {
-    line-height:25px;
-    margin-bottom: 10px;
-}
-
-.main-content > .product figcaption > .sales > .prices > span {
-    color: #999;
-    display: block;
-    font-size: 14px;
-}
-
-.main-content > .product figcaption > .sales > .prices > span strong {
-    font-size: 18px;
-    font-weight: lighter;
-}
-
-.main-content > .product figcaption > .sales > .prices > span small {
-    color: #ff8a00;
-}
-
-.main-content > .product figcaption > .sales > .prices > span small.old {
-    text-decoration: line-through;
+    margin: 10px 0;
+    max-height: 130px;
+    overflow: hidden;
 }
 
 .main-content > .summary {
@@ -177,4 +147,64 @@ a.btn-white:hover{
 
 .main-content > .cases {
     font-size: 14px;
+}
+
+.introduce-box {
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    height: 300px;
+    width: 350px;
+    position: relative;
+}
+
+.introduce-box .slide-btn-panel,
+.introduce-box .slide-btn {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    bottom: 0;
+    cursor: pointer;
+    outline: medium none;
+    position: absolute;
+    top: 0;
+    width: 50px;
+}
+
+.introduce-box .slide-btn-panel i {
+    color: #e6e6e6;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 25px;
+    opacity: 0.5;
+}
+
+.introduce-box .slide-btn-panel:hover i {
+    opacity: 1;
+}
+
+.introduce-box .slide-btn-panel.left-btn,
+.introduce-box .slide-btn.left-btn {
+    left: 0;
+}
+
+.introduce-box .slide-btn-panel.right-btn,
+.introduce-box .slide-btn.right-btn {
+    right: 0;
+}
+
+.introduce-box > .slide-body {
+    position: relative;
+    overflow: auto;
+}
+
+.introduce-box ul > li {
+    position: relative;
+    height: 300px;
+    background: transparent none repeat scroll 0 0;
+}
+
+.introduce-box ul > li > img {
+    height: 100%;
+    width: 100%;
 }
