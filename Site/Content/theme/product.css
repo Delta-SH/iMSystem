@@ -7,41 +7,6 @@ h1, h2, h3 {
     padding: 0;
 }
 
-a.btn-blue, a.btn-white {
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-}
-
-a.btn-blue, a.btn-blue:link, a.btn-blue:visited, a.btn-white, a.btn-white:link, a.btn-white:visited {
-    display: inline-block;
-    width: 150px;
-    padding: 8px 0;
-    background: #00a2ca;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
-    margin-right: 5px;
-    border: solid 1px #00a2ca;
-}
-
-a.btn-blue:hover {
-    background: #33b5d4;
-    border-color: #33b5d4;
-}
-
-a.btn-white, a.btn-white:link, a.btn-white:visited {
-    background: #fff;
-    border-color: #00a2ca;
-    color: #00a2ca;
-}
-
-a.btn-white:hover {
-    background: #33b5d4;
-    border-color: #33b5d4;
-    color: #fff;
-}
-
 .modulars h2 {
     font-weight: bold;
     font-size: 20px;
@@ -106,7 +71,7 @@ a.btn-white:hover {
 .main-content > .product > article {
     position: relative;
     height: 300px;
-    margin-right: 360px;
+    margin-right: 410px;
 }
 
 .main-content > .product > article figcaption {
@@ -155,7 +120,7 @@ a.btn-white:hover {
     padding: 0;
     margin-left: 10px;
     height: 300px;
-    width: 350px;
+    width: 400px;
     position: relative;
 }
 

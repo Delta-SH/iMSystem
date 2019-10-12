@@ -108,7 +108,7 @@
     height: 30px;
     line-height: 20px;
     font-size: 14px;
-    margin:0;
+    margin: 0;
     padding: 0;
     color: #fff;
     border-bottom: 1px solid #65676a;
@@ -125,7 +125,7 @@
 
 .dropdown-box .menu-body > ul > li {
     width: 100%;
-    margin:10px 0 0 0;
+    margin: 10px 0 0 0;
     padding: 10px 10px;
     background: #373d41 none repeat scroll 0 0;
     transition: background-color 0.2s ease 0s;
@@ -140,19 +140,19 @@
 }
 
 .dropdown-box .menu-body > ul > li a {
-    padding:0;
-    line-height:normal;
+    padding: 0;
+    line-height: normal;
 }
 
 .dropdown-box .menu-body > ul > li h3 {
     color: #fff;
     font-size: 13px;
-    margin:0 0 5px 0;
+    margin: 0 0 5px 0;
     padding: 0;
 }
 
 .dropdown-box .menu-body > ul > li h3 img {
-    width: 28px; 
+    width: 28px;
     margin-left: 5px;
     margin-bottom: 3px;
 }
@@ -163,8 +163,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 .normal-dropdown {
@@ -188,64 +188,78 @@
 .toolbar-item, .toolbar-layer {
     background: url(/Content/images/toolbar.png) no-repeat;
 }
+
 .toolbar {
     position: fixed;
     right: 0px;
     bottom: 50px;
     z-index: 250;
 }
+
 .toolbar-item {
     display: block;
     width: 52px;
     height: 52px;
     margin-top: 1px;
     position: relative;
-    background-color:#cdcdcd;
+    background-color: #cdcdcd;
 }
+
 .toolbar-item:hover {
-    background-color:#a6a6a6;
+    background-color: #a6a6a6;
 }
+
 .toolbar-item-qq {
     background-position: 0 -426px;
 }
+
 .toolbar-item-qq:hover {
     background-position: 0 -488px;
 }
+
 .toolbar-item-contact {
     background-position: 0 -550px;
 }
+
 .toolbar-item-contact:hover {
     background-position: 0 -612px;
 }
+
 .toolbar-item-contact .toolbar-layer {
     height: 212px;
     background-position: 0 0;
 }
+
 .toolbar-item-app {
     background-position: 0 -674px;
 }
+
 .toolbar-item-app:hover {
     background-position: 0 -736px;
 }
+
 .toolbar-item-app .toolbar-layer {
     height: 194px;
     background-position: 0 -222px;
 }
+
 .toolbar-item-top {
     background-position: 0 -798px;
 }
+
 .toolbar-item-top:hover {
     background-position: 0 -860px;
 }
-.toolbar-layer{
-    display:none;
-    position:absolute;
-    right:50px;
-    bottom:-10px;
+
+.toolbar-layer {
+    display: none;
+    position: absolute;
+    right: 50px;
+    bottom: -10px;
     width: 172px;
 }
 /** footer */
-footer{
+footer {
     min-width: 1000px;
     background-color: #373d41;
     border-top: 1px solid #43454a;
@@ -290,10 +304,10 @@ footer .commitment:hover > .slogan {
 }
 
 footer .short h3 {
-    color:#fff;
-    font-size:16px;
-    margin-top:20px;
-    margin-bottom:20px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer .short a {
@@ -309,11 +323,11 @@ footer .short .contact {
     color: #a9b0b4;
     font-size: 13px;
     height: 30px;
-    position:relative;
+    position: relative;
 }
 
 footer .short .contact .icon {
-    float:left;
+    float: left;
     font-size: 30px;
     line-height: 30px;
 }
@@ -333,7 +347,7 @@ footer .short .other {
 footer .short .other .icon {
     font-size: 30px;
     line-height: 80px;
-    padding-right:10px;
+    padding-right: 10px;
 }
 
 footer .short .other a {
@@ -341,13 +355,13 @@ footer .short .other a {
 }
 
 footer .short .other .weixin {
-    display:none;
+    display: none;
     height: 150px;
     width: 150px;
     left: 0;
     top: -160px;
     position: absolute;
-    z-index:998;
+    z-index: 998;
 }
 
 footer .short .other .weixin img {

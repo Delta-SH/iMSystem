@@ -38,7 +38,7 @@ h1, h2, h3, dd, ul, ol {
     overflow: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
-    padding:10px 20px;
+    padding: 10px 20px;
 }
 
 .sidebar > ul > li .title > .title-icon {

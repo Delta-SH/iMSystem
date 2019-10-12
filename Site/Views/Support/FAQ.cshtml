@@ -1,21 +1,44 @@
-﻿@model Site.Models.NewsModel
+﻿@using Site.Models;
+@section head {
+    <link href="@Url.Content("~/content/theme/service.css")" rel="stylesheet" type="text/css" />
+}
+
 <div class="page-top-banner page-service">
     <div class="container">
         <div class="header">
             <h3>常见问题</h3>
-            <p>阿里云专家服务团队为用户提供应用、安全、数据等各种服务来提升用户应用系统性能，让用户的应用和<br>服务在云上更好的运转。</p>
+            <p>汇集行业经验，解决常见问题。 </p>
         </div>
     </div>
 </div>
 
-<div class="page-common-content service-content">
+<div class="page-common-content question-content">
     <div class="container">
         <ol class="breadcrumb">
             <li><a href="/">首页</a></li>
             <li><a href="#">服务支持</a></li>
             <li class="active">常见问题</li>
         </ol>
-        <div class="row">
+        <div class="question-viewport">
+            <div id="accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+                @foreach (var question in iMStore.Questions) {
+                <div class="panel">
+                    <div id="heading-@question.Id" class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-@question.Id" aria-expanded="true" aria-controls="collapse-@question.Id">
+                                <span>@question.Title</span>
+                                <i class="ims-icon-font ims-icon-font-xia"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-@question.Id" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-@question.Id">
+                        <div class="panel-body">
+                            @Html.Raw(question.Content)
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
         </div>
     </div>
 </div>

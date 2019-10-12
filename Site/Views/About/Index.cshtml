@@ -1,9 +1,13 @@
-﻿@model Site.Models.NewsModel
+﻿@using Site.Models;
+@section head {
+    <link href="@Url.Content("~/content/theme/about.css")" rel="stylesheet" type="text/css" />
+}
+
 <div class="page-top-banner page-about">
     <div class="container">
         <div class="header">
             <h3>公司简介</h3>
-            <p>阿里云专家服务团队为用户提供应用、安全、数据等各种服务来提升用户应用系统性能，让用户的应用和<br>服务在云上更好的运转。</p>
+            <p>帮助客户全面了解公司概况与核心能力。</p>
         </div>
     </div>
 </div>
@@ -15,7 +19,46 @@
             <li><a href="#">关于我们</a></li>
             <li class="active">公司简介</li>
         </ol>
-        <div class="row">
+        <div class="about-viewport">
+            <div class="company-title">
+                <h4>
+                    @iMStore.Company
+                </h4>
+            </div>
+            <div class="company-image">
+                <img src="~/Content/images/company-image.png" alt="" />
+            </div>
+            <div class="company-content">
+                <h6>公司简介</h6>
+                <div class="company-text">
+                    <p>
+                        鑫威集團有限公司始創於1996年。自成立以來，鑫威始終秉持“創建一流企業，造就一流人才，做出一流貢獻”的願景，打造了知名的“鑫威”品牌。
+                        鑫威集團主業是以“工程”為主題的裝備製造業，主導產品為混凝土機械、挖掘機械系列產品，挖掘機械為中國主流品牌；混凝土機械為全球品牌。
+                    </p>
+                    <p>
+                        西安至元的核心竞争力是坚固的嵌入式动力环境监控系统，16年披荆斩棘、披星戴月的潜心研发，为军事、电力、政府、企业领域提供了100多款机房监控系列产品。
+                    </p>
+                    <p>
+                        西安至元的研发团队由多名博士、硕士研究生组成，技术上与空军工程大学、西安交通大学、西安理工大学、西安电子科技大学等建立校企合作。
+                    </p>
+                    <p>
+                        主要研发产品有：电力变电站动力环境监控系统、军事仓库动力环境监控系统、居配所动力环境监控系统、电动汽车充电站动力环境监控系统、通信基站动力环境监控系统、蓄电池在线监控系统、动力环境监控云平台、4G动力环境监控监控系统、数据中心动力环境监控系统、光伏发电动力环境监控系统、发电机蓄电池检测系统、漏水检测系统、智能温湿度监控系统。产品覆盖传感器、监控主机、监控平台及各个行业。
+                    </p>
+                </div>
+                <h6>发展历程</h6>
+                <div class="company-text">
+                    <h5>2019年</h5>
+                    <ul class="company-timer">
+                        <li><i class="ims-icon-font ims-icon-font-time"></i>公司为中国邮电电信总局开发了全国智能网管业信息管理系统软件</li>
+                        <li><i class="ims-icon-font ims-icon-font-time"></i>公司自主研制的BTC-9500ATM交换机为核心简称宽带实验网络</li>
+                    </ul>
+                    <h5>2018年</h5>
+                    <ul class="company-timer">
+                        <li><i class="ims-icon-font ims-icon-font-time"></i>公司组建中国邮电ATM科学实验网（SEANET）</li>
+                        <li><i class="ims-icon-font ims-icon-font-time"></i>公司成立，研制出自助知识产权ATM骨干交换机和DXC数字交叉连接设备。</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>

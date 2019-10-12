@@ -1,0 +1,53 @@
+﻿@section head {
+    <link href="@Url.Content("~/content/theme/news.css")" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        body {
+            background:#fff;
+        }
+    </style>
+}
+
+@using Site.Models;
+@model Site.Models.News
+<div class="container news-detail">
+    <div class="title-box">
+        <h1>@Model.Title</h1>
+    </div>
+    <div class="news-assist">
+        <div class="assist-item">
+            <div class="assist-name">
+                <i class="ims-icon-font ims-icon-font-mine"></i>
+                作者:
+            </div>
+            <div class="assist-value">
+                @Html.Raw(Model.Author)
+            </div>
+        </div>
+        <div class="assist-item">
+            <div class="assist-name">
+                <i class="ims-icon-font ims-icon-font-fenlei"></i>
+                分类:
+            </div>
+            <div class="assist-value">
+                @Html.Raw(CommonHelper.GetNewsTypeWithURL(Model.Type))
+            </div>
+        </div>
+        <div class="assist-item">
+            <div class="assist-name">
+                <i class="ims-icon-font ims-icon-font-time"></i>
+                发布时间:
+            </div>
+            <div class="assist-value">
+                @CommonHelper.DateConverter(Model.CreatedTime)
+            </div>
+        </div>
+    </div>
+    <div class="news-line"></div>
+    <div class="news-summary">
+        【摘要】：@Model.Summary
+    </div>
+    <div class="news-text">
+        @Html.Raw(Model.Content)
+    </div>
+</div>
+

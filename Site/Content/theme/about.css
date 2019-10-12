@@ -1,0 +1,278 @@
+﻿.about-content .company-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00a2ca;
+}
+
+.about-content .company-title > h4 {
+    color: #00a2ca;
+    font-size: 25px;
+}
+
+.about-content .company-image {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.about-content .company-image img {
+    margin: 0 auto;
+    height: 300px;
+    width: 100%;
+}
+
+.about-content .company-content > h6 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 3px solid #00a2ca;
+}
+
+.about-content .company-content > .company-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.about-content .company-content > .company-text > p {
+    text-indent: 28pt;
+}
+
+.about-content .company-content > .company-text > h5 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-content .company-content > .company-text > h5:first-child {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.about-content .company-content > .company-text > ul > li {
+    padding-left: 10px;
+}
+
+.about-content .company-content > .company-text > ul > li > i {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.dev-content .dev-image {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.dev-content .dev-image img {
+    margin: 0 auto;
+    height: 300px;
+    width: 100%;
+}
+
+.dev-content .dev-text {
+    margin-bottom: 40px;
+}
+
+.dev-content .dev-text > .dev-item {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #c6c6c6;
+}
+
+.dev-content .dev-item > .dev-item-title {
+    background: #00a2ca;
+    color: #fff;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    float: left;
+}
+
+.dev-content .dev-item > .dev-item-content {
+    font-size: 16px;
+    margin-left: 220px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.cer-content .cer-item {
+    text-align: center;
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+.cer-content .cer-item > a.cer-image {
+    display: block;
+    height: 310px;
+    padding: 4px;
+    border: 1px solid #ddd;
+}
+
+.cer-content .cer-item:hover > a.cer-image {
+    border: 1px solid #00a2ca;
+}
+
+.cer-content .cer-item > .cer-title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+
+.cer-content .cer-item:hover > .cer-title {
+    color: #00a2ca;
+}
+
+.cus-content .cus-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cus-content .cus-item > .cus-item-title {
+    border-left: 5px solid #00a2ca;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.cus-content .cus-item > .cus-item-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cus-content .cus-item .cus-item-case {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.cus-content .cus-item .cus-item-list {
+    padding: 0 30px 0 0;
+    margin: 0;
+}
+
+.cus-content .cus-item .cus-item-thumb > a {
+    display: block;
+    overflow: hidden;
+}
+
+.cus-content .cus-item .cus-item-thumb > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.cus-content .cus-item .cus-item-thumb > a:hover > img {
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.cus-content .cus-item .cus-item-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+.contact-content .contact-image {
+    text-align: center;
+}
+
+.contact-content .contact-image > img {
+    margin: 0 auto;
+    height: 300px;
+    width: 100%;
+}
+
+.contact-content .contact-title h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contact-content .contact-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-content .contact-content > .contact-left-box {
+}
+
+.contact-content .contact-content > .contact-left-box > h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-content .contact-content > .contact-left-box > p {
+    font-size: 14px;
+    color: #777;
+    line-height: 2;
+}
+
+.contact-content .contact-content > .contact-right-box {
+    text-align: center;
+}
+
+.contact-content .contact-content > .contact-right-box > h4 {
+    font-size: 22px;
+}
+
+.contact-content .contact-content > .contact-right-box > img {
+    display: block;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.contact-content .contact-content > .contact-right-box > h4.contact-telephone {
+    margin-top: 20px;
+    color: #ff8a00;
+}
+
+.contact-content .contact-content > .contact-right-box i {
+    font-size: 28px;
+}
+
+.contact-content .contact-content > .contact-map {
+    height: 360px;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+}
+
+.contact-map-marker > h4 {
+    font-size: 14px;
+    color: #00a2ca;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.contact-map-marker > p {
+    color: #333;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.line {
+    height: 0;
+    width: 120px;
+    border-bottom: 3px solid #00a2ca;
+    margin: 0 auto;
+}

@@ -1,21 +1,54 @@
-﻿@model Site.Models.NewsModel
+﻿@using Site.Models;
+@section head {
+    <link href="@Url.Content("~/content/theme/about.css")" rel="stylesheet" type="text/css" />
+}
+
 <div class="page-top-banner page-about">
     <div class="container">
         <div class="header">
             <h3>资质证书</h3>
-            <p>阿里云专家服务团队为用户提供应用、安全、数据等各种服务来提升用户应用系统性能，让用户的应用和<br>服务在云上更好的运转。</p>
+            <p>彰显企业荣誉与实力。</p>
         </div>
     </div>
 </div>
 
-<div class="page-common-content about-content">
+<div class="page-common-content cer-content">
     <div class="container">
         <ol class="breadcrumb">
             <li><a href="/">首页</a></li>
             <li><a href="#">关于我们</a></li>
             <li class="active">资质证书</li>
         </ol>
-        <div class="row">
+        <div class="cer-viewport">
+            @{
+                var colen = 3;
+                var certs = iMStore.Certificates.ToArray();
+                for (var i = 0; i <= certs.Length / colen; i++) {
+                    var start = colen * i;
+                    var end = start + colen - 1;
+
+                    if (end > certs.Length - 1) {
+                        end = certs.Length - 1;
+                    }
+
+                    if (end <= start) {
+                        continue;
+                    }
+
+                    <div class="row cer-row">
+                        @for (var j = start; j <= end; j++) {
+                            <div class="col-xs-@(12/colen) cer-col">
+                                <div class="cer-item">
+                                    <a href="@certs[j].Url" target="_blank" class="cer-image">
+                                        <img src="@certs[j].Url" alt="@certs[j].Id" title="@certs[j].Id" />
+                                    </a>
+                                    <div class="cer-title">@certs[j].Title</div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            }
         </div>
     </div>
 </div>

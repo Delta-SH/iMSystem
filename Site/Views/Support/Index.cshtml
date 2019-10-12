@@ -1,9 +1,13 @@
-﻿@model Site.Models.NewsModel
+﻿@using Site.Models;
+@section head {
+    <link href="@Url.Content("~/content/theme/service.css")" rel="stylesheet" type="text/css" />
+}
+
 <div class="page-top-banner page-service">
     <div class="container">
         <div class="header">
             <h3>客户服务</h3>
-            <p>阿里云专家服务团队为用户提供应用、安全、数据等各种服务来提升用户应用系统性能，让用户的应用和<br>服务在云上更好的运转。</p>
+            <p>以服务赢客户，以质量求生存，以科技促发展。</p>
         </div>
     </div>
 </div>
@@ -15,7 +19,146 @@
             <li><a href="#">服务支持</a></li>
             <li class="active">客户服务</li>
         </ol>
-        <div class="row">
+        <div class="row service-item">
+            <div class="col-xs-6 service-item-left">
+                <div class="service-item-image">
+                    <img src="~/Content/images/service-bg-01.png" />
+                </div>
+            </div>
+            <div class="col-xs-6 service-item-right">
+                <div class="service-item-introduce">
+                    <div class="telephone-panel">
+                        <div class="title">7×24小时客服热线</div>
+                        <div class="telephone">
+                            <i class="ims-icon-font ims-icon-font-telephone"></i>
+                            @iMStore.Contact
+                        </div>
+                        <div class="text">
+                            我们提供从售前咨询到售后支持的一站式产品服务，用心为你提供更优质的服务体验是我们的服务宗旨。
+                        </div>
+                        <div class="row icons">
+                            <div class="col-xs-3 icons-item">
+                                <i class="ims-icon-font ims-icon-font-gou"></i>
+                                <h6>售前咨询</h6>
+                            </div>
+                            <div class="col-xs-3 icons-item">
+                                <i class="ims-icon-font ims-icon-font-shouhou2"></i>
+                                <h6>售后支持</h6>
+                            </div>
+                            <div class="col-xs-3 icons-item">
+                                <i class="ims-icon-font ims-icon-font-sheng"></i>
+                                <h6>软件升级</h6>
+                            </div>
+                            <div class="col-xs-3 icons-item">
+                                <i class="ims-icon-font ims-icon-font-xiao"></i>
+                                <h6>咨询体验</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row service-item">
+            <div class="col-xs-6 service-item-left">
+                <div class="service-item-introduce">
+                    <div class="contact-panel">
+                        <div class="title">自助服务</div>
+                        <div class="contact-qq">
+                            <a href="@iMStore.QQ" class="btn-blue" title="在线咨询">
+                                <i class="ims-icon-font ims-icon-font-zixun"></i>
+                                咨询在线客服
+                            </a>
+                        </div>
+                        <div class="contact-other">
+                            <div class="row contact-other-row">
+                                <div class="col-xs-4 contact-other-col">
+                                    <div class="contact-weixin">
+                                        <div class="contact-weixin-icon">
+                                            <i class="ims-icon-font ims-icon-font-weixin2"></i>
+                                            <h6>微信公众号</h6>
+                                            <h6>扫一扫关注我们</h6>
+                                        </div>
+                                        <div class="contact-weixin-code">
+                                            <img src="~/Content/images/weixin.png" alt="微信公众号" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 contact-other-col">
+                                    <div class="contact-weibo">
+                                        <a href="@iMStore.Weibo" target="_blank" title="企业官方微博">
+                                            <div class="contact-weibo-icon">
+                                                <i class="ims-icon-font ims-icon-font-weibo2"></i>
+                                                <h6>
+                                                    企业官方微博
+                                                </h6>
+                                                <h6>关注我们，了解资讯</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 contact-other-col">
+                                    <div class="contact-email">
+                                        <a href="mailto:@iMStore.Email" target="_blank" title="企业官方微博">
+                                            <div class="contact-email-icon">
+                                                <i class="ims-icon-font ims-icon-font-email2"></i>
+                                                <h6>
+                                                    企业服务邮箱
+                                                </h6>
+                                                <h6>@iMStore.Email</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 service-item-right">
+                <div class="service-item-image">
+                    <img src="~/Content/images/service-bg-02.png" />
+                </div>
+            </div>
+        </div>
+        <div class="row service-item">
+            <div class="col-xs-6 service-item-left">
+                <div class="service-item-image">
+                    <img src="~/Content/images/service-bg-03.png" />
+                </div>
+            </div>
+            <div class="col-xs-6 service-item-right">
+                <div class="service-item-introduce">
+                    <div class="fqa-panel">
+                        <div class="title">常见问题</div>
+                        <div class="text">
+                            汇集多年行业经验，解决客户使用过程中遇到的常见问题，帮助客户轻松使用我们的各类软硬件产品和服务。
+                        </div>
+                        <div class="navto">
+                            <a href="/support/faq" target="_blank">更多帮助&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row service-item">
+            <div class="col-xs-6 service-item-left">
+                <div class="service-item-introduce">
+                    <div class="download-panel">
+                        <div class="title">帮助文档</div>
+                        <div class="text">
+                            客户可以从资料下载中心获得产品说明书、帮助文档、产品升级包及其他相关资料。
+                        </div>
+                        <div class="navto">
+                            <a href="/support/download" target="_blank">下载资料&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 service-item-right">
+                <div class="service-item-image">
+                    <img src="~/Content/images/service-bg-04.png" />
+                </div>
+            </div>
         </div>
     </div>
 </div>

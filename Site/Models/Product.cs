@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Site.Models {
-    public partial class Product {
+    public class Product {
         public int Index { get; set; }
 
         public string Id { get; set; }

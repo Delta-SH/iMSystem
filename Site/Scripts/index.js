@@ -23,7 +23,10 @@
 
     $('.index-products-sale .sale-box > .tabs > .tab-item').hover(function (e) {
         e.preventDefault();
-        if ($(this).hasClass('active')) return false;
+        e.stopPropagation();
+
+        if ($(this).hasClass('active'))
+            return false;
 
         $(this)
         .addClass('active')

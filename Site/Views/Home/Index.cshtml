@@ -37,7 +37,7 @@
     <div class="container top-events">
         <div class="row">
             <div class="col-xs-3">
-                <a href="/event/newCustomerEvent" target="_blank" class="events">
+                <a href="/about" target="_blank" class="events">
                     <div class="ims-icon-font ims-icon-font-why event-icon"></div>
                     <div class="slogan">
                         <h3>选择艾睿普</h3>
@@ -46,7 +46,7 @@
                 </a>
             </div>
             <div class="col-xs-3">
-                <a href="/event/newCustomerEvent" target="_blank" class="events">
+                <a href="/news" target="_blank" class="events">
                     <div class="ims-icon-font ims-icon-font-gonggao event-icon"></div>
                     <div class="slogan">
                         <h3>最新动态</h3>
@@ -64,7 +64,7 @@
                 </a>
             </div>
             <div class="col-xs-3">
-                <a href="/event/newCustomerEvent" target="_blank" class="events">
+                <a href="/product" target="_blank" class="events">
                     <div class="ims-icon-font ims-icon-font-new event-icon"></div>
                     <div class="slogan">
                         <h3>新品上线</h3>
@@ -389,48 +389,78 @@
             <div class="row">
                 <div class="col-xs-4">
                     <div class="title">
-                        电信行业<a href="#" target="_blank">更多&gt;</a>
+                        电信行业<a href="/about/customer" target="_blank">更多&gt;</a>
                     </div>
-                    <div class="content">
-                        <img src="/Content/images/forums-bg-01.jpg" alt="">
-                        <div class="content-title">
-                            <a href="#" target="_blank">2017上海移动项目</a>
-                        </div>
-                    </div>
-                    <ul class="detail">
-                        <li><a href="#" target="_blank"><i></i>上海联通项目</a></li>
-                        <li><a href="#" target="_blank"><i></i>上海电信项目</a></li>
-                    </ul>
+                    @{
+                        var customers = iMStore.Customer.FindAll(c => c.Type == 0).ToArray();
+                        if (customers.Length > 0) {
+                            <div class="content">
+                                <img src="@customers[0].Image" alt="">
+                                <div class="content-title">
+                                    <a href="@customers[0].Url" target="_blank">@customers[0].Name</a>
+                                </div>
+                            </div>
+                        }
+
+                        if (customers.Length > 1) {
+                            <ul class="detail">
+                                <li><a href="@customers[1].Url" target="_blank"><i></i>@customers[1].Name</a></li>
+                                @if (customers.Length > 2) {
+                                    <li><a href="@customers[2].Url" target="_blank"><i></i>@customers[2].Name</a></li>
+                                }
+                            </ul>
+                        }
+                    }
                 </div>
                 <div class="col-xs-4">
                     <div class="title">
-                        电力行业<a href="#" target="_blank">更多&gt;</a>
+                        电力行业<a href="/about/customer" target="_blank">更多&gt;</a>
                     </div>
-                    <div class="content">
-                        <img src="/Content/images/forums-bg-02.jpg" alt="">
-                        <div class="content-title">
-                            <a href="#" target="_blank">电力行业项目1</a>
-                        </div>
-                    </div>
-                    <ul class="detail">
-                        <li><a href="#" target="_blank"><i></i>电力行业项目2</a></li>
-                        <li><a href="#" target="_blank"><i></i>电力行业项目3</a></li>
-                    </ul>
+                    @{
+                        customers = iMStore.Customer.FindAll(c => c.Type == 1).ToArray();
+                        if (customers.Length > 0) {
+                            <div class="content">
+                                <img src="@customers[0].Image" alt="">
+                                <div class="content-title">
+                                    <a href="@customers[0].Url" target="_blank">@customers[0].Name</a>
+                                </div>
+                            </div>
+                        }
+
+                        if (customers.Length > 1) {
+                            <ul class="detail">
+                                <li><a href="@customers[1].Url" target="_blank"><i></i>@customers[1].Name</a></li>
+                                @if (customers.Length > 2) {
+                                    <li><a href="@customers[2].Url" target="_blank"><i></i>@customers[2].Name</a></li>
+                                }
+                            </ul>
+                        }
+                    }
                 </div>
                 <div class="col-xs-4">
                     <div class="title">
-                        政府行业<a href="#" target="_blank">更多&gt;</a>
+                        政府行业<a href="/about/customer" target="_blank">更多&gt;</a>
                     </div>
-                    <div class="content">
-                        <img src="/Content/images/forums-bg-03.jpg" alt="">
-                        <div class="content-title">
-                            <a href="#" target="_blank">政府项目1</a>
-                        </div>
-                    </div>
-                    <ul class="detail">
-                        <li><a href="#" target="_blank"><i></i>政府项目2</a></li>
-                        <li><a href="#" target="_blank"><i></i>政府项目3</a></li>
-                    </ul>
+                    @{
+                        customers = iMStore.Customer.FindAll(c => c.Type == 2).ToArray();
+                        if (customers.Length > 0) {
+                            <div class="content">
+                                <img src="@customers[0].Image" alt="">
+                                <div class="content-title">
+                                    <a href="@customers[0].Url" target="_blank">@customers[0].Name</a>
+                                </div>
+                            </div>
+                        }
+
+                        if (customers.Length > 1) {
+                            <ul class="detail">
+                                <li><a href="@customers[1].Url" target="_blank"><i></i>@customers[1].Name</a></li>
+                                @if (customers.Length > 2) {
+                                    <li><a href="@customers[2].Url" target="_blank"><i></i>@customers[2].Name</a></li>
+                                }
+                            </ul>
+                        }
+                    }
                 </div>
             </div>
         </div>

@@ -1,9 +1,13 @@
-﻿@model Site.Models.NewsModel
+﻿@section head {
+    <link href="@Url.Content("~/content/theme/news.css")" rel="stylesheet" type="text/css" />
+}
+
+@model Site.Models.NewsModel
 <div class="page-top-banner page-news">
     <div class="container">
         <div class="header">
             <h3>新闻中心</h3>
-            <p>阿里云专家服务团队为用户提供应用、安全、数据等各种服务来提升用户应用系统性能，让用户的应用和<br>服务在云上更好的运转。</p>
+            <p>聚焦企业动态，了解行业资讯。</p>
         </div>
     </div>
 </div>
@@ -15,7 +19,7 @@
             <li><a href="/news">新闻中心</a></li>
             <li class="active">行业资讯</li>
         </ol>
-        <div class="row">
+        <div class="row news-viewport">
             <div class="col-xs-2 sidebar">
                 <ul class="nav nav-pills nav-stacked">
                     <li><a href="/news">企业新闻</a></li>
@@ -29,29 +33,25 @@
                             <div class="news-list">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <a href="@news.Url" target="_blank" class="thumbnail">
-                                            <img src="@news.Image" alt="">
+                                        <a href="/news/detail/@news.Id" class="thumbnail" target="_blank">
+                                            <img src="@news.Image" alt="NEWS IMAGES" title="@news.Title">
                                         </a>
                                     </div>
                                     <div class="col-xs-9">
                                         <div class="caption">
-                                            <a href="@news.Url" target="_blank">
+                                            <a href="/news/detail/@news.Id" title="@news.Title" target="_blank">
                                                 <h3>@news.Title</h3>
                                             </a>
-                                            <p>@news.Comment</p>
+                                            <p>@news.Summary</p>
                                         </div>
                                         <div class="clearfix">
                                             <div class="pull-left">
-                                                @if (news.Tag == "p1") {
-                                                    <span class="label label-danger">重要新闻</span>
-                                                } else if (news.Tag == "p2") {
-                                                    <span class="label label-info">普通新闻</span>
-                                                } else {
-                                                    <span class="label label-default">其他新闻</span>
+                                                @if (!string.IsNullOrWhiteSpace(news.Tag)) {
+                                                    <span class="label label-danger">@news.Tag</span>
                                                 }
                                             </div>
                                             <div class="pull-right timestamp">
-                                                @Site.Models.CommonHelper.DateConverter(news.CreatedTime)
+                                                发布时间：@Site.Models.CommonHelper.DateConverter(news.CreatedTime)
                                             </div>
                                         </div>
                                     </div>

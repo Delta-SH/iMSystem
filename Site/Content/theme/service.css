@@ -1,0 +1,436 @@
+﻿body {
+    background: #eee;
+}
+
+.service-content .service-item {
+    background: #fff;
+    margin: 20px 0;
+    padding: 0;
+    border: 1px solid rgb(234, 239, 244);
+    box-shadow: 0px 0px 8px 0px rgba(34, 34, 34, 0.13);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 34, 34, 0.13);
+}
+
+.service-content .service-item > .service-item-left {
+    margin: 0;
+    padding: 15px;
+}
+
+.service-content .service-item > .service-item-right {
+    margin: 0;
+    padding: 15px;
+}
+
+.service-content .service-item-image {
+    height: 360px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.service-content .service-item-image > img {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.service-content .service-item-image:hover > img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.service-content .service-item-introduce {
+    height: 360px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.service-content .service-item-introduce .title {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.service-content .telephone-panel {
+    margin-top: 35px;
+}
+
+.service-content .telephone-panel > .telephone {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #ff8a00;
+}
+
+.service-content .telephone-panel > .telephone > i {
+    font-size: 28px;
+}
+
+.service-content .telephone-panel > .text {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.service-content .telephone-panel > .icons {
+    margin-top: 40px;
+    text-align: center;
+    color: #8c8c8c;
+}
+
+.service-content .telephone-panel > .icons i {
+    font-size: 38px;
+}
+
+.service-content .telephone-panel > .icons h6 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.service-content .contact-panel {
+    margin-top: 35px;
+}
+
+.service-content .contact-panel > .contact-qq {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.service-content .contact-panel > .contact-qq > a i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.service-content .contact-panel > .contact-other {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.service-content .contact-panel .contact-other-row {
+    margin: 0;
+    padding: 0;
+}
+
+.service-content .contact-panel .contact-other-col {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.service-content .contact-panel .contact-weixin,
+.service-content .contact-panel .contact-weibo,
+.service-content .contact-panel .contact-email {
+    color: #8c8c8c;
+    height: 160px;
+    padding-top: 10px;
+}
+
+.service-content .contact-panel .contact-weibo > a,
+.service-content .contact-panel .contact-email > a {
+    color: #8c8c8c;
+}
+
+.service-content .contact-panel .contact-weibo > a:hover h6,
+.service-content .contact-panel .contact-email > a:hover h6 {
+    color: #00c2de;
+}
+
+.service-content .contact-panel .contact-weixin-icon > i,
+.service-content .contact-panel .contact-weibo-icon > i,
+.service-content .contact-panel .contact-email-icon > i {
+    display: block;
+    font-size: 48px;
+}
+
+.service-content .contact-panel .contact-weixin-icon > h6,
+.service-content .contact-panel .contact-weibo-icon > h6,
+.service-content .contact-panel .contact-email-icon > h6 {
+    font-size: 14px;
+}
+
+.service-content .contact-panel .contact-weixin-code {
+    display: none;
+}
+
+.service-content .contact-panel .contact-weixin-code > img {
+    height: 150px;
+    width: 150px;
+}
+
+.service-content .contact-panel .contact-weixin:hover .contact-weixin-icon {
+    display: none;
+}
+
+.service-content .contact-panel .contact-weixin:hover .contact-weixin-code {
+    display: block;
+}
+
+
+.service-content .fqa-panel {
+    margin-top: 60px;
+}
+
+.service-content .fqa-panel > .text {
+    margin-top: 50px;
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.service-content .fqa-panel > .navto {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.service-content .fqa-panel > .navto > a {
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.service-content .fqa-panel > .navto > a:hover {
+    color: #00c2de;
+}
+
+.service-content .download-panel {
+    margin-top: 60px;
+}
+
+.service-content .download-panel > .text {
+    margin-top: 50px;
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.service-content .download-panel > .navto {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.service-content .download-panel > .navto > a {
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.service-content .download-panel > .navto > a:hover {
+    color: #00c2de;
+}
+
+.exchange-content h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.exchange-content .exchange-item {
+    background: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.exchange-content .icons {
+    text-align: center;
+    color: #8c8c8c;
+    padding: 60px 0;
+}
+
+.exchange-content .icons-item i {
+    font-size: 80px;
+}
+
+.exchange-content .icons-item h6 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.exchange-content .promise {
+    text-align: center;
+    color: #8c8c8c;
+    margin: auto 40px;
+    border-top: 1px solid #e6e6e6;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.exchange-content .promise p {
+    margin: 0;
+}
+
+.exchange-content .exchange-detail {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.exchange-content .exchange-detail-item {
+    margin-left: 30px;
+}
+
+.exchange-content .exchange-detail-item h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.exchange-content .exchange-detail-item th,
+.exchange-content .exchange-detail-item td {
+    text-align: center;
+}
+
+.question-content .panel-group .panel {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    margin-top: 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.question-content .panel > .panel-heading,
+.question-content .panel > .panel-body {
+    padding: 20px;
+}
+
+.question-content .panel > .panel-heading a > span {
+    font-size: 16px;
+}
+
+.question-content .panel > .panel-heading a > i {
+    float: right;
+    font-size: 16px;
+}
+
+.question-content .panel > .panel-heading a.collapsed {
+    color: #666;
+}
+
+.question-content .panel > .panel-heading a.collapsed > i:before {
+    content: "\e620";
+}
+
+.question-content .panel-body,
+.question-content .panel-body p {
+    background: #FBFBFB;
+    font-size: 14px;
+}
+
+.download-content .download-box {
+    padding: 0;
+    border: 1px solid #eee;
+    background: #fff none repeat scroll 0 0;
+}
+
+.download-content .tabs {
+    height: 60px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    background: #f9f9f9;
+}
+
+.download-content .tabs > .tab-item {
+    color: #666;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 50px;
+    text-align: center;
+    width: 250px;
+}
+
+.download-content .tabs > .tab-item:hover {
+    color: #00c1de;
+}
+
+.download-content .tabs > .tab-item.active {
+    color: #00c1de;
+}
+
+.download-content .tabs > .tab-item div {
+    border-bottom: 1px solid #eee;
+    margin-top: -1px;
+}
+
+.download-content .tabs > .tab-item.active div {
+    border-bottom-color: #00c1de;
+}
+
+.download-content .content {
+    position: relative;
+}
+
+.download-content .content > .content-item {
+    width: 100%;
+    min-height: 600px;
+    padding: 20px;
+    display: none;
+    z-index: 1;
+}
+
+.download-content .content > .content-item.active {
+    display: block;
+    z-index: 2;
+}
+
+.download-content .content > .content-item > .download-item {
+    height: 100px;
+    color: #666;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.download-content .download-item > .download-item-left {
+    width: 100%;
+    padding-right: 120px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.download-content .download-item > .download-item-right {
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.download-content .download-item .download-item-date,
+.download-content .download-item .download-item-size {
+    font-size: 12px;
+    padding: 3px;
+    text-align: left;
+}
+
+.download-content .download-item a.download-icon-button {
+    line-height: 1.8;
+}
+
+.download-content .download-item .download-icon-button > i {
+    font-size: 25px;
+}
+
+.download-content .download-item a.download-item-title {
+    font-size: 16px;
+    display: block;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.download-content .download-item .download-item-summary {
+    overflow: hidden;
+}
+
+.download-content .download-item a.download-icon-button {
+    color: #666;
+}
+
+.download-content .download-item a.download-icon-button:hover {
+    color: #00a2ca;
+}

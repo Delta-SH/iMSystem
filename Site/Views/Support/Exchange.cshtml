@@ -1,21 +1,156 @@
-﻿@model Site.Models.NewsModel
+﻿@using Site.Models;
+@section head {
+    <link href="@Url.Content("~/content/theme/service.css")" rel="stylesheet" type="text/css" />
+}
+
 <div class="page-top-banner page-service">
     <div class="container">
         <div class="header">
             <h3>售后政策</h3>
-            <p>阿里云专家服务团队为用户提供应用、安全、数据等各种服务来提升用户应用系统性能，让用户的应用和<br>服务在云上更好的运转。</p>
+            <p>我们将竭尽所能为您提供更放心、更优质的售后服务保障。</p>
         </div>
     </div>
 </div>
 
-<div class="page-common-content service-content">
+<div class="page-common-content exchange-content">
     <div class="container">
         <ol class="breadcrumb">
             <li><a href="/">首页</a></li>
             <li><a href="#">服务支持</a></li>
             <li class="active">售后政策</li>
         </ol>
-        <div class="row">
+        <h2>艾睿普承诺</h2>
+        <div class="exchange-item">
+            <div class="row icons">
+                <div class="col-xs-3 icons-item">
+                    <i class="ims-icon-font ims-icon-font-you"></i>
+                    <h6>行业优质产品</h6>
+                </div>
+                <div class="col-xs-3 icons-item">
+                    <i class="ims-icon-font ims-icon-font-lian"></i>
+                    <h6>全国联保服务</h6>
+                </div>
+                <div class="col-xs-3 icons-item">
+                    <i class="ims-icon-font ims-icon-font-zhibao"></i>
+                    <h6>1年免费维保服务</h6>
+                </div>
+                <div class="col-xs-3 icons-item">
+                    <i class="ims-icon-font ims-icon-font-kefu"></i>
+                    <h6>7×24小时售后支持</h6>
+                </div>
+            </div>
+            <div class="row promise">
+                <div class="col-xs-12">
+                    <p>
+                        如因产品质量问题，凭产品维修服务中心的检测证明，在质保期内享受免费维修等三包服务！
+                    </p>
+                    <p>
+                        （注：代销商品由商品生产厂家提供售后，具体详则请查看产品售后政策说明）
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2>产品售后政策</h2>
+        <div class="exchange-item">
+            <div class="exchange-detail">
+                <p>
+                    严格依据《中华人民共和国消费者权益保护法》、《中华人民共和国产品质量法》实行售后服务，服务内容如下：
+                </p>
+
+                <div class="exchange-detail-item">
+                    <h4>一、退换货政策</h4>
+                    <p>
+                        1、凡通过小米商城或天猫商城的小米官方旗舰店购买本产品的用户，可在自签收次日起七日内享受无理由退货服务(已激活Windows、Office、流量套餐的主机除外)。退货时用户须出示有效购买凭证，并退回发票。用户须保证退货商品保持原有品质和功能、外观完好、商品本身及配件的商标和各种标识完整齐全，如有赠品需一并退回。如果商品出现人为损坏、包装箱缺失、零配件缺失的情况，不予办理退货。
+                    </p>
+                    <p>
+                        2、自用户签收次日起七日内，发生非人为损坏性能故障，经由小米售后服务中心检测确认后，为用户办理退货业务，退货时用户须出示有效购买凭证，并退回发票。如有赠品需一并退回。
+                    </p>
+                    <p>
+                        3、自用户签收次日起十五日内，发生非人为损坏性能故障，经由小米售后服务中心检测确认后，为用户办理换货业务，更换整套商品。换货后，商品本身三包期重新计算。
+                    </p>
+                </div>
+                <div class="exchange-detail-item">
+                    <h4>二、保修政策</h4>
+                    <p>
+                        自用户签收次日起十五日后，发生非人为损坏性能故障，经由小米售后服务中心检测确认后，为用户办理维修业务。
+                    </p>
+                    <table class="table table-bordered" style="width:600px;">
+                        <thead>
+                            <tr class="active">
+                                <th>保修内容</th>
+                                <th>保修期限</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>小米网络收音机</td>
+                                <td>1年</td>
+                            </tr>
+                            <tr>
+                                <td>小米网络收音机</td>
+                                <td>1年</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="exchange-detail-item">
+                    <h4>三、非保修条款</h4>
+                    <p>
+                        以下情况不属于保修范围：
+                    </p>
+                    <p>
+                        1、超过三包有效期限；
+                    </p>
+                    <p>
+                        2、无保修卡、发票或保修卡与发票信息不符；
+                    </p>
+                    <p>
+                        3、人为原因造成的损坏；
+                    </p>
+                    <p>
+                        4、不可抗拒因素造成的损坏；
+                    </p>
+                    <p>
+                        5、未按《用户手册》的要求使用、保养及调整造成的任何损坏；
+                    </p>
+                    <p>
+                        6、超出正常使用条件，强行使用本产品造成的故障或损伤；
+                    </p>
+                    <p>
+                        7、未经小米公司授权的人员私自拆动或修理；
+                    </p>
+                    <p>
+                        8、恶意损坏保修卡内容、产品信息，包括模糊破坏、自行撕毁、篡改等；
+                    </p>
+                    <p>
+                        9、其他非产品本身设计、制造、质量等问题而导致的故障和损坏；
+                    </p>
+                </div>
+                <div class="exchange-detail-item">
+                    <h4>四、售后服务收费标准</h4>
+                    <p>
+                        自用户签收次日起十五日后，发生非人为损坏性能故障，经由小米售后服务中心检测确认后，为用户办理维修业务。
+                    </p>
+                    <table class="table table-bordered" style="width:600px;">
+                        <thead>
+                            <tr class="active">
+                                <th>型号</th>
+                                <th>物流费报销上限</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>小米音乐闹钟</td>
+                                <td>115元</td>
+                            </tr>
+                            <tr>
+                                <td>小米网络收音机</td>
+                                <td>115元</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </div>

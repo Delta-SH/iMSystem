@@ -290,5 +290,16 @@ namespace Site.Models {
 
             return true;
         }
+
+        public static string GetNewsTypeWithURL(int type) {
+            switch (type) {
+                case 0:
+                return "<a href='/news'>企业新闻</a>";
+                case 1:
+                return "<a href='/news/industry'>行业新闻</a>";
+                default:
+                return "未分类";
+            }
+        }
     }
 }

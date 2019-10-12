@@ -1,21 +1,72 @@
-﻿@model Site.Models.NewsModel
+﻿@using Site.Models;
+@section head {
+    <link href="@Url.Content("~/content/theme/about.css")" rel="stylesheet" type="text/css" />
+}
+
 <div class="page-top-banner page-about">
     <div class="container">
         <div class="header">
             <h3>公司理念</h3>
-            <p>阿里云专家服务团队为用户提供应用、安全、数据等各种服务来提升用户应用系统性能，让用户的应用和<br>服务在云上更好的运转。</p>
+            <p>传播企业文化，塑造企业形象，提高企业竞争力。</p>
         </div>
     </div>
 </div>
 
-<div class="page-common-content about-content">
+<div class="page-common-content dev-content">
     <div class="container">
         <ol class="breadcrumb">
             <li><a href="/">首页</a></li>
             <li><a href="#">关于我们</a></li>
             <li class="active">公司理念</li>
         </ol>
-        <div class="row">
+        <div class="dev-viewport">
+            <div class="dev-image">
+                <img src="~/Content/images/dev-image.png" alt="" />
+            </div>
+            <div class="dev-text">
+                <div class="dev-item">
+                    <div class="dev-item-title">公司愿景</div>
+                    <div class="dev-item-content">
+                        打造世界知名企业，致力成为全球监控行业引领者。
+                    </div>
+                </div>
+                <div class="dev-item">
+                    <div class="dev-item-title">公司使命</div>
+                    <div class="dev-item-content">
+                        不断追求技术创新与突破，让机房更智能、让运维更高效。
+                    </div>
+                </div>
+                <div class="dev-item">
+                    <div class="dev-item-title">核心价值观</div>
+                    <div class="dev-item-content">
+                        为顾客创造价值，为员工创造机会，为社会创造效益。
+                    </div>
+                </div>
+                <div class="dev-item">
+                    <div class="dev-item-title">企业宗旨</div>
+                    <div class="dev-item-content">
+                        诚信为本、客户至上、技术争先、追求卓越。
+                    </div>
+                </div>
+                <div class="dev-item">
+                    <div class="dev-item-title">经营理念</div>
+                    <div class="dev-item-content">
+                        质量是我们生存的基础，创新是我们发展的根本。
+                    </div>
+                </div>
+                <div class="dev-item">
+                    <div class="dev-item-title">管理理念</div>
+                    <div class="dev-item-content">
+                        用科学规范管理、用创新提升管理；严以律己，宽以待人。
+                    </div>
+                </div>
+                <div class="dev-item">
+                    <div class="dev-item-title">服务理念</div>
+                    <div class="dev-item-content">
+                        以服务赢客户，以质量求生存，以科技促发展。
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

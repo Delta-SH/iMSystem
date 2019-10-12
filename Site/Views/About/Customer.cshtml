@@ -1,21 +1,174 @@
-﻿@model Site.Models.NewsModel
+﻿@using Site.Models;
+@section head {
+    <link href="@Url.Content("~/content/theme/about.css")" rel="stylesheet" type="text/css" />
+}
+
 <div class="page-top-banner page-about">
     <div class="container">
         <div class="header">
             <h3>客户案例</h3>
-            <p>阿里云专家服务团队为用户提供应用、安全、数据等各种服务来提升用户应用系统性能，让用户的应用和<br>服务在云上更好的运转。</p>
+            <p>我们正在为很多优质客户提供服务，期待您的加入。</p>
         </div>
     </div>
 </div>
 
-<div class="page-common-content about-content">
+<div class="page-common-content cus-content">
     <div class="container">
         <ol class="breadcrumb">
             <li><a href="/">首页</a></li>
             <li><a href="#">关于我们</a></li>
             <li class="active">客户案例</li>
         </ol>
-        <div class="row">
+        <div class="cus-viewport">
+            <div class="cus-item">
+                <div class="cus-item-title">
+                    电信行业
+                </div>
+                <div class="cus-item-content">
+                    @{
+                        var colen = 3;
+                        var customers = iMStore.Customer.FindAll(c => c.Type == 0).ToArray();
+                        for (var i = 0; i <= customers.Length / colen; i++) {
+                            var start = colen * i;
+                            var end = start + colen - 1;
+
+                            if (end > customers.Length - 1) {
+                                end = customers.Length - 1;
+                            }
+
+                            if (end <= start) {
+                                continue;
+                            }
+
+                            <div class="row cus-item-case">
+                                @for (var j = start; j <= end; j++) {
+                                    <div class="col-xs-@(12/colen) cus-item-list">
+                                        <div class="cus-item-thumb">
+                                            <a href="@customers[j].Url" title="@customers[j].Name">
+                                                <img src="@customers[j].Image" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cus-item-txt">
+                                            @customers[j].Name
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="cus-item">
+                <div class="cus-item-title">
+                    电力行业
+                </div>
+                <div class="cus-item-content">
+                    @{
+                        customers = iMStore.Customer.FindAll(c => c.Type == 1).ToArray();
+                        for (var i = 0; i <= customers.Length / colen; i++) {
+                            var start = colen * i;
+                            var end = start + colen - 1;
+
+                            if (end > customers.Length - 1) {
+                                end = customers.Length - 1;
+                            }
+
+                            if (end <= start) {
+                                continue;
+                            }
+
+                            <div class="row cus-item-case">
+                                @for (var j = start; j <= end; j++) {
+                                    <div class="col-xs-@(12/colen) cus-item-list">
+                                        <div class="cus-item-thumb">
+                                            <a href="@customers[j].Url" title="@customers[j].Name">
+                                                <img src="@customers[j].Image" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cus-item-txt">
+                                            @customers[j].Name
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="cus-item">
+                <div class="cus-item-title">
+                    政府行业
+                </div>
+                <div class="cus-item-content">
+                    @{
+                        customers = iMStore.Customer.FindAll(c => c.Type == 2).ToArray();
+                        for (var i = 0; i <= customers.Length / colen; i++) {
+                            var start = colen * i;
+                            var end = start + colen - 1;
+
+                            if (end > customers.Length - 1) {
+                                end = customers.Length - 1;
+                            }
+
+                            if (end <= start) {
+                                continue;
+                            }
+
+                            <div class="row cus-item-case">
+                                @for (var j = start; j <= end; j++) {
+                                    <div class="col-xs-@(12/colen) cus-item-list">
+                                        <div class="cus-item-thumb">
+                                            <a href="@customers[j].Url" title="@customers[j].Name">
+                                                <img src="@customers[j].Image" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cus-item-txt">
+                                            @customers[j].Name
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="cus-item">
+                <div class="cus-item-title">
+                    其他行业
+                </div>
+                <div class="cus-item-content">
+                    @{
+                        customers = iMStore.Customer.FindAll(c => c.Type == 3).ToArray();
+                        for (var i = 0; i <= customers.Length / colen; i++) {
+                            var start = colen * i;
+                            var end = start + colen - 1;
+
+                            if (end > customers.Length - 1) {
+                                end = customers.Length - 1;
+                            }
+
+                            if (end <= start) {
+                                continue;
+                            }
+
+                            <div class="row cus-item-case">
+                                @for (var j = start; j <= end; j++) {
+                                    <div class="col-xs-@(12/colen) cus-item-list">
+                                        <div class="cus-item-thumb">
+                                            <a href="@customers[j].Url" title="@customers[j].Name">
+                                                <img src="@customers[j].Image" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cus-item-txt">
+                                            @customers[j].Name
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
         </div>
     </div>
 </div>
