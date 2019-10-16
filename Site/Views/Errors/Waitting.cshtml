@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>温馨提示</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+    <link rel="bookmark" type="image/x-icon" href="~/favicon.ico" />
+    <style type="text/css">
+        html,body {
+            width:100%;
+            height:100%;
+            margin:0;
+            padding:0;
+        }
+
+        body {
+            background-color: #22252a;
+            color: #fff;
+        }
+
+        .sys-tip-container {
+            display: flex;
+            display: -webkit-flex;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sys-tip-container > .sys-tip-item h1 {
+            letter-spacing: 2px;
+            font-size: 40px;
+            font-weight: 600;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .sys-tip-container > .sys-tip-item h2 {
+            letter-spacing: 2px;
+            font-size: 34px;
+            font-weight: 600;
+            font-family: "Montserrat", sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="sys-tip-container">
+        <div class="sys-tip-item">
+            <h1>We're sorry...</h1>
+            <h2>即将上线，敬请期待。</h2>
+        </div>
+    </div>
+</body>
+</html>

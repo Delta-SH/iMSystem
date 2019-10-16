@@ -12,10 +12,24 @@ namespace Site.Controllers {
             return PartialView(product);
         }
 
-        public ActionResult DCIM() {
+        public ActionResult PEIMS() {
             ViewBag.HideFooter = true;
-            var product = iMStore.Software.Find(s => s.Id == "P000101");
+            var product = iMStore.Software.Find(s => s.Id == "p-01-001");
             if(product == null) throw new HttpException(404, "Page not found.");
+            return View(product);
+        }
+
+        public ActionResult BOMS() {
+            ViewBag.HideFooter = true;
+            var product = iMStore.Software.Find(s => s.Id == "p-01-002");
+            if (product == null) throw new HttpException(404, "Page not found.");
+            return View(product);
+        }
+
+        public ActionResult IMMU() {
+            ViewBag.HideFooter = true;
+            var product = iMStore.Hardware.Find(s => s.Id == "p-02-001");
+            if (product == null) throw new HttpException(404, "Page not found.");
             return View(product);
         }
     }

@@ -18,7 +18,7 @@
 }
 
 .news-content .sidebar > ul > li.active > a {
-    background: #00c1de;
+    background: #108cee;
 }
 
 .news-content .sidebar > ul > li > a {
@@ -42,7 +42,7 @@
 }
 
 .news-content .content > .news-box > .news-list a.thumbnail:hover {
-    border-color: #00a2ca;
+    border-color: #108cee;
 }
 
 .news-content .content > .news-box > .news-list h3 {
@@ -57,7 +57,7 @@
 }
 
 .news-content .content > .news-box > .news-list a:hover h3 {
-    color: #00a2ca;
+    color: #108cee;
 }
 
 .news-content .content > .news-box > .news-list p {

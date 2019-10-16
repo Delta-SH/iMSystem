@@ -1,0 +1,102 @@
+﻿@section head {
+    <link href="@Url.Content("~/content/theme/unslider.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/content/theme/sidebar.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/content/theme/product.css")" rel="stylesheet" type="text/css" />
+}
+
+@using Site.Models;
+@model Site.Models.Product
+<div class="container-fluid viewport">
+    <div class="row">
+        <div class="col-xs-12 topnav">
+            <ol class="breadcrumb">
+                <li><a href="/">首页</a></li>
+                <li><a href="#">产品中心</a></li>
+                <li class="active">硬件产品系列</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row content">
+        <div class="col-xs-2 left-nav">
+            @{ Html.RenderAction("sidebar", new { product = Model }); }
+        </div>
+        <div class="col-xs-10 main-content">
+            <section class="product">
+                <div class="introduce-box">
+                    <div class="slide-body">
+                        <ul>
+                            @foreach (var banner in @Model.Banners) {
+                                <li>
+                                    <img alt="产品展示" title="产品展示" src="@banner" />
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="slide-btn-panel left-btn">
+                        <button class="slide-btn left-btn">
+                            <i class="ims-icon-font ims-icon-font-left"></i>
+                        </button>
+                    </div>
+                    <div class="slide-btn-panel right-btn">
+                        <button class="slide-btn right-btn">
+                            <i class="ims-icon-font ims-icon-font-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <article>
+                    <figure>
+                        <figcaption>
+                            <h1>@Model.Name</h1>
+                            <h3>@Model.English</h3>
+                            <p>@Model.Comment</p>
+                            <div class="introduce-sales">
+                                <div class="prices">
+                                    <span>原价：<small class="old">¥ <strong>@string.Format("{0:F2}", Model.Original)</strong> /月</small></span>
+                                    <span>优惠：<small>¥ <strong>@string.Format("{0:F2}", Model.Price)</strong> /月（限专业版）</small></span>
+                                </div>
+                                <a class="btn-blue" href="//www.taobao.com/" target="_blank">立即购买</a>
+                                <a class="btn-white" href="/calculator.html#/bos/price" target="_blank">加入购物车</a>
+                            </div>
+                            <div class="introduce-contact-us">
+                                <div class="contact-telephone">
+                                    <i class="ims-icon-font ims-icon-font-telephone"></i>
+                                    <div class="telephone">
+                                        <div class="telephone-name">咨询热线</div>
+                                        <div class="telephone-number">@iMStore.Contact</div>
+                                    </div>
+                                </div>
+                                <div class="contact-qq">
+                                    <a href="@iMStore.QQ" class="btn-blue" title="在线咨询">
+                                        <i class="ims-icon-font ims-icon-font-zixun"></i>
+                                        在线咨询
+                                    </a>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+            <section class="summary modulars">
+                <h2> <span>产品概述</span> </h2>
+                <p>暂无</p>
+            </section>
+            <section class="pros modulars">
+                <h2> <span>产品功能</span> </h2>
+                <p>暂无</p>
+            </section>
+            <section class="feature modulars">
+                <h2> <span>产品优势</span> </h2>
+                <p>暂无</p>
+            </section>
+            <section class="cases modulars">
+                <h2> <span>客户案例</span> </h2>
+                <p>暂无</p>
+            </section>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="//cdn.bootcss.com/unslider/2.0.3/js/unslider-min.js" type="text/javascript"></script>
+    <script src="@Url.Content("~/scripts/product.js")" type="text/javascript"></script>
+}

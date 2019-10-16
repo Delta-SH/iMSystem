@@ -55,7 +55,7 @@
                 </a>
             </div>
             <div class="col-xs-3">
-                <a href="http://www.taobao.com" target="_blank" class="events">
+                <a href="//www.taobao.com" target="_blank" class="events">
                     <div class="ims-icon-font ims-icon-font-gift event-icon"></div>
                     <div class="slogan">
                         <h3>限时优惠</h3>
@@ -254,7 +254,7 @@
                             if (hsolution1 != null) {
                                 <article>
                                     <figure>
-                                        <img alt="" src="/Content/images/solutions-bg-01.jpg">
+                                        <img alt="" src="@hsolution1.Image">
                                         <div class="bg"></div>
                                         <figcaption>
                                             <div class="ims-icon-font ims-icon-font-telecom solution-icon"></div>
@@ -275,10 +275,10 @@
                             if (hsolution2 != null) {
                                 <article>
                                     <figure>
-                                        <img alt="" src="/Content/images/solutions-bg-02.jpg">
+                                        <img alt="" src="@hsolution2.Image">
                                         <div class="bg"></div>
                                         <figcaption>
-                                            <div class="ims-icon-font ims-icon-font-nongye solution-icon"></div>
+                                            <div class="ims-icon-font ims-icon-font-power solution-icon"></div>
                                             <h3>@hsolution2.Name</h3>
                                             <p>@hsolution2.Comment</p>
                                             <a href="@hsolution2.Url" target="_blank">查看详情</a>
@@ -296,10 +296,10 @@
                             if (hsolution3 != null) {
                                 <article>
                                     <figure>
-                                        <img alt="" src="/Content/images/solutions-bg-03.jpg">
+                                        <img alt="" src="@hsolution3.Image">
                                         <div class="bg"></div>
                                         <figcaption>
-                                            <div class="ims-icon-font ims-icon-font-gongye solution-icon"></div>
+                                            <div class="ims-icon-font ims-icon-font-nongye solution-icon"></div>
                                             <h3>@hsolution3.Name</h3>
                                             <p>@hsolution3.Comment</p>
                                             <a href="@hsolution3.Url" target="_blank">查看详情</a>
@@ -319,7 +319,7 @@
                             if (hsolution4 != null) {
                                 <article>
                                     <figure>
-                                        <img alt="" src="/Content/images/solutions-bg-04.jpg">
+                                        <img alt="" src="@hsolution4.Image">
                                         <div class="bg even"></div>
                                         <figcaption>
                                             <div class="ims-icon-font ims-icon-font-zhengfu solution-icon"></div>
@@ -340,7 +340,7 @@
                             if (tsolution1 != null) {
                                 <article>
                                     <figure>
-                                        <img alt="" src="/Content/images/solutions-bg-05.jpg">
+                                        <img alt="" src="@tsolution1.Image">
                                         <div class="bg even"></div>
                                         <figcaption>
                                             <div class="ims-icon-font ims-icon-font-qiye solution-icon"></div>
@@ -361,7 +361,7 @@
                             if (tsolution2 != null) {
                                 <article>
                                     <figure>
-                                        <img alt="" src="/Content/images/solutions-bg-06.jpg">
+                                        <img alt="" src="@tsolution2.Image">
                                         <div class="bg even"></div>
                                         <figcaption>
                                             <div class="ims-icon-font ims-icon-font-xiezilou solution-icon"></div>
@@ -400,15 +400,16 @@
                                     <a href="@customers[0].Url" target="_blank">@customers[0].Name</a>
                                 </div>
                             </div>
+
                         }
 
                         if (customers.Length > 1) {
-                            <ul class="detail">
-                                <li><a href="@customers[1].Url" target="_blank"><i></i>@customers[1].Name</a></li>
-                                @if (customers.Length > 2) {
-                                    <li><a href="@customers[2].Url" target="_blank"><i></i>@customers[2].Name</a></li>
-                                }
-                            </ul>
+                            <div class="content">
+                                <img src="@customers[1].Image" alt="">
+                                <div class="content-title">
+                                    <a href="@customers[1].Url" target="_blank">@customers[1].Name</a>
+                                </div>
+                            </div>
                         }
                     }
                 </div>
@@ -428,12 +429,12 @@
                         }
 
                         if (customers.Length > 1) {
-                            <ul class="detail">
-                                <li><a href="@customers[1].Url" target="_blank"><i></i>@customers[1].Name</a></li>
-                                @if (customers.Length > 2) {
-                                    <li><a href="@customers[2].Url" target="_blank"><i></i>@customers[2].Name</a></li>
-                                }
-                            </ul>
+                            <div class="content">
+                                <img src="@customers[1].Image" alt="">
+                                <div class="content-title">
+                                    <a href="@customers[1].Url" target="_blank">@customers[1].Name</a>
+                                </div>
+                            </div>
                         }
                     }
                 </div>
@@ -453,12 +454,12 @@
                         }
 
                         if (customers.Length > 1) {
-                            <ul class="detail">
-                                <li><a href="@customers[1].Url" target="_blank"><i></i>@customers[1].Name</a></li>
-                                @if (customers.Length > 2) {
-                                    <li><a href="@customers[2].Url" target="_blank"><i></i>@customers[2].Name</a></li>
-                                }
-                            </ul>
+                            <div class="content">
+                                <img src="@customers[1].Image" alt="">
+                                <div class="content-title">
+                                    <a href="@customers[1].Url" target="_blank">@customers[1].Name</a>
+                                </div>
+                            </div>
                         }
                     }
                 </div>

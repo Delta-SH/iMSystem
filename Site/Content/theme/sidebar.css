@@ -74,8 +74,9 @@ h1, h2, h3, dd, ul, ol {
     width: 100%;
     color: #fff;
     display: block;
-    padding: 10px 20px;
+    padding: 10px 15px;
     overflow: hidden;
+    white-space: nowrap;
     transition: all 200ms linear;
     -o-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
@@ -83,7 +84,7 @@ h1, h2, h3, dd, ul, ol {
 }
 
 .sidebar > ul > li > ul > li a:hover {
-    background-color: #00c1de;
+    background-color: #108cee;
 }
 
 .sidebar > ul > li > ul > li .menu-icon {
@@ -95,5 +96,5 @@ h1, h2, h3, dd, ul, ol {
 }
 
 .sidebar > ul > li > ul > li.selected a {
-    background: #00c1de none repeat scroll 0 0;
+    background: #108cee none repeat scroll 0 0;
 }

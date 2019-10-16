@@ -95,8 +95,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\certificates\2862414588961612.jpg" />
-    <Content Include="Content\customers\001.jpg" />
+    <Content Include="Content\certificates\z-00-001.png" />
+    <Content Include="Content\certificates\z-01-001.png" />
+    <Content Include="Content\certificates\z-01-002.png" />
+    <Content Include="Content\certificates\z-01-003.png" />
+    <Content Include="Content\customers\c-00-001.png" />
     <Content Include="Content\fonts\iconfont.svg" />
     <Content Include="Content\images\banners\banner-1.png" />
     <Content Include="Content\images\banners\banner-2.png" />
@@ -105,25 +108,20 @@
     <Content Include="Content\images\contact-image.png" />
     <Content Include="Content\images\dev-image.png" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\news.png" />
     <Content Include="Content\images\service-bg-01.png" />
     <Content Include="Content\images\service-bg-02.png" />
     <Content Include="Content\images\service-bg-03.png" />
     <Content Include="Content\images\service-bg-04.png" />
-    <Content Include="Content\images\software-bg-01.png" />
+    <Content Include="Content\products\hardware\p-02-001-01.png" />
+    <Content Include="Content\products\hardware\p-02-001.png" />
+    <Content Include="Content\products\software\p-01-001-01.png" />
+    <Content Include="Content\products\software\p-01-001.png" />
     <Content Include="Content\images\ffffff.gif" />
-    <Content Include="Content\images\forums-bg-01.jpg" />
-    <Content Include="Content\images\forums-bg-02.jpg" />
-    <Content Include="Content\images\forums-bg-03.jpg" />
     <Content Include="Content\images\hot.png" />
     <Content Include="Content\images\product-icons.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\new.png" />
-    <Content Include="Content\images\solutions-bg-02.jpg" />
-    <Content Include="Content\images\solutions-bg-05.jpg" />
-    <Content Include="Content\images\solutions-bg-01.jpg" />
-    <Content Include="Content\images\solutions-bg-03.jpg" />
-    <Content Include="Content\images\solutions-bg-04.jpg" />
-    <Content Include="Content\images\solutions-bg-06.jpg" />
     <Content Include="Content\images\toolbar.png" />
     <Content Include="Content\images\top-about-banner.png" />
     <Content Include="Content\images\top-product-banner.png" />
@@ -131,6 +129,14 @@
     <Content Include="Content\images\top-service-banner.png" />
     <Content Include="Content\images\weixin.png" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\products\software\p-01-002-01.png" />
+    <Content Include="Content\products\software\p-01-002.png" />
+    <Content Include="Content\solutions\s-00-001.png" />
+    <Content Include="Content\solutions\s-00-003.png" />
+    <Content Include="Content\solutions\s-00-002.png" />
+    <Content Include="Content\solutions\s-00-004.png" />
+    <Content Include="Content\solutions\s-01-001.png" />
+    <Content Include="Content\solutions\s-01-002.png" />
     <Content Include="Content\theme\about.css" />
     <Content Include="Content\theme\bars.css" />
     <Content Include="Content\theme\news.css" />
@@ -201,7 +207,6 @@
     <Content Include="Views\Product\Sidebar.cshtml" />
     <Content Include="Views\Solution\Index.cshtml" />
     <Content Include="Views\Solution\Sidebar.cshtml" />
-    <Content Include="Views\Product\DCIM.cshtml" />
     <Content Include="Views\Errors\Index.cshtml" />
     <Content Include="Views\Errors\FileNotFound.cshtml" />
     <Content Include="Views\Errors\NoAccess.cshtml" />
@@ -217,11 +222,17 @@
     <Content Include="Views\About\Customer.cshtml" />
     <Content Include="Views\About\Contact.cshtml" />
     <Content Include="Views\News\Detail.cshtml" />
-    <Content Include="Content\files\introduction.pdf" />
     <Content Include="Content\fonts\iconfont.eot" />
     <Content Include="Content\fonts\iconfont.ttf" />
     <Content Include="Content\fonts\iconfont.woff" />
     <Content Include="Content\fonts\iconfont.woff2" />
+    <Content Include="Views\Errors\Waitting.cshtml" />
+    <Content Include="Views\Product\PEIMS.cshtml" />
+    <Content Include="Views\Product\BOMS.cshtml" />
+    <Content Include="Views\Product\IMMU.cshtml" />
+    <Content Include="Content\files\EMCReport.pdf" />
+    <Content Include="Content\files\LVDReport.pdf" />
+    <Content Include="Content\files\RoHSReport.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -15,7 +15,7 @@ ol, ul, dl {
 }
 
 a, a:hover, a:link, a:visited {
-    color: #00a2ca;
+    color: #108cee;
     text-decoration: none;
 }
 
@@ -161,14 +161,14 @@ a:focus {
 .index-top-events .top-events .events {
     display: block;
     overflow: hidden;
-    color: #00c1de;
+    color: #108cee;
     background: #fff;
     border: 1px solid #dbdbdb;
 }
 
 .index-top-events .top-events .events:hover {
-    border: 1px solid #00c1de;
-    box-shadow: 0 0 5px rgba(0, 198, 226, 0.5);
+    border: 1px solid #108cee;
+    box-shadow: 0 0 5px rgba(16,140,238, 0.5);
 }
 
 .index-top-events .top-events .events > .event-icon {
@@ -194,7 +194,7 @@ a:focus {
 }
 
 .index-top-events .top-events .events:hover > .slogan > h3 {
-    color: #00c1de;
+    color: #108cee;
 }
 
 .index-top-events .top-events .events > .slogan > p {
@@ -255,11 +255,11 @@ a:focus {
 }
 
 .index-products-sale .tab-item:hover {
-    color: #00c1de;
+    color: #108cee;
 }
 
 .index-products-sale .tab-item.active {
-    color: #00c1de;
+    color: #108cee;
 }
 
 .index-products-sale .tab-item div {
@@ -272,7 +272,7 @@ a:focus {
 }
 
 .index-products-sale .tab-item.active div {
-    border-bottom-color: #00c1de;
+    border-bottom-color: #108cee;
 }
 
 .index-products-sale .content {
@@ -471,8 +471,8 @@ a:focus {
 }
 
 .index-products-sale .content-item .products-image:hover .bg {
-    opacity: 0.9;
-    background: #00c2de none repeat scroll 0 0;
+    opacity: 0.8;
+    background: #108cee none repeat scroll 0 0;
 }
 
 .index-products-sale .content-item .products-image > .products-detail {
@@ -503,7 +503,7 @@ a:focus {
 
 .index-products-sale .content-item .products-image > .products-detail > a:hover {
     background: #fff none repeat scroll 0 0;
-    color: #00c1de;
+    color: #108cee;
 }
 
 .index-products-sale .content-item .products-price::before, .index-products-sale .content-item .products-price::after {
@@ -547,8 +547,8 @@ a:focus {
 
 .index-products-sale .content-item .products-price > a {
     background: #fff none repeat scroll 0 0;
-    border: 1px solid #00c1de;
-    color: #00c1de;
+    border: 1px solid #108cee;
+    color: #108cee;
     display: block;
     float: right;
     font-size: 14px;
@@ -560,7 +560,7 @@ a:focus {
 }
 
 .index-products-sale .content-item .products-price > a:hover {
-    background: #00c1de none repeat scroll 0 0;
+    background: #108cee none repeat scroll 0 0;
     color: #fff;
 }
 
@@ -686,8 +686,8 @@ a:focus {
 }
 
 .index-solutions-sale .slide-item:hover .bg {
-    background: #00c2de none repeat scroll 0 0;
-    opacity: 0.9;
+    background: #108cee none repeat scroll 0 0;
+    opacity: 0.8;
 }
 
 .index-solutions-sale figure > figcaption > h3 {
@@ -733,7 +733,7 @@ a:focus {
 
 .index-solutions-sale figure > figcaption > a:hover {
     background: #fff none repeat scroll 0 0;
-    color: #00c1de;
+    color: #108cee;
 }
 
 .index-solutions {
@@ -809,8 +809,8 @@ a:focus {
 }
 
 .index-solutions > .solutions-box > .solutions-content .solutions-item:hover .bg {
-    background: #00c2de none repeat scroll 0 0;
-    opacity: 0.9;
+    background: #108cee none repeat scroll 0 0;
+    opacity: 0.8;
 }
 
 .index-solutions > .solutions-box > .solutions-content figure > figcaption > h3 {
@@ -856,7 +856,7 @@ a:focus {
 
 .index-solutions > .solutions-box > .solutions-content figure > figcaption > a:hover {
     background: #fff none repeat scroll 0 0;
-    color: #00c1de;
+    color: #108cee;
 }
 
 .index-forums-sale {
@@ -896,9 +896,10 @@ a:focus {
 
 .index-forums-sale .forums-box .content {
     position: relative;
-    border: 1px solid #c5d8db;
-    height: 180px;
+    height: 200px;
     overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px #cdcdcd;
 }
 
 .index-forums-sale .forums-box .content img {
@@ -924,7 +925,7 @@ a:focus {
     background: #373d41 none repeat scroll 0 0;
     position: absolute;
     bottom: 0;
-    opacity: 0.7;
+    opacity: 0.6;
     line-height: 35px;
     padding-left: 5px;
 }
@@ -935,41 +936,7 @@ a:focus {
 }
 
 .index-forums-sale .forums-box .content-title a:hover {
-    color: #00a2ca;
-}
-
-.index-forums-sale .forums-box .detail {
-    padding: 20px 0 0;
-    display: block;
-}
-
-.index-forums-sale .forums-box .detail li {
-    height: 28px;
-    line-height: 28px;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.index-forums-sale .forums-box .detail li > a {
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.index-forums-sale .forums-box .detail li > a:hover {
-    color: #00a2ca;
-}
-
-.index-forums-sale .forums-box .detail li > a > i {
-    display: inline-block;
-    height: 3px;
-    width: 3px;
-    margin-right: 10px;
-    background: #ccc;
-    overflow: hidden;
-    vertical-align: middle;
+    color: #108cee;
 }
 
 .page-top-banner {
@@ -1106,12 +1073,12 @@ a.btn-blue, a.btn-blue:link, a.btn-blue:visited, a.btn-white, a.btn-white:link, 
     display: inline-block;
     width: 150px;
     padding: 8px 0;
-    background: #00a2ca;
+    background: #108cee;
     font-size: 14px;
     color: #fff;
     text-align: center;
     margin-right: 5px;
-    border: solid 1px #00a2ca;
+    border: solid 1px #108cee;
 }
 
 a.btn-blue:hover {
@@ -1121,8 +1088,8 @@ a.btn-blue:hover {
 
 a.btn-white, a.btn-white:link, a.btn-white:visited {
     background: #fff;
-    border-color: #00a2ca;
-    color: #00a2ca;
+    border-color: #108cee;
+    color: #108cee;
 }
 
 a.btn-white:hover {

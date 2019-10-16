@@ -136,7 +136,7 @@
 
 .service-content .contact-panel .contact-weibo > a:hover h6,
 .service-content .contact-panel .contact-email > a:hover h6 {
-    color: #00c2de;
+    color: #108cee;
 }
 
 .service-content .contact-panel .contact-weixin-icon > i,
@@ -191,7 +191,7 @@
 }
 
 .service-content .fqa-panel > .navto > a:hover {
-    color: #00c2de;
+    color: #108cee;
 }
 
 .service-content .download-panel {
@@ -215,7 +215,7 @@
 }
 
 .service-content .download-panel > .navto > a:hover {
-    color: #00c2de;
+    color: #108cee;
 }
 
 .exchange-content h2 {
@@ -343,11 +343,11 @@
 }
 
 .download-content .tabs > .tab-item:hover {
-    color: #00c1de;
+    color: #108cee;
 }
 
 .download-content .tabs > .tab-item.active {
-    color: #00c1de;
+    color: #108cee;
 }
 
 .download-content .tabs > .tab-item div {
@@ -356,7 +356,7 @@
 }
 
 .download-content .tabs > .tab-item.active div {
-    border-bottom-color: #00c1de;
+    border-bottom-color: #108cee;
 }
 
 .download-content .content {
@@ -432,5 +432,5 @@
 }
 
 .download-content .download-item a.download-icon-button:hover {
-    color: #00a2ca;
+    color: #108cee;
 }

@@ -1,11 +1,11 @@
 ﻿.about-content .company-title {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #00a2ca;
+    border-bottom: 1px solid #108cee;
 }
 
 .about-content .company-title > h4 {
-    color: #00a2ca;
+    color: #108cee;
     font-size: 25px;
 }
 
@@ -25,7 +25,7 @@
     font-size: 15px;
     font-weight: bold;
     padding-left: 10px;
-    border-left: 3px solid #00a2ca;
+    border-left: 3px solid #108cee;
 }
 
 .about-content .company-content > .company-text {
@@ -82,7 +82,7 @@
 }
 
 .dev-content .dev-item > .dev-item-title {
-    background: #00a2ca;
+    background: #108cee;
     color: #fff;
     height: 50px;
     width: 200px;
@@ -115,7 +115,13 @@
 }
 
 .cer-content .cer-item:hover > a.cer-image {
-    border: 1px solid #00a2ca;
+    border: 1px solid #108cee;
+}
+
+.cer-content .cer-item > a.cer-image img {
+    display: block;
+    height: 100%;
+    width: auto;
 }
 
 .cer-content .cer-item > .cer-title {
@@ -126,7 +132,7 @@
 }
 
 .cer-content .cer-item:hover > .cer-title {
-    color: #00a2ca;
+    color: #108cee;
 }
 
 .cus-content .cus-item {
@@ -135,7 +141,7 @@
 }
 
 .cus-content .cus-item > .cus-item-title {
-    border-left: 5px solid #00a2ca;
+    border-left: 5px solid #108cee;
     padding: 5px 10px;
     font-size: 14px;
     color: #777;
@@ -154,6 +160,16 @@
 .cus-content .cus-item .cus-item-list {
     padding: 0 30px 0 0;
     margin: 0;
+}
+
+.cus-content .cus-item .cus-item-thumb {
+    box-shadow: 0 1px 4px #cdcdcd;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+.cus-content .cus-item .cus-item-thumb:hover {
+    box-shadow: 0 6px 20px #cdcdcd;
 }
 
 .cus-content .cus-item .cus-item-thumb > a {
@@ -182,10 +198,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 14px;
-    color: #777;
     text-align: center;
 }
 
@@ -257,7 +272,7 @@
 
 .contact-map-marker > h4 {
     font-size: 14px;
-    color: #00a2ca;
+    color: #108cee;
     font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
@@ -273,6 +288,6 @@
 .line {
     height: 0;
     width: 120px;
-    border-bottom: 3px solid #00a2ca;
+    border-bottom: 3px solid #108cee;
     margin: 0 auto;
 }

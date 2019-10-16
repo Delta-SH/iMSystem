@@ -17,5 +17,9 @@ namespace Site.Controllers {
         public ActionResult FileNotFound() {
             return View();
         }
+
+        public ActionResult Waitting() {
+            return View();
+        }
     }
 }

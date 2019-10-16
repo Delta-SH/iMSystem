@@ -21,5 +21,7 @@ namespace Site.Models {
         public string Tag { get; set; }
 
         public string Url { get; set; }
+
+        public string Image { get; set; }
     }
 }

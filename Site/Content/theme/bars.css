@@ -69,7 +69,7 @@
     width: 0;
     height: 3px;
     padding: 0;
-    background-color: #00c1de;
+    background-color: #108cee;
 }
 
 .dropdown-box {
@@ -132,7 +132,7 @@
 }
 
 .dropdown-box .menu-body > ul > li:hover {
-    background-color: #00c1de;
+    background-color: #108cee;
 }
 
 .dropdown-box .menu-body > ul > li:hover p {
@@ -300,7 +300,7 @@ footer .commitment > .slogan {
 }
 
 footer .commitment:hover > .slogan {
-    color: #00c1de;
+    color: #108cee;
 }
 
 footer .short h3 {
@@ -316,7 +316,7 @@ footer .short a {
 }
 
 footer .short a:hover {
-    color: #00c1de;
+    color: #108cee;
 }
 
 footer .short .contact {
@@ -382,5 +382,5 @@ footer .copyright a {
 }
 
 footer .copyright a:hover {
-    color: #00c1de;
+    color: #108cee;
 }

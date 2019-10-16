@@ -79,8 +79,8 @@ h1, h2, h3 {
 }
 
 .main-content > .product figcaption h1 {
-    font-size: 42px;
-    font-weight: lighter;
+    font-size: 38px;
+    font-weight: 300;
 }
 
 .main-content > .product figcaption h3 {
