@@ -111,7 +111,7 @@ namespace Site.Models {
                         Original = 10000,
                         Price = 10000,
                         Tag = "hot",
-                        Url = "/product/peims",
+                        Url = "/errors/waitting",
                         Picture = "/content/products/software/p-01-001.jpg",
                         Banners = new string[]{
                             "/content/products/software/p-01-001-01.jpg"
@@ -127,7 +127,7 @@ namespace Site.Models {
                         Remark = "软件产品的简单介绍说明",
                         Original = 10000,
                         Price = 10000,
-                        Url = "/product/boms",
+                        Url = "/errors/waitting",
                         Picture = "/content/products/software/p-01-002.jpg",
                         Banners = new string[]{
                             "/content/products/software/p-01-002-01.jpg"
@@ -186,7 +186,7 @@ namespace Site.Models {
                         Remark = "硬件产品的简单介绍说明",
                         Original = 10000,
                         Price = 10000,
-                        Url = "/product/immu",
+                        Url = "/errors/waitting",
                         Picture = "/content/products/hardware/p-02-001.jpg",
                         Banners = new string[]{
                             "/content/products/hardware/p-02-001-01.jpg"
@@ -389,7 +389,7 @@ namespace Site.Models {
                         Subtitle = "针对不同的客户需求，定制出更懂你的产品",
                         BgClass = "banner-2",
                         BtnText = "了解详情",
-                        Url = "/product/peims",
+                        Url = "/errors/waitting",
                         Comment = "行业领先的软硬件一体化产品"
                     },
                     new Figure {
