@@ -964,15 +964,15 @@ a:focus {
 }
 
 .page-top-banner.page-service {
-    background-image: url(/Content/images/top-service-banner.png);
+    background-image: url(/Content/images/top-service-banner.jpg);
 }
 
 .page-top-banner.page-news {
-    background-image: url(/Content/images/top-news-banner.png);
+    background-image: url(/Content/images/top-news-banner.jpg);
 }
 
 .page-top-banner.page-about {
-    background-image: url(/Content/images/top-about-banner.png);
+    background-image: url(/Content/images/top-about-banner.jpg);
 }
 
 .page-common-content {

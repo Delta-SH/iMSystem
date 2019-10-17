@@ -22,7 +22,7 @@ namespace Site.Models {
         /// Gets or sets the application version
         /// </summary>
         public static string Version {
-            get { return "V1.0.0 Build191015"; }
+            get { return "V1.0.0 Build191020"; }
         }
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace Site.Models {
         /// Gets or sets the Email
         /// </summary>
         public static string Email {
-            get { return "service@irep.com.cn"; }
+            get { return "service@www.irep.com.cn"; }
         }
 
         /// <summary>
@@ -112,9 +112,9 @@ namespace Site.Models {
                         Price = 10000,
                         Tag = "hot",
                         Url = "/product/peims",
-                        Picture = "/content/products/software/p-01-001.png",
+                        Picture = "/content/products/software/p-01-001.jpg",
                         Banners = new string[]{
-                            "/content/products/software/p-01-001-01.png"
+                            "/content/products/software/p-01-001-01.jpg"
                         },
                         Comment = "动力环境综合监控系统(PEIMS)立足于建设一个全面覆盖数据中心所有核心机房、汇聚层机房、电力室、空调室等设备的动力环境、安防门禁、视频监控、能耗管理于一体的远程监控管理系统，同时配合IMMU嵌入式前置服务器机房现场管理设备，打造出一整套机房本地管理独立运维与远程集成综合运维管理的多元化、多种运维模式的系统。"
                     },
@@ -128,9 +128,9 @@ namespace Site.Models {
                         Original = 10000,
                         Price = 10000,
                         Url = "/product/boms",
-                        Picture = "/content/products/software/p-01-002.png",
+                        Picture = "/content/products/software/p-01-002.jpg",
                         Banners = new string[]{
-                            "/content/products/software/p-01-002-01.png"
+                            "/content/products/software/p-01-002-01.jpg"
                         },
                         Comment = "蓄电池组在线质量监测系统(BOMS)主要功能是监测蓄电池组的蓄电池状态，提早发现并及时告警落后蓄电池，提高直流系统的安全性能。本产品主要应用于电力行业中的直流系统监测，针对蓄电池组的蓄电池状态监控，并提供对单体蓄电池和蓄电池组的报警设定，及对蓄电池内阻监控，从而保证直流系统的安全运行，提高直流系统的可靠性和自动化程度，大大减少试验过程中繁琐的人工测量、手工记录等操作。"
                     },
@@ -144,9 +144,9 @@ namespace Site.Models {
                         Original = 10000,
                         Price = 10000,
                         Url = "/errors/waitting",
-                        Picture = "/content/products/software/p-01-003.png",
+                        Picture = "/content/products/software/p-01-003.jpg",
                         Banners = new string[]{
-                            "/content/products/software/p-01-003-01.png"
+                            "/content/products/software/p-01-003-01.jpg"
                         },
                         Comment = "暂无"
                     },
@@ -161,9 +161,9 @@ namespace Site.Models {
                         Price = 10000,
                         Tag = "new",
                         Url = "/errors/waitting",
-                        Picture = "/content/products/software/p-01-004.png",
+                        Picture = "/content/products/software/p-01-004.jpg",
                         Banners = new string[]{
-                            "/content/products/software/p-01-004-01.png"
+                            "/content/products/software/p-01-004-01.jpg"
                         },
                         Comment = "暂无"
                     }
@@ -187,9 +187,9 @@ namespace Site.Models {
                         Original = 10000,
                         Price = 10000,
                         Url = "/product/immu",
-                        Picture = "/content/products/hardware/p-02-001.png",
+                        Picture = "/content/products/hardware/p-02-001.jpg",
                         Banners = new string[]{
-                            "/content/products/hardware/p-02-001-01.png"
+                            "/content/products/hardware/p-02-001-01.jpg"
                         },
                         Comment = "机房监控设备采用嵌入式计算机控制技术，对机房监控系统的软件和硬件进行一体化设计，内置WebServer服务，软件全部固化，使用标准的浏览器可对机房环境和机房设备实施远程监控，配有开关量采集接口，控制输出接口，RS-232和RS-485数字通讯接口，GPRS短信/电话通讯模块，以及智能化电源管理保证服务器的持续运行。"
                     },
@@ -203,9 +203,9 @@ namespace Site.Models {
                         Original = 10000,
                         Price = 10000,
                         Url = "/errors/waitting",
-                        Picture = "/content/products/hardware/p-02-002.png",
+                        Picture = "/content/products/hardware/p-02-002.jpg",
                         Banners = new string[]{
-                            "/content/products/hardware/p-02-002-01.png"
+                            "/content/products/hardware/p-02-002-01.jpg"
                         },
                         Comment = "暂无"
                     },
@@ -219,9 +219,9 @@ namespace Site.Models {
                         Original = 10000,
                         Price = 10000,
                         Url = "/errors/waitting",
-                        Picture = "/content/products/hardware/p-02-003.png",
+                        Picture = "/content/products/hardware/p-02-003.jpg",
                         Banners = new string[]{
-                            "/content/products/hardware/p-02-003-01.png"
+                            "/content/products/hardware/p-02-003-01.jpg"
                         },
                         Comment = "暂无"
                     },
@@ -235,9 +235,9 @@ namespace Site.Models {
                         Original = 10000,
                         Price = 10000,
                         Url = "/errors/waitting",
-                        Picture = "/content/products/hardware/p-02-004.png",
+                        Picture = "/content/products/hardware/p-02-004.jpg",
                         Banners = new string[]{
-                            "/content/products/hardware/p-02-004-01.png"
+                            "/content/products/hardware/p-02-004-01.jpg"
                         },
                         Comment = "暂无"
                     },
@@ -251,9 +251,9 @@ namespace Site.Models {
                         Original = 10000,
                         Price = 10000,
                         Url = "/errors/waitting",
-                        Picture = "/content/products/hardware/p-02-005.png",
+                        Picture = "/content/products/hardware/p-02-005.jpg",
                         Banners = new string[]{
-                            "/content/products/hardware/p-02-005-01.png"
+                            "/content/products/hardware/p-02-005-01.jpg"
                         },
                         Comment = "暂无"
                     },
@@ -267,9 +267,9 @@ namespace Site.Models {
                         Original = 10000,
                         Price = 10000,
                         Url = "/errors/waitting",
-                        Picture = "/content/products/hardware/p-02-006.png",
+                        Picture = "/content/products/hardware/p-02-006.jpg",
                         Banners = new string[]{
-                            "/content/products/hardware/p-02-006-01.png"
+                            "/content/products/hardware/p-02-006-01.jpg"
                         },
                         Comment = "暂无"
                     },
@@ -294,7 +294,7 @@ namespace Site.Models {
                         Tag = "hot",
                         Url = "/errors/waitting",
                         Comment = "解决方案的简单介绍说明",
-                        Image = "/content/solutions/s-00-001.png"
+                        Image = "/content/solutions/s-00-001.jpg"
                     },
                     new Solution {
                         Index = 2,
@@ -307,7 +307,7 @@ namespace Site.Models {
                         Tag = "new",
                         Url = "/errors/waitting",
                         Comment = "解决方案的简单介绍说明",
-                        Image = "/content/solutions/s-00-002.png"
+                        Image = "/content/solutions/s-00-002.jpg"
                     },
                     new Solution {
                         Index = 3,
@@ -319,7 +319,7 @@ namespace Site.Models {
                         Price = 100,
                         Url = "/errors/waitting",
                         Comment = "解决方案的简单介绍说明",
-                        Image = "/content/solutions/s-00-003.png"
+                        Image = "/content/solutions/s-00-003.jpg"
                     },
                     new Solution {
                         Index = 4,
@@ -331,7 +331,7 @@ namespace Site.Models {
                         Price = 100,
                         Url = "/errors/waitting",
                         Comment = "解决方案的简单介绍说明",
-                        Image = "/content/solutions/s-00-004.png"
+                        Image = "/content/solutions/s-00-004.jpg"
                     }
                 };
             }
@@ -353,7 +353,7 @@ namespace Site.Models {
                         Price = 100,
                         Url = "/errors/waitting",
                         Comment = "解决方案的简单介绍说明",
-                        Image = "/content/solutions/s-01-001.png"
+                        Image = "/content/solutions/s-01-001.jpg"
                     },
                     new Solution {
                         Index = 2,
@@ -366,7 +366,7 @@ namespace Site.Models {
                         Tag = "hot",
                         Url = "/errors/waitting",
                         Comment = "解决方案的简单介绍说明",
-                        Image = "/content/solutions/s-01-002.png"
+                        Image = "/content/solutions/s-01-002.jpg"
                     }
                 };
             }
@@ -414,7 +414,7 @@ namespace Site.Models {
                  * 图片示例
                  <p>
                     <div class='img-wrapper'>
-                        <img src='image/001.png' >
+                        <img src='image/001.jpg' >
                         <div class='img-text'>图片说明文字</div>
                     </div>
                  </p>
@@ -424,7 +424,7 @@ namespace Site.Models {
                         Id = "n-20180101-00-001",
                         Title = "漳州市艾睿普软件技术有限公司成立",
                         Type = 0,
-                        Image = "/content/images/news.png",
+                        Image = "/content/images/news.jpg",
                         Author = "艾睿普",
                         Tag = "HOT",
                         Summary = "热烈庆祝漳州市艾睿普软件技术有限公司成立。",
@@ -663,25 +663,25 @@ namespace Site.Models {
                     new Certificate {
                         Id = "z-00-001",
                         Title = "动力环境综合监控系统",
-                        Url="/content/certificates/z-00-001.png",
+                        Url="/content/certificates/z-00-001.jpg",
                         CreatedTime = DateTime.Parse("2016-09-19 00:00:00")
                     },
                     new Certificate {
                         Id = "z-01-001",
                         Title = "IMMU(CE-EMC)",
-                        Url="/content/certificates/z-01-001.png",
+                        Url="/content/certificates/z-01-001.jpg",
                         CreatedTime = DateTime.Parse("2019-09-04 00:00:00")
                     },
                     new Certificate {
                         Id = "z-01-002",
                         Title = "IMMU(ROHS)",
-                        Url="/content/certificates/z-01-002.png",
+                        Url="/content/certificates/z-01-002.jpg",
                         CreatedTime = DateTime.Parse("2019-09-04 00:00:00")
                     },
                     new Certificate {
                         Id = "z-01-003",
                         Title = "IMMU(CE-LVD)",
-                        Url="/content/certificates/z-01-003.png",
+                        Url="/content/certificates/z-01-003.jpg",
                         CreatedTime = DateTime.Parse("2019-09-04 00:00:00")
                     }
                 };
@@ -699,42 +699,84 @@ namespace Site.Models {
                         Name = "漳州市艾睿普软件技术有限公司",
                         Type = 0,
                         Url="//www.irep.com.cn",
-                        Image = "/content/customers/c-00-001.png"
+                        Image = "/content/customers/c-00-001.jpg"
                     },
                     new Customer {
-                        Id = "c-00-001",
+                        Id = "c-00-002",
                         Name = "漳州市艾睿普软件技术有限公司",
                         Type = 0,
                         Url="//www.irep.com.cn",
-                        Image = "/content/customers/c-00-001.png"
+                        Image = "/content/customers/c-00-001.jpg"
                     },
                     new Customer {
-                        Id = "c-00-001",
+                        Id = "c-00-003",
                         Name = "漳州市艾睿普软件技术有限公司",
                         Type = 0,
                         Url="//www.irep.com.cn",
-                        Image = "/content/customers/c-00-001.png"
+                        Image = "/content/customers/c-00-001.jpg"
                     },
                     new Customer {
                         Id = "c-01-001",
                         Name = "漳州市艾睿普软件技术有限公司",
                         Type = 1,
                         Url="//www.irep.com.cn",
-                        Image = "/content/customers/c-00-001.png"
+                        Image = "/content/customers/c-00-001.jpg"
+                    },
+                    new Customer {
+                        Id = "c-01-002",
+                        Name = "漳州市艾睿普软件技术有限公司",
+                        Type = 1,
+                        Url="//www.irep.com.cn",
+                        Image = "/content/customers/c-00-001.jpg"
+                    },
+                    new Customer {
+                        Id = "c-01-003",
+                        Name = "漳州市艾睿普软件技术有限公司",
+                        Type = 1,
+                        Url="//www.irep.com.cn",
+                        Image = "/content/customers/c-00-001.jpg"
                     },
                     new Customer {
                         Id = "c-02-001",
                         Name = "漳州市艾睿普软件技术有限公司",
                         Type = 2,
                         Url="//www.irep.com.cn",
-                        Image = "/content/customers/c-00-001.png"
+                        Image = "/content/customers/c-00-001.jpg"
+                    },
+                    new Customer {
+                        Id = "c-02-002",
+                        Name = "漳州市艾睿普软件技术有限公司",
+                        Type = 2,
+                        Url="//www.irep.com.cn",
+                        Image = "/content/customers/c-00-001.jpg"
+                    },
+                    new Customer {
+                        Id = "c-02-003",
+                        Name = "漳州市艾睿普软件技术有限公司",
+                        Type = 2,
+                        Url="//www.irep.com.cn",
+                        Image = "/content/customers/c-00-001.jpg"
                     },
                     new Customer {
                         Id = "c-03-001",
                         Name = "漳州市艾睿普软件技术有限公司",
                         Type = 3,
                         Url="//www.irep.com.cn",
-                        Image = "/content/customers/c-00-001.png"
+                        Image = "/content/customers/c-00-001.jpg"
+                    },
+                    new Customer {
+                        Id = "c-03-002",
+                        Name = "漳州市艾睿普软件技术有限公司",
+                        Type = 3,
+                        Url="//www.irep.com.cn",
+                        Image = "/content/customers/c-00-001.jpg"
+                    },
+                    new Customer {
+                        Id = "c-03-003",
+                        Name = "漳州市艾睿普软件技术有限公司",
+                        Type = 3,
+                        Url="//www.irep.com.cn",
+                        Image = "/content/customers/c-00-001.jpg"
                     }
                 };
             }
